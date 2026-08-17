@@ -20,6 +20,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; }
+    .adv-row, .adv-row > div { min-width: 0 !important; overflow-wrap: break-word; }
+    .adv-row a { white-space: normal !important; }
+    #signup { background: oklch(0.99 0.004 90); }
+    body { background: oklch(0.99 0.004 90); }
     html { scroll-behavior: smooth; }
     body { margin: 0; font-family: 'Manrope', -apple-system, sans-serif; }
     a { color: oklch(0.5 0.13 195); }
@@ -206,7 +210,7 @@
         </div>
       </div>
       <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; margin-top: 44px;">
-        <span style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 19px; color: oklch(0.25 0.02 260);">Хочу освоить эту профессию ↓</span>
+        <span style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 19px; color: oklch(0.25 0.02 260);">Хочу освоить профессию ↓</span>
         <a href="#" onClick="{{ onOpenSignup }}" style="display: inline-flex; align-items: center; gap: 10px; background: oklch(0.5 0.13 195); color: white; text-decoration: none; padding: 17px 22px; border-radius: 100px; font-weight: 800; font-size: 17px; box-shadow: 0 12px 24px -8px oklch(0.5 0.13 195 / 0.5); width: 100%; box-sizing: border-box; justify-content: center; text-align: center; transition: background 0.15s ease;" style-hover="background: oklch(0.44 0.13 195);">Записаться на бесплатный вебинар</a>
       </div>
     </div>
