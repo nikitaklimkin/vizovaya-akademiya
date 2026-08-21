@@ -1,7 +1,7 @@
 (function () {
-      var ICON = '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="PATH"></path></svg>';
-      var BTN = 'width:44px;height:44px;padding:0;border-radius:50%;border:1.5px solid rgba(15,118,110,0.3);background:#fff;color:rgb(15,118,110);display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 2px 8px rgba(20,40,60,0.08);transition:opacity .2s ease;';
-      function build() {
+
+        var ICON = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="PATH"></path></svg>';
+        var BTN = 'width:34px;height:34px;padding:0;border-radius:50%;border:1.5px solid rgba(15,118,110,0.28);background:#fff;color:rgb(15,118,110);display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 2px 6px rgba(20,40,60,0.07);transition:opacity .2s ease;';
               var rail = document.querySelector('.reviews-rail');
               if (!rail) { setTimeout(build, 500); return; }
               if (document.getElementById('rvNav')) return;
