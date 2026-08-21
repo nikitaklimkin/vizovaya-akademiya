@@ -93,6 +93,8 @@
       .about-thumbs { display: flex !important; grid-template-columns: unset !important; overflow-x: auto !important; scroll-snap-type: x mandatory !important; gap: 8px !important; padding: 2px 24px 6px 0 !important; margin-top: 10px !important; }
       .about-thumbs > div { flex: 0 0 64px !important; scroll-snap-align: start; }
     }
+    @media (min-width: 701px) and (max-width: 1140px) { div:has(> .reserve-submit-btn) { flex-wrap: wrap !important; row-gap: 10px !important; } .reserve-submit-btn { flex: 0 0 100% !important; width: 100% !important; } }
+    @media (min-width: 701px) and (max-width: 900px) { .hero-photo-card { max-width: 380px !important; } .about-photo { max-width: 380px !important; } .video-media { max-width: 440px !important; } }
   </style>
   <script src="./image-slot.js"></script>
 </helmet>
