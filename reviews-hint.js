@@ -8,7 +8,7 @@
               if (rail.scrollWidth - rail.clientWidth < 40) { setTimeout(build, 1200); return; }
               var bar = document.createElement('div');
               bar.id = 'rvNav';
-              bar.style.cssText = 'display:flex;justify-content:center;align-items:center;gap:16px;margin:18px 0 4px;';
+                    bar.style.cssText = 'display:flex;justify-content:center;align-items:center;gap:16px;margin:4px 0 16px;';
               var prev = document.createElement('button');
               prev.type = 'button';
               prev.setAttribute('aria-label', 'Предыдущие отзывы');
@@ -21,7 +21,7 @@
               next.innerHTML = ICON.replace('PATH', 'M9 5l7 7-7 7');
               bar.appendChild(prev);
               bar.appendChild(next);
-              rail.parentNode.insertBefore(bar, rail.nextSibling);
+                    rail.parentNode.insertBefore(bar, rail);
               function step(dir) {
                         var d = Math.round(rail.clientWidth * 0.72);
                     var from = rail.scrollLeft;
