@@ -1,60 +1,46 @@
 (function () {
-    var SHOWN_KEY = 'rvHintDone';
-    function init() {
-          var rail = document.querySelector('.reviews-rail');
-          if (!rail) { setTimeout(init, 500); return; }
-          if (rail.scrollWidth - rail.clientWidth < 40) return;
-          var host = rail.parentElement;
-          if (getComputedStyle(host).position === 'static') host.style.position = 'relative';
-          var hint = document.createElement('div');
-          hint.setAttribute('aria-hidden', 'true');
-          hint.style.cssText = 'position:absolute;z-index:6;right:10px;top:34%;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.7);box-shadow:0 3px 12px rgba(20,40,60,0.22);display:flex;align-items:center;justify-content:center;pointer-events:none;opacity:1;transition:opacity 0.3s ease;animation:rvNudge 1.6s ease-in-out infinite';
-          hint.innerHTML = '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="rgb(15,118,110)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"></path></svg>';
-          var css = document.createElement('style');
-          css.textContent = '@keyframes rvNudge{0%,100%{transform:translateX(0)}50%{transform:translateX(5px)}}';
-          document.head.appendChild(css);
-          host.appendChild(hint);
-          var done = false;
-          function hide() {
-                  if (done) return;
-                  done = true;
-                  hint.style.opacity = '0';
-                  setTimeout(function () { if (hint.parentNode) hint.parentNode.removeChild(hint); }, 350);
-                  rail.removeEventListener('scroll', hide);
-                  rail.removeEventListener('touchstart', hide);
-                  try { sessionStorage.setItem(SHOWN_KEY, '1'); } catch (e) {}
-          }
-          try { if (sessionStorage.getItem(SHOWN_KEY)) { hide(); return; } } catch (e) {}
-          rail.addEventListener('scroll', hide, { passive: true });
-          rail.addEventListener('touchstart', hide, { passive: true });
-    }
-    if (document.readyState === 'loading') {
-          document.addEventListener('DOMContentLoaded', init);
-    } else {
-          init();
-    }
-})();
-
-(function () {
-      function markExternal() {
-              var links = document.querySelectorAll('a[href]');
-              for (var i = 0; i < links.length; i++) {
-                        var a = links[i];
-                        var href = a.getAttribute('href') || '';
-                        if (!/^(https?:)?\/\//i.test(href)) continue;
-                        if (a.hostname && a.hostname === location.hostname) continue;
-                        a.setAttribute('target', '_blank');
-                        a.setAttribute('rel', 'noopener noreferrer');
+      var ICON = '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="PATH"></path></svg>';
+      var BTN = 'width:44px;height:44px;padding:0;border-radius:50%;border:1.5px solid rgba(15,118,110,0.3);background:#fff;color:rgb(15,118,110);display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 2px 8px rgba(20,40,60,0.08);transition:opacity .2s ease;';
+      function build() {
+              var rail = document.querySelector('.reviews-rail');
+              if (!rail) { setTimeout(build, 500); return; }
+              if (document.getElementById('rvNav')) return;
+              if (rail.scrollWidth - rail.clientWidth < 40) { setTimeout(build, 1200); return; }
+              var bar = document.createElement('div');
+              bar.id = 'rvNav';
+              bar.style.cssText = 'display:flex;justify-content:center;align-items:center;gap:16px;margin:18px 0 4px;';
+              var prev = document.createElement('button');
+              prev.type = 'button';
+              prev.setAttribute('aria-label', 'Предыдущие отзывы');
+              prev.style.cssText = BTN;
+              prev.innerHTML = ICON.replace('PATH', 'M15 5l-7 7 7 7');
+              var next = document.createElement('button');
+              next.type = 'button';
+              next.setAttribute('aria-label', 'Следующие отзывы');
+              next.style.cssText = BTN;
+              next.innerHTML = ICON.replace('PATH', 'M9 5l7 7-7 7');
+              bar.appendChild(prev);
+              bar.appendChild(next);
+              rail.parentNode.insertBefore(bar, rail.nextSibling);
+              function step(dir) {
+                        var d = Math.round(rail.clientWidth * 0.72);
+                        if (rail.scrollBy) { rail.scrollBy({ left: dir * d, behavior: 'smooth' }); }
+                        else { rail.scrollLeft = rail.scrollLeft + dir * d; }
               }
-      }
-      function start() {
-              markExternal();
-              var mo = new MutationObserver(markExternal);
-              mo.observe(document.body, { childList: true, subtree: true });
+              prev.addEventListener('click', function () { step(-1); });
+              next.addEventListener('click', function () { step(1); });
+              function sync() {
+                        var max = rail.scrollWidth - rail.clientWidth - 4;
+                        prev.style.opacity = rail.scrollLeft <= 4 ? '0.3' : '1';
+                        next.style.opacity = rail.scrollLeft >= max ? '0.3' : '1';
+              }
+              rail.addEventListener('scroll', sync, { passive: true });
+              window.addEventListener('resize', sync);
+              sync();
       }
       if (document.readyState === 'loading') {
-              document.addEventListener('DOMContentLoaded', start);
+              document.addEventListener('DOMContentLoaded', build);
       } else {
-              start();
+              build();
       }
 })();
