@@ -34,3 +34,27 @@
           init();
     }
 })();
+
+(function () {
+      function markExternal() {
+              var links = document.querySelectorAll('a[href]');
+              for (var i = 0; i < links.length; i++) {
+                        var a = links[i];
+                        var href = a.getAttribute('href') || '';
+                        if (!/^(https?:)?\/\//i.test(href)) continue;
+                        if (a.hostname && a.hostname === location.hostname) continue;
+                        a.setAttribute('target', '_blank');
+                        a.setAttribute('rel', 'noopener noreferrer');
+              }
+      }
+      function start() {
+              markExternal();
+              var mo = new MutationObserver(markExternal);
+              mo.observe(document.body, { childList: true, subtree: true });
+      }
+      if (document.readyState === 'loading') {
+              document.addEventListener('DOMContentLoaded', start);
+      } else {
+              start();
+      }
+})();
