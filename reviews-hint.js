@@ -26,12 +26,12 @@
                         var d = Math.round(rail.clientWidth * 0.72);
                     var from = rail.scrollLeft;
                     var to = Math.max(0, Math.min(from + dir * d, rail.scrollWidth - rail.clientWidth));
-                    var t0 = Date.now();
+                          var t0 = Date.now(); var snapWas = rail.style.scrollSnapType; rail.style.scrollSnapType = 'none';
                     function frame() {
-                            var p = Math.min(1, (Date.now() - t0) / 320);
-                            var e = p < 0.5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2;
+                                    var p = Math.min(1, (Date.now() - t0) / 620);
+                                    var e = 1 - Math.pow(1 - p, 3);
                             rail.scrollLeft = from + (to - from) * e;
-                            if (p < 1) requestAnimationFrame(frame);
+                                    if (p < 1) { requestAnimationFrame(frame); } else { rail.style.scrollSnapType = snapWas; }
                     }
                     frame();
               }
