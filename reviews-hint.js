@@ -24,8 +24,16 @@
               rail.parentNode.insertBefore(bar, rail.nextSibling);
               function step(dir) {
                         var d = Math.round(rail.clientWidth * 0.72);
-                        if (rail.scrollBy) { rail.scrollBy({ left: dir * d, behavior: 'smooth' }); }
-                        else { rail.scrollLeft = rail.scrollLeft + dir * d; }
+                    var from = rail.scrollLeft;
+                    var to = Math.max(0, Math.min(from + dir * d, rail.scrollWidth - rail.clientWidth));
+                    var t0 = Date.now();
+                    function frame() {
+                            var p = Math.min(1, (Date.now() - t0) / 320);
+                            var e = p < 0.5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2;
+                            rail.scrollLeft = from + (to - from) * e;
+                            if (p < 1) requestAnimationFrame(frame);
+                    }
+                    frame();
               }
               prev.addEventListener('click', function () { step(-1); });
               next.addEventListener('click', function () { step(1); });
