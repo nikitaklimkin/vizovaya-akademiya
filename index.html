@@ -1,4 +1,4 @@
-<script>(function(){try{if(location.search.indexOf('pc=1')>-1){sessionStorage.setItem('pc','1');return}if(sessionStorage.getItem('pc'))return}catch(e){}var w=Math.min(screen.width||9999,window.innerWidth||9999);if(w<700)location.replace('/m.html'+location.hash)})();</script>
+<script>(function(){function go(){try{if(location.search.indexOf('pc=1')>-1){sessionStorage.setItem('pc','1');return}if(sessionStorage.getItem('pc'))return}catch(e){}if(window.matchMedia&&window.matchMedia('(max-width:700px)').matches)location.replace('/m.html'+location.hash)}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',go)}else{go()}})();</script>
 <!DOCTYPE html>
 <html>
 <head>
