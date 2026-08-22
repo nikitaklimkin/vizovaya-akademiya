@@ -1,4 +1,4 @@
-(function(){
+  document.addEventListener('click',function(e){var a=e.target.closest?e.target.closest('[data-doc]'):null;if(a){e.preventDefault();e.stopPropagation();openDoc(a.getAttribute('data-doc'))}},true);
   var CO='ИП Климкин Никита Сергеевич';
   var INN='971501295187';
   var OGRN='319774600227832';
@@ -21,6 +21,6 @@
     function note(){var f=document.getElementById('lgFooter');if(!f)return;if(f.querySelector('[data-note]'))return;var n=document.createElement('div');n.setAttribute('data-note','1');n.style.cssText='max-width:720px;margin:0 auto 16px;font-size:12.5px;line-height:1.65;color:rgb(132,139,148)';n.innerHTML='Посещая сайт, вы соглашаетесь с '+lk('policy','политикой конфиденциальности')+', '+lk('pdn','обработкой персональных данных')+' и использованием файлов cookies.';f.insertBefore(n,f.lastElementChild)}
   function heads(){var NEWH='10 фактов, почему сейчас идеально войти в визовую сферу';var all=document.querySelectorAll('div,p,span,h1,h2,h3,h4');for(var i=0;i<all.length;i++){var e=all[i];if(e.children.length)continue;var t=(e.textContent||'').trim();if(t.indexOf('10 фактов о профессии')===0){e.textContent=NEWH}}}
   function run(){killOld();footer();note();consent();heads()}
-  document.addEventListener('click',function(e){var a=e.target.closest?e.target.closest('[data-doc]'):null;if(a){e.preventDefault();openDoc(a.getAttribute('data-doc'))}});
+    document.addEventListener('click',function(e){var a=e.target.closest?e.target.closest('[data-doc]'):null;if(a){e.preventDefault();e.stopPropagation();openDoc(a.getAttribute('data-doc'))}},true);
   if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',function(){run();setInterval(run,900)})}else{run();setInterval(run,900)}
 })();
