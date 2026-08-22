@@ -1,4 +1,4 @@
-    function boot(){run();setInterval(run,600);var mo=new MutationObserver(run);mo.observe(document.body,{childList:true,subtree:true})}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',boot)}else{boot()}
+    (function(){
   var CO='ИП Климкин Никита Сергеевич';
   var INN='971501295187';
   var OGRN='319774600227832';
