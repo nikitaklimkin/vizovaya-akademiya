@@ -521,7 +521,7 @@
       <div ref="{{ reviewsRailRef }}" class="reviews-rail" style="display: grid; grid-auto-flow: column; grid-auto-columns: 44%; grid-template-rows: auto auto; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 2px 60px 2px 0;">
         <sc-for list="{{ reviews }}" as="item" hint-placeholder-count="12">
           <div style="scroll-snap-align: start; display: flex; flex-direction: column; gap: 10px;">
-            <a href="#" onClick="{{ item.onOpen }}" style="position: relative; display: block; aspect-ratio: 9 / 16; border-radius: 18px; overflow: hidden; background: oklch(0.94 0.012 195); border: 1px solid oklch(0.9 0.012 195); text-decoration: none;"><img src="{{ item.poster }}" alt="" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;"><div style="position: absolute; inset: 0; background: linear-gradient(180deg, transparent 45%, oklch(0.2 0.02 260 / 0.45) 100%);"></div><div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 46px; height: 46px; border-radius: 50%; background: oklch(1 0 0 / 0.92); display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 24px -10px oklch(0.2 0.03 260 / 0.6);"><svg width="17" height="17" viewBox="0 0 24 24" fill="oklch(0.5 0.13 195)"><path d="M8 5l12 7-12 7z"></path></svg></div></a>
+            <sc-if value="{{ item.hasVideo }}"><a href="#" onClick="{{ item.onOpen }}" style="position: relative; display: block; aspect-ratio: 9 / 16; border-radius: 18px; overflow: hidden; background: oklch(0.94 0.012 195); border: 1px solid oklch(0.9 0.012 195); text-decoration: none;"><img src="{{ item.poster }}" alt="" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;"><div style="position: absolute; inset: 0; background: linear-gradient(180deg, transparent 45%, oklch(0.2 0.02 260 / 0.45) 100%);"></div><div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 46px; height: 46px; border-radius: 50%; background: oklch(1 0 0 / 0.92); display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 24px -10px oklch(0.2 0.03 260 / 0.6);"><svg width="17" height="17" viewBox="0 0 24 24" fill="oklch(0.5 0.13 195)"><path d="M8 5l12 7-12 7z"></path></svg></div></a></sc-if><sc-if value="{{ item.noVideo }}"><div style="position: relative; aspect-ratio: 9 / 16; border-radius: 18px; overflow: hidden; background: oklch(0.94 0.012 195); border: 1px solid oklch(0.9 0.012 195); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;"><div style="width: 42px; height: 42px; border-radius: 50%; background: white; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 18px -8px oklch(0.2 0.03 260 / 0.4);"><svg width="16" height="16" viewBox="0 0 24 24" fill="oklch(0.55 0.09 195)"><path d="M8 5l12 7-12 7z"></path></svg></div><div style="font-size: 12px; font-weight: 700; color: oklch(0.55 0.03 195); letter-spacing: 0.02em;">видео-отзыв</div></div></sc-if>
               <div style="font-size: 12px; font-weight: 700; color: oklch(0.55 0.03 195); letter-spacing: 0.02em;">видео-отзыв</div>
             </div>
             <div>
@@ -1062,6 +1062,10 @@ class Component extends DCLogic {
     { name: 'Светлана', age: '38 лет', city: 'Екатеринбург', caption: 'Работает в офисе и совмещает' },
     { name: 'Ирина', age: '31 год', city: 'Москва', caption: 'Освоила Шенген, теперь учит США и Великобританию' },
     { name: 'Алина', age: '25 лет', city: 'Самара', caption: 'Освоила профессию из города с населением 80 тыс человек' },
+    { name: 'Юлия', age: '36 лет', city: 'Ростов-на-Дону', caption: 'Открыла своё визовое агентство в маленьком городе' },
+    { name: 'Наталья', age: '44 года', city: 'Пермь', caption: 'Ушла с наёмной работы через два месяца' },
+    { name: 'Ксения', age: '28 лет', city: 'Владивосток', caption: 'Получила первого клиента, ещё до старта обучения' },
+    { name: 'Дарья', age: '33 года', city: 'Тюмень', caption: 'Устроилась в визовое агентство сразу после обучения' },
   ];
   onOpenReview = (src) => (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ reviewSrc: src }); };
   onCloseReview = () => this.setState({ reviewSrc: null });
@@ -1078,6 +1082,8 @@ class Component extends DCLogic {
       ...r,
       src: 'assets/reviews/review-' + (i + 1) + '.mp4',
       poster: 'assets/reviews/review-' + (i + 1) + '.jpg',
+      hasVideo: i < 8,
+      noVideo: i >= 8,
       onOpen: this.onOpenReview('assets/reviews/review-' + (i + 1) + '.mp4'),
     }));
   }
