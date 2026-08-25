@@ -654,9 +654,9 @@
       </div>
       <div style="display: flex; flex-direction: column; gap: 12px;">
         <sc-for list="{{ faqItems }}" as="item" hint-placeholder-count="10">
-          <div style="background: white; border-radius: 16px; overflow: hidden; border: 1px solid oklch(0.92 0.005 260);">
+          <div style="{{ item.cardStyle }}">
             <div onClick="{{ item.toggle }}" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 24px; cursor: pointer;">
-              <span style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 17px; color: oklch(0.22 0.02 260);">{{ item.q }}</span>
+              <span style="{{ item.qStyle }}">{{ item.q }}</span>
               <span style="{{ item.iconStyle }}">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="oklch(0.5 0.13 195)" stroke-width="2.4"><path d="M6 9l6 6 6-6"></path></svg>
               </span>
@@ -1223,6 +1223,7 @@ class Component extends DCLogic {
   onCloseBudget = () => this.setState({ budgetOpen: false });
   toggleFaq = (i) => this.setState(s => ({ openFaq: s.openFaq === i ? -1 : i }));
   faqData = [
+    { q: 'А если я пойму, что профессия мне не подходит?', a: 'Это нормально, и мы относимся к такому выбору с пониманием. Вернуть деньги можно в течение 14 дней после старта обучения — без заявлений и объяснения причин. Достаточно сказать куратору, что вы хотите прекратить обучение, и в течение 24 часов средства поступят на тот же счёт, с которого была оплата.', accent: true },
     { q: 'Нужен ли английский или профильное образование?', a: 'Нет, английский не требуется. Работа на русском, с русскоязычными клиентами, анкеты заполняются по шаблонам. Анастасия пришла в визовую сферу из суда, без опыта в туризме. Нужны внимательность и готовность разобраться.' },
     { q: 'Я живу не в Москве. Смогу работать?', a: 'Да. Клиент и специалист почти никогда не встречаются лично: документы — в мессенджере, запись на подачу — онлайн. Работать можно из любой точки, где есть интернет.' },
     { q: 'Сколько времени это занимает? У меня работа и семья.', a: 'Обучение — 1,5 месяца, большинство совмещает с работой. Дальше нагрузку выбираете сами: один заказ — это несколько точек контакта с клиентом, а не занятость сутками.' },
@@ -1364,7 +1365,13 @@ class Component extends DCLogic {
           q: item.q,
           a: item.a,
           toggle: () => this.toggleFaq(i),
-          iconStyle: 'flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; background: oklch(0.94 0.03 195); display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease; transform: rotate(' + (open ? 180 : 0) + 'deg);',
+          cardStyle: item.accent
+            ? 'background: oklch(0.97 0.02 195); border-radius: 16px; overflow: hidden; border: 1.5px solid oklch(0.8 0.07 195); border-left: 5px solid oklch(0.5 0.13 195); box-shadow: 0 10px 26px -18px oklch(0.3 0.09 195 / 0.6);'
+            : 'background: white; border-radius: 16px; overflow: hidden; border: 1px solid oklch(0.92 0.005 260);',
+          qStyle: item.accent
+            ? "font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 17px; color: oklch(0.3 0.09 195);"
+            : "font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 17px; color: oklch(0.22 0.02 260);",
+          iconStyle: 'flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; background: ' + (item.accent ? 'oklch(0.88 0.06 195)' : 'oklch(0.94 0.03 195)') + '; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease; transform: rotate(' + (open ? 180 : 0) + 'deg);',
           bodyStyle: open ? 'max-height: 400px; opacity: 1; transition: max-height 0.25s ease, opacity 0.2s ease;' : 'max-height: 0; opacity: 0; overflow: hidden; transition: max-height 0.25s ease, opacity 0.2s ease;'
         };
       }),
