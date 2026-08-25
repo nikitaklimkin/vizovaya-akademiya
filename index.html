@@ -14,9 +14,10 @@
     <text x="600" y="620" font-family="Arial, sans-serif" font-size="70" font-weight="800" fill="#ffffff" text-anchor="middle">Визовый центр</text>
   </svg>
 </template>
-<script src="./support.js"></script>
-  <script src="./reviews-hint.js" defer></script>
-  <script src="./legal.js" defer></script>
+<script src="./support.js?v=4"></script>
+  <script src="./reviews-hint.js?v=4" defer></script>
+  <script src="./legal.js?v=4" defer></script>
+<style>@keyframes dc-pulse{0%,100%{box-shadow:0 0 0 2px oklch(0.62 0.22 25 / 0.85)}50%{box-shadow:0 0 0 5px oklch(0.62 0.22 25 / 0.35)}}@keyframes dc-pulse-b{0%,100%{border-color:oklch(0.62 0.22 25)}50%{border-color:oklch(0.72 0.16 25)}}</style>
 </head>
 <body>
 <x-dc>
@@ -102,7 +103,7 @@
     .modal-card:has(input):has(a[href*="max.ru"]) > div:last-child > :nth-child(1) { order: 1 !important; } .modal-card:has(input):has(a[href*="max.ru"]) > div:last-child > :nth-child(4) { order: 2 !important; } .modal-card:has(input):has(a[href*="max.ru"]) > div:last-child > :nth-child(2) { order: 3 !important; } .modal-card:has(input):has(a[href*="max.ru"]) > div:last-child > :nth-child(3) { order: 4 !important; }
     .modal-card:has(input):has(a[href*="max.ru"]) > div:last-child > :nth-child(8) { order: 5 !important; } .modal-card:has(input):has(a[href*="max.ru"]) > div:last-child > :nth-child(9) { order: 6 !important; } .modal-card:has(input):has(a[href*="max.ru"]) > div:last-child > :nth-child(7) { order: 7 !important; } .modal-card:has(input):has(a[href*="max.ru"]) > div:last-child > :nth-child(5) { order: 8 !important; } .modal-card:has(input):has(a[href*="max.ru"]) > div:last-child > :nth-child(6) { order: 9 !important; }
   </style>
-  <script src="./image-slot.js"></script>
+  <script src="./image-slot.js?v=4"></script>
 </helmet>
 
 <div style="background: oklch(0.99 0.004 90); color: oklch(0.22 0.02 260); width: 100%; overflow-x: hidden;">
@@ -225,12 +226,12 @@
         <div class="adv-row" style="background: white; border-radius: 24px; padding: 36px; display: grid; grid-template-columns: 220px 1fr; gap: 32px; align-items: center;">
           <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 6px;">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="oklch(0.45 0.14 55)" stroke-width="2"><path d="M12 17.3l-5.4 3 1.4-6.1L3.5 9.9l6.2-.6L12 3.5l2.3 5.8 6.2.6-4.5 4.3 1.4 6.1z"></path></svg>
-            <div style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 28px; color: oklch(0.45 0.14 55); line-height: 1.15;">40+ учеников</div>
+            <div style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 28px; color: oklch(0.45 0.14 55); line-height: 1.15;">87+ учеников</div>
             <div style="font-size: 13.5px; color: oklch(0.5 0.02 260);">успешно прошли обучение</div>
           </div>
           <div>
             <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 22px; margin: 0 0 10px;">А если у меня не получится?</div>
-            <div style="font-size: 16px; color: oklch(0.4 0.02 260); line-height: 1.6;">Уже более 40 учеников успешно прошли обучение и начали зарабатывать, кто-то работает на себя как визовый агент, кто-то устроился в визовое агентство, в том числе в наше. <a href="#reviews" style="background: oklch(0.94 0.05 55); color: oklch(0.45 0.14 55); font-weight: 700; padding: 3px 12px; border-radius: 100px; white-space: nowrap; text-decoration: none; transition: background 0.15s, color 0.15s;" style-hover="background: oklch(0.55 0.14 55); color: white;">Смотреть отзывы</a></div>
+            <div style="font-size: 16px; color: oklch(0.4 0.02 260); line-height: 1.6;">Уже более 87 учеников успешно прошли обучение и начали зарабатывать, кто-то работает на себя как визовый агент, кто-то устроился в визовое агентство, в том числе в наше. <a href="#reviews" style="background: oklch(0.94 0.05 55); color: oklch(0.45 0.14 55); font-weight: 700; padding: 3px 12px; border-radius: 100px; white-space: nowrap; text-decoration: none; transition: background 0.15s, color 0.15s;" style-hover="background: oklch(0.55 0.14 55); color: white;">Смотреть отзывы</a></div>
           </div>
         </div>
       </div>
@@ -566,7 +567,7 @@
               <div onClick="{{ onSelectSlot19 }}" class="reserve-slot-btn" style="{{ slot19Style }}">19:00 (Мск)</div>
               <button onClick="{{ onSubmit }}" class="reserve-btn reserve-submit-btn" style="flex: 1; background: oklch(0.16 0.025 250); color: white; border: none; padding: 13px 22px; border-radius: 12px; font-weight: 800; font-size: 16px; cursor: pointer; white-space: nowrap; height: 52px">Записаться</button>
             </div>
-            <div style="margin-top: 12px; display: flex; flex-direction: column; gap: 10px; font-size: 12px; line-height: 1.45; color: oklch(0.92 0.02 195);"><div onClick="{{ onToggleAds }}" style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; user-select: none;"><div style="{{ adsBoxStyle }}"><span style="{{ adsCheckStyle }}">✓</span></div><div style="flex: 1; min-width: 0;">Я согласен на <a href="/ads.html" data-doc="ads" style="color: white; font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">получение рекламы</a> и <a href="/pdn.html" data-doc="pdn" style="color: white; font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">обработку персональных данных</a> в целях получения рекламы.</div></div><div onClick="{{ onToggleOffer }}" style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; user-select: none;"><div style="{{ offerBoxStyle }}"><span style="{{ offerCheckStyle }}">✓</span></div><div style="flex: 1; min-width: 0;">Нажимая кнопку, я принимаю условия <a href="/offer.html" data-doc="offer" style="color: white; font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">оферты</a>. Персональные данные будут обрабатываться в целях заключения и исполнения договора согласно <a href="/policy.html" data-doc="policy" style="color: white; font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">Политике обработки персональных данных</a>.</div></div></div>
+            <div style="margin-top: 12px; display: flex; flex-direction: column; gap: 10px; font-size: 12px; line-height: 1.45; color: oklch(0.92 0.02 195);"><div onClick="{{ onToggleOffer }}" style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; user-select: none;"><div style="{{ offerBoxStyle }}"><span style="{{ offerCheckStyle }}">✓</span></div><div style="flex: 1; min-width: 0;">Нажимая кнопку, я принимаю условия <a href="/offer.html" target="_blank" rel="noopener" data-doc="offer" style="color: white; font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">оферты</a>. Персональные данные будут обрабатываться в целях заключения и исполнения договора согласно <a href="/policy.html" target="_blank" rel="noopener" data-doc="policy" style="color: white; font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">Политике обработки персональных данных</a>.</div></div><div onClick="{{ onToggleAds }}" style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; user-select: none;"><div style="{{ adsBoxStyle }}"><span style="{{ adsCheckStyle }}">✓</span></div><div style="flex: 1; min-width: 0;">Я согласен на <a href="/ads.html" target="_blank" rel="noopener" data-doc="ads" style="color: white; font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">получение рекламы</a> и <a href="/pdn.html" target="_blank" rel="noopener" data-doc="pdn" style="color: white; font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">обработку персональных данных</a> в целях получения удобных уведомлений и рекламных предложений.</div></div></div>
 
             <div style="display: flex; align-items: center; gap: 12px; margin: 22px 0 18px;">
               <div style="flex: 1; height: 1px; background: oklch(1 0 0 / 0.25);"></div>
@@ -668,7 +669,7 @@
         </sc-for>
       </div>
       <div style="display: flex; align-items: center; justify-content: center; margin-top: 40px;">
-        <a href="#" onClick="{{ onOpenSignup }}" style="display: inline-flex; align-items: center; gap: 10px; background: oklch(0.5 0.13 195); color: white; text-decoration: none; padding: 17px 30px; border-radius: 100px; font-weight: 800; font-size: 16px; box-shadow: 0 12px 24px -8px oklch(0.5 0.13 195 / 0.5); transition: background 0.15s ease;" style-hover="background: oklch(0.44 0.13 195);">Хочу на бесплатный вебинар</a>
+        <a href="#" onClick="{{ onOpenSignup }}" style="display: inline-flex; align-items: center; gap: 10px; background: oklch(0.5 0.13 195); color: white; text-decoration: none; padding: 17px 30px; border-radius: 100px; font-weight: 800; font-size: 16px; box-shadow: 0 12px 24px -8px oklch(0.5 0.13 195 / 0.5); transition: background 0.15s ease;" style-hover="background: oklch(0.44 0.13 195);">Хочу на бесплатный вебинар и 3 подарка</a>
       </div>
     </div>
   </div>
@@ -698,7 +699,7 @@
   </div>
   <sc-if value="{{ signupOpen }}" hint-placeholder-val="{{ false }}">
     <div onClick="{{ onCloseSignup }}" style="position: fixed; inset: 0; background: oklch(0.12 0.02 260 / 0.75); backdrop-filter: blur(4px); z-index: 110; display: flex; align-items: center; justify-content: center; padding: 20px;">
-      <div onClick="{{ onStopPropagation }}" class="modal-card" style="background: white; border-radius: 24px; padding: 40px 36px 32px; max-width: 520px; width: 100%; max-height: 90vh; overflow-y: auto; position: relative; box-shadow: 0 40px 80px -20px oklch(0.15 0.03 260 / 0.5);">
+      <div onClick="{{ onStopPropagation }}" class="modal-card" style="background: white; border-radius: 24px; padding: 40px 36px 32px; max-width: 520px; width: 100%; max-height: 96vh; overflow-y: auto; position: relative; box-shadow: 0 40px 80px -20px oklch(0.15 0.03 260 / 0.5);">
         <div onClick="{{ onCloseSignup }}" style="position: absolute; top: 18px; right: 18px; width: 34px; height: 34px; border-radius: 50%; background: oklch(0.96 0.005 260); display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 2; transition: background 0.15s ease;" style-hover="background: oklch(0.9 0.005 260);">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="oklch(0.4 0.02 260)" stroke-width="2.4"><path d="M6 6l12 12M18 6L6 18"></path></svg>
         </div>
@@ -732,7 +733,7 @@
               </div>
               <button onClick="{{ onSubmit }}" style="background: oklch(0.5 0.13 195); color: white; border: none; padding: 15px 22px; border-radius: 12px; font-weight: 800; font-size: 16px; cursor: pointer; box-shadow: 0 12px 24px -8px oklch(0.5 0.13 195 / 0.5); transition: background 0.15s ease;" style-hover="background: oklch(0.44 0.13 195);">Записаться и получить 3 подарка</button>
             </div>
-            <div style="margin-bottom: 20px; margin-top: 12px; display: flex; flex-direction: column; gap: 10px; font-size: 11.5px; line-height: 1.45; color: oklch(0.42 0.02 260);"><div onClick="{{ onToggleAds }}" style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; user-select: none;"><div style="{{ adsBoxStyle }}"><span style="{{ adsCheckStyle }}">✓</span></div><div style="flex: 1; min-width: 0;">Я согласен на <a href="/ads.html" data-doc="ads" style="color: oklch(0.35 0.11 195); font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">получение рекламы</a> и <a href="/pdn.html" data-doc="pdn" style="color: oklch(0.35 0.11 195); font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">обработку персональных данных</a> в целях получения рекламы.</div></div><div onClick="{{ onToggleOffer }}" style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; user-select: none;"><div style="{{ offerBoxStyle }}"><span style="{{ offerCheckStyle }}">✓</span></div><div style="flex: 1; min-width: 0;">Нажимая кнопку, я принимаю условия <a href="/offer.html" data-doc="offer" style="color: oklch(0.35 0.11 195); font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">оферты</a>. Персональные данные будут обрабатываться в целях заключения и исполнения договора согласно <a href="/policy.html" data-doc="policy" style="color: oklch(0.35 0.11 195); font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">Политике обработки персональных данных</a>.</div></div></div>
+            <div style="margin-bottom: 20px; margin-top: 12px; display: flex; flex-direction: column; gap: 10px; font-size: 11.5px; line-height: 1.45; color: oklch(0.42 0.02 260);"><div onClick="{{ onToggleOffer }}" style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; user-select: none;"><div style="{{ offerBoxStyle }}"><span style="{{ offerCheckStyle }}">✓</span></div><div style="flex: 1; min-width: 0;">Нажимая кнопку, я принимаю условия <a href="/offer.html" target="_blank" rel="noopener" data-doc="offer" style="color: oklch(0.35 0.11 195); font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">оферты</a>. Персональные данные будут обрабатываться в целях заключения и исполнения договора согласно <a href="/policy.html" target="_blank" rel="noopener" data-doc="policy" style="color: oklch(0.35 0.11 195); font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">Политике обработки персональных данных</a>.</div></div><div onClick="{{ onToggleAds }}" style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; user-select: none;"><div style="{{ adsBoxStyle }}"><span style="{{ adsCheckStyle }}">✓</span></div><div style="flex: 1; min-width: 0;">Я согласен на <a href="/ads.html" target="_blank" rel="noopener" data-doc="ads" style="color: oklch(0.35 0.11 195); font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">получение рекламы</a> и <a href="/pdn.html" target="_blank" rel="noopener" data-doc="pdn" style="color: oklch(0.35 0.11 195); font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">обработку персональных данных</a> в целях получения удобных уведомлений и рекламных предложений.</div></div></div>
 
             <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 18px;">
               <div style="flex: 1; height: 1px; background: oklch(0.91 0.005 260);"></div>
@@ -1259,30 +1260,80 @@ class Component extends DCLogic {
   onSelectSlot14 = () => this.setState({ slot: '14:00' });
   onSelectSlot19 = () => this.setState({ slot: '19:00' });
   ring(invalid) {
-    return invalid ? 'box-shadow: 0 0 0 2px oklch(0.62 0.22 25 / 0.9); transition: box-shadow 0s;' : 'box-shadow: 0 0 0 0 transparent; transition: box-shadow 1s ease;';
+    return invalid ? 'animation: dc-pulse 0.9s ease-in-out infinite; background: oklch(0.97 0.035 25) !important; transition: background 0.2s ease;' : 'box-shadow: 0 0 0 0 transparent; transition: box-shadow 1s ease, background 0.6s ease;';
   }
   slotBtnStyle(active, invalid) {
-    return 'flex: 1; text-align: center; cursor: pointer; border-radius: 12px; padding: 13px 10px; font-weight: 700; font-size: 15px; border: 1.5px solid ' +
-      (invalid ? 'oklch(0.62 0.22 25)' : (active ? 'oklch(0.65 0.13 55)' : 'oklch(0.88 0.01 260)')) + '; background: ' + (active ? 'oklch(0.97 0.03 55)' : 'oklch(0.97 0.005 260)') + '; color: ' + (active ? 'oklch(0.4 0.13 55)' : 'oklch(0.4 0.02 260)') + '; transition: border-color ' + (invalid ? '0s' : '1s ease') + ';';
+    return (invalid ? 'animation: dc-pulse-b 0.9s ease-in-out infinite; ' : '') + 'flex: 1; text-align: center; cursor: pointer; border-radius: 12px; padding: 13px 10px; font-weight: 700; font-size: 15px; border: 1.5px solid ' +
+      (invalid ? 'oklch(0.62 0.22 25)' : (active ? 'oklch(0.65 0.13 55)' : 'oklch(0.88 0.01 260)')) + '; background: ' + (invalid ? 'oklch(0.97 0.035 25)' : (active ? 'oklch(0.97 0.03 55)' : 'oklch(0.97 0.005 260)')) + '; color: ' + (active ? 'oklch(0.4 0.13 55)' : 'oklch(0.4 0.02 260)') + '; transition: border-color ' + (invalid ? '0s' : '1s ease') + ';';
   }
   onToggleAds = () => this.setState({ adsOk: !this.state.adsOk });
   onToggleOffer = () => this.setState({ offerOk: !this.state.offerOk });
   boxStyle(on, invalid) {
     return 'flex-shrink: 0; width: 19px; height: 19px; border-radius: 5px; margin-top: 1px; '
       + 'display: flex; align-items: center; justify-content: center; '
-      + 'background: ' + (on ? 'oklch(0.5 0.13 195)' : 'transparent') + '; '
+      + 'background: ' + (on ? 'oklch(0.5 0.13 195)' : (invalid ? 'oklch(0.96 0.04 25)' : 'transparent')) + '; '
       + 'border: 1.5px solid ' + (on ? 'oklch(0.5 0.13 195)' : (invalid ? 'oklch(0.62 0.19 25)' : 'oklch(0.75 0.03 260)')) + '; '
+      + (invalid && !on ? 'animation: dc-pulse-b 0.9s ease-in-out infinite; ' : '')
       + 'transition: background 0.15s ease, border-color ' + (invalid ? '0s' : '1s ease') + ';';
   }
   checkStyle(on) {
     return 'font-size: 12px; font-weight: 900; line-height: 1; color: ' + (on ? 'white' : 'transparent') + ';';
   }
+  scrollToFirstInvalid = () => {
+    setTimeout(() => {
+      const pickAll = (root) => Array.prototype.slice.call(root.querySelectorAll('input, div, span'))
+        .filter((el) => {
+          const st = el.getAttribute('style') || '';
+          const flagged = st.indexOf('dc-pulse') > -1 || st.indexOf('oklch(0.62 0.22 25') > -1 || st.indexOf('oklch(0.62 0.19 25') > -1;
+          if (!flagged) return false;
+          const r = el.getBoundingClientRect();
+          return r.width > 0 && r.height > 0;
+        });
+      const card = document.querySelector('.modal-card');
+      let scope = card || document.body;
+      let bad = pickAll(scope);
+      if (!bad.length && scope !== document.body) { scope = document.body; bad = pickAll(scope); }
+      if (!bad.length) return;
+
+      // границы всех незаполненных мест
+      let top = Infinity, bottom = -Infinity;
+      for (let i = 0; i < bad.length; i++) {
+        const r = bad[i].getBoundingClientRect();
+        if (r.top < top) top = r.top;
+        if (r.bottom > bottom) bottom = r.bottom;
+      }
+      const inPopup = scope !== document.body && scope.scrollHeight > scope.clientHeight;
+      const viewTop = inPopup ? scope.getBoundingClientRect().top + 8 : 74;
+      const viewBottom = inPopup ? scope.getBoundingClientRect().bottom - 8 : window.innerHeight - 12;
+      const viewH = viewBottom - viewTop;
+      const blockH = bottom - top;
+
+      // если всё уже видно целиком — не двигаем
+      if (top >= viewTop && bottom <= viewBottom) return;
+
+      // сдвиг: помещаем весь блок в кадр, а если не влезает — показываем его начало
+      let delta = (blockH <= viewH)
+        ? (top - viewTop) - (viewH - blockH) / 2
+        : (top - viewTop) - 12;
+
+      if (inPopup) {
+        const target = Math.max(0, scope.scrollTop + delta);
+        if (scope.scrollTo) scope.scrollTo({ top: target, behavior: 'smooth' });
+        else scope.scrollTop = target;
+      } else {
+        const y = (window.pageYOffset || document.documentElement.scrollTop || 0) + delta;
+        if (window.scrollTo) window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
+        else if (bad[0].scrollIntoView) bad[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }, 180);
+  };
   onSubmit = () => {
     const s = this.state;
     if (!s.name.trim() || !s.phone.trim() || !s.email.trim() || !s.slot || !s.adsOk || !s.offerOk) {
       this.setState({ errorFlash: true });
       if (this._errTimer) clearTimeout(this._errTimer);
-      this._errTimer = setTimeout(() => this.setState({ errorFlash: false }), 1000);
+      this._errTimer = setTimeout(() => this.setState({ errorFlash: false }), 2200);
+      this.scrollToFirstInvalid();
       return;
     }
     window.location.href = '/thanks.html';
@@ -1308,9 +1359,9 @@ class Component extends DCLogic {
     const startY = window.pageYOffset;
     const targetY = el.getBoundingClientRect().top + startY - (window.innerHeight - el.offsetHeight) / 2;
     const distance = targetY - startY;
-    const duration = 1000;
+    const duration = 1800;
     let startTime = null;
-    const ease = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+    const ease = (t) => (t < 0.5 ? 8 * t * t * t * t : 1 - Math.pow(-2 * t + 2, 4) / 2);
     const step = (ts) => {
       if (!startTime) startTime = ts;
       const progress = Math.min((ts - startTime) / duration, 1);
