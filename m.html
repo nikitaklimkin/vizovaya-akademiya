@@ -1080,13 +1080,9 @@ class Component extends DCLogic {
   get reviews() {
     return this.reviewsData.map((r, i) => ({
       ...r,
-      src: i < 8 ? ('assets/reviews/review-' + (i + 1) + '.mp4')
-        : ['assets/reviews/compressed_435.mp4','assets/reviews/compressed_IMG_7337.MOV','assets/reviews/20260821_163956.mov'][i - 8] || null,
-      poster: i < 8 ? ('assets/reviews/review-' + (i + 1) + '.jpg') : 'assets/reviews/stub.jpg',
-      onOpen: (i < 11)
-        ? this.onOpenReview(i < 8 ? ('assets/reviews/review-' + (i + 1) + '.mp4')
-            : ['assets/reviews/compressed_435.mp4','assets/reviews/compressed_IMG_7337.MOV','assets/reviews/20260821_163956.mov'][i - 8])
-        : ((e) => { if (e && e.preventDefault) e.preventDefault(); }),
+      src: 'assets/reviews/review-' + (i + 1) + '.mp4',
+      poster: 'assets/reviews/review-' + (i + 1) + '.jpg',
+      onOpen: this.onOpenReview('assets/reviews/review-' + (i + 1) + '.mp4'),
     }));
   }
   onOpenVideo = (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ videoOpen: true, videoPaused: true }); };
