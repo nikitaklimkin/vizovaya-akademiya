@@ -23,5 +23,5 @@
   function heads(){var NEWH='10 фактов, почему сейчас идеально войти в визовую сферу';var all=document.querySelectorAll('div,p,span,h1,h2,h3,h4');for(var i=0;i<all.length;i++){var e=all[i];if(e.children.length)continue;var t=(e.textContent||'').trim();if(t.indexOf('10 фактов о профессии')===0){e.textContent=NEWH}}}
   function run(){killOld();footer();note();consent();heads()}
     document.addEventListener('click',function(e){var a=e.target.closest?e.target.closest('[data-doc]'):null;if(a){var u=DOCURL[a.getAttribute('data-doc')];if(u){e.preventDefault();e.stopPropagation();window.location.href=u}}},true);
-    function boot(){run();setInterval(run,600);var mo=new MutationObserver(run);mo.observe(document.body,{childList:true,subtree:true})}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',boot)}else{boot()}
+    function boot(){run();(function(){var t=setInterval(run,600);setTimeout(function(){clearInterval(t)},15000)})();var mo=new MutationObserver(run);mo.observe(document.body,{childList:true,subtree:true})}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',boot)}else{boot()}
 })();

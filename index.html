@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="preload" as="image" href="assets/founder-3.webp" fetchpriority="high">
 <script>(function(){try{var q=location.search;if(q.indexOf('pc=1')>-1){try{sessionStorage.setItem('pc','1')}catch(e){}return}try{if(sessionStorage.getItem('pc'))return}catch(e){}if(window.matchMedia&&window.matchMedia('(max-width:700px)').matches){location.replace('/m.html'+location.search+location.hash)}}catch(e){}})();</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -104,7 +105,7 @@
     .modal-card:has(input):has(a[href*="max.ru"]) > div:last-child > :nth-child(1) { order: 1 !important; } .modal-card:has(input):has(a[href*="max.ru"]) > div:last-child > :nth-child(4) { order: 2 !important; } .modal-card:has(input):has(a[href*="max.ru"]) > div:last-child > :nth-child(2) { order: 3 !important; } .modal-card:has(input):has(a[href*="max.ru"]) > div:last-child > :nth-child(3) { order: 4 !important; }
     .modal-card:has(input):has(a[href*="max.ru"]) > div:last-child > :nth-child(8) { order: 5 !important; } .modal-card:has(input):has(a[href*="max.ru"]) > div:last-child > :nth-child(9) { order: 6 !important; } .modal-card:has(input):has(a[href*="max.ru"]) > div:last-child > :nth-child(7) { order: 7 !important; } .modal-card:has(input):has(a[href*="max.ru"]) > div:last-child > :nth-child(5) { order: 8 !important; } .modal-card:has(input):has(a[href*="max.ru"]) > div:last-child > :nth-child(6) { order: 9 !important; }
   </style>
-  <script src="./image-slot.js?v=4"></script>
+  
 </helmet>
 
 <div style="background: oklch(0.99 0.004 90); color: oklch(0.22 0.02 260); width: 100%; overflow-x: hidden;">
@@ -151,7 +152,7 @@
     <div>
       <div class="hero-photo-card" style="background: white; border-radius: 24px; padding: 14px 14px 20px; box-shadow: 0 30px 60px -20px oklch(0.2 0.03 260 / 0.3);">
         <div style="border-radius: 16px; overflow: hidden; aspect-ratio: 1/1;">
-          <img src="assets/founder-3.webp" data-gallery-id="founder-hero" onClick="{{ onZoomImage }}" alt="Анастасия — основательница «Без границ»" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%; display: block; cursor: zoom-in;">
+          <img src="assets/founder-3.webp" data-gallery-id="founder-hero" onClick="{{ onZoomImage }}" alt="Анастасия — основательница «Без границ»" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%; display: block; cursor: zoom-in;" fetchpriority="high">
         </div>
         <div style="padding: 22px 16px 10px; text-align: center;">
           <div style="font-size: 17px; line-height: 1.5; font-weight: 700; color: oklch(0.25 0.02 260); max-width: none; width: auto; height: auto;">Анастасия Климкина — основательница визового агентства «Без границ» и автор курсов по визовой профессии</div>
