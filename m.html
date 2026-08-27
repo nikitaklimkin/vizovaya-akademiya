@@ -22,6 +22,7 @@
   <script src="./reviews-hint.js?v=4" defer></script>
   <script src="./legal.js?v=4" defer></script>
 <style>@keyframes dc-pulse{0%,100%{box-shadow:0 0 0 2px oklch(0.62 0.22 25 / 0.85)}50%{box-shadow:0 0 0 5px oklch(0.62 0.22 25 / 0.35)}}@keyframes dc-pulse-b{0%,100%{border-color:oklch(0.62 0.22 25)}50%{border-color:oklch(0.72 0.16 25)}}</style>
+<style>.gift-link:hover{opacity:.72;text-decoration-style:solid}.gift-link:active{opacity:.55}</style>
 </head>
 <body>
 <x-dc>
@@ -140,7 +141,7 @@
     <div>
       <div class="hero-photo-card" style="background: white; border-radius: 24px; padding: 14px 14px 20px; box-shadow: 0 30px 60px -20px oklch(0.2 0.03 260 / 0.3);">
         <div style="border-radius: 16px; overflow: hidden; aspect-ratio: 1/1;">
-          <img src="assets/founder-3-m.webp" data-gallery-id="founder-hero" onClick="{{ onZoomImage }}" alt="Анастасия — основательница «Без границ»" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%; display: block; cursor: zoom-in;" fetchpriority="high">
+          <img src="assets/founder-3-m.webp" data-gallery-id="founder-hero" onClick="{{ onZoomImage }}" alt="Анастасия — основательница «Без границ»" style="background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAUABEDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCO4QBVXOCx+ZajWLbarI+AU9RjnNTW3l3UQLJulB3YY8GpJ9Pha4/eMTubLAvz04rBlWujP+2j/ns3+fxopP7Lf/n3f/P4UUW8yOVl6KUi7VAqhfQCjVU/eI4Jzux+lFFWWN+zR+h/OiiipuB//9k=);background-size:cover;background-position:center;width: 100%; height: 100%; object-fit: cover; object-position: center 30%; display: block; cursor: zoom-in;" fetchpriority="high">
         </div>
         <div style="padding: 22px 16px 10px; text-align: center;">
           <div style="font-size: 17px; line-height: 1.5; font-weight: 700; color: oklch(0.25 0.02 260); max-width: none; width: auto; height: auto;">Анастасия Климкина</div>
@@ -281,13 +282,13 @@
       <div class="about-grid" style="display: grid; grid-template-columns: 1fr; gap: 24px; align-items: start;">
         <div>
           <div class="about-thumbs" style="display: grid; grid-template-columns: 1fr; gap: 8px; margin-top: 0;">
-            <div style="border-radius: 10px; overflow: hidden; aspect-ratio: 3/4;"><img src="assets/founder-4.webp" data-gallery-id="founder-about" onClick="{{ onZoomImage }}" alt="Анастасия Климкина" style="width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in;" loading="lazy" decoding="async"></div>
-            <div style="border-radius: 10px; overflow: hidden; aspect-ratio: 3/4;"><img src="assets/founder-1.webp" data-gallery-id="founder-about" onClick="{{ onZoomImage }}" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in;" loading="lazy" decoding="async"></div>
-            <div style="border-radius: 10px; overflow: hidden; aspect-ratio: 3/4;"><img src="assets/founder-2.webp" data-gallery-id="founder-about" onClick="{{ onZoomImage }}" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in;" loading="lazy" decoding="async"></div>
-            <div style="border-radius: 10px; overflow: hidden; aspect-ratio: 3/4;"><img src="assets/founder-3-m.webp" data-gallery-id="founder-about" onClick="{{ onZoomImage }}" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in;" loading="lazy" decoding="async"></div>
-            <div style="border-radius: 10px; overflow: hidden; aspect-ratio: 3/4;"><img src="assets/founder-5.webp" data-gallery-id="founder-about" onClick="{{ onZoomImage }}" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in;" loading="lazy" decoding="async"></div>
-            <div style="border-radius: 10px; overflow: hidden; aspect-ratio: 3/4;"><img src="assets/founder-6.webp" data-gallery-id="founder-about" onClick="{{ onZoomImage }}" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in;" loading="lazy" decoding="async"></div>
-            <div style="border-radius: 10px; overflow: hidden; aspect-ratio: 3/4;"><img src="assets/founder-7.webp" data-gallery-id="founder-about" onClick="{{ onZoomImage }}" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in;" loading="lazy" decoding="async"></div>
+            <div style="border-radius: 10px; overflow: hidden; aspect-ratio: 3/4;"><img src="assets/founder-4.webp" data-gallery-id="founder-about" onClick="{{ onZoomImage }}" alt="Анастасия Климкина" style="background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAUAA8DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCdNXtrqEBQkYBzhjyPpUc2vLGgjgCbu7DpUraRbBB5S8joKDo0TKAWHH+zS55D5CyXYA4bGKnySBnniiipLP/Z);background-size:cover;background-position:center;width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in;" loading="lazy" decoding="async"></div>
+            <div style="border-radius: 10px; overflow: hidden; aspect-ratio: 3/4;"><img src="assets/founder-1.webp" data-gallery-id="founder-about" onClick="{{ onZoomImage }}" alt="" style="background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAUAA8DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDJuYH/ALUtGU/KWHJHTBq1p1uU1uZ2lQbZG+82Acgn+tTWEdu8SmSVzJvJ2knIFJ9miJYEuhJzyM4qm30KUUtWEl7NlFUqihQcKoFISTGjEksS2Se/SiipLZ//2Q==);background-size:cover;background-position:center;width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in;" loading="lazy" decoding="async"></div>
+            <div style="border-radius: 10px; overflow: hidden; aspect-ratio: 3/4;"><img src="assets/founder-2.webp" data-gallery-id="founder-about" onClick="{{ onZoomImage }}" alt="" style="background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAUAA8DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwC3/blq6rsYbSeSykcVIdQhYfI2QfQiudtIL1ZI4ShCZ/iPAFS3F5cW8zJNFtIPGOePWmpEtGow3AjJGe4ODTRGoXbjI9+aKKgo/9k=);background-size:cover;background-position:center;width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in;" loading="lazy" decoding="async"></div>
+            <div style="border-radius: 10px; overflow: hidden; aspect-ratio: 3/4;"><img src="assets/founder-3-m.webp" data-gallery-id="founder-about" onClick="{{ onZoomImage }}" alt="" style="background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAUABEDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCO4QBVXOCx+ZajWLbarI+AU9RjnNTW3l3UQLJulB3YY8GpJ9Pha4/eMTubLAvz04rBlWujP+2j/ns3+fxopP7Lf/n3f/P4UUW8yOVl6KUi7VAqhfQCjVU/eI4Jzux+lFFWWN+zR+h/OiiipuB//9k=);background-size:cover;background-position:center;width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in;" loading="lazy" decoding="async"></div>
+            <div style="border-radius: 10px; overflow: hidden; aspect-ratio: 3/4;"><img src="assets/founder-5.webp" data-gallery-id="founder-about" onClick="{{ onZoomImage }}" alt="" style="background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAUAA8DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwA0+drNzb3KlcNwR0Iq3fODKdpBVRn69Kyb68cXkjRMApAwuehxUZumti8DNlhj5j9M1nZ2sbRklJM0xZ26ygiFMjvjNWGVepRT9QKKKozP/9k=);background-size:cover;background-position:center;width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in;" loading="lazy" decoding="async"></div>
+            <div style="border-radius: 10px; overflow: hidden; aspect-ratio: 3/4;"><img src="assets/founder-6.webp" data-gallery-id="founder-about" onClick="{{ onZoomImage }}" alt="" style="background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAUAA8DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDZkjjVhgjkZ4qJTkFtwKk5HsMVSl1CxTCxllB44FVhqsEZKqkj44AB4qLt6yZSSWiRl3BwV4B+tUmuZSSA20e1FFOIpH//2Q==);background-size:cover;background-position:center;width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in;" loading="lazy" decoding="async"></div>
+            <div style="border-radius: 10px; overflow: hidden; aspect-ratio: 3/4;"><img src="assets/founder-7.webp" data-gallery-id="founder-about" onClick="{{ onZoomImage }}" alt="" style="background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAUAA8DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDRadNp8oqwBwfY1QjmSe9aDOJFG45HH51m/a5knaZ5Xyx+fHf6Co55le4ke2L+Wx43Hn8aHN9BKAqMUk4wQBnBGaYAC20gYH50UVkbH//Z);background-size:cover;background-position:center;width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in;" loading="lazy" decoding="async"></div>
           </div>
         </div>
         <div>
@@ -406,7 +407,7 @@
 
         <div class="video-grid" style="background: oklch(0.16 0.025 250); border-radius: 20px; padding: 20px 16px; display: grid; grid-template-columns: 1fr; gap: 20px; align-items: center; margin-bottom: 26px;">
           <div class="video-media" onClick="{{ onOpenVideo }}" style="position: relative; border-radius: 16px; overflow: hidden; aspect-ratio: 16/9; cursor: pointer;">
-            <img src="assets/video-cover.webp" alt="10 фактов о профессии визового специалиста" style="display: block; width: 100%; height: 100%; object-fit: cover;" loading="lazy" decoding="async">
+            <img src="assets/video-cover.webp" alt="10 фактов о профессии визового специалиста" style="background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAALABQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCz5MG8yW8KsNxIYkACoWkZJAUWP7pZiACAO361mXEjLdyopwvmEYAxxTJhi5jPoqgc9jnNZXe5pypGpNfqshWSCMMOCMUVztxfXLzMWmY0U9WK5//Z);background-size:cover;background-position:center;display: block; width: 100%; height: 100%; object-fit: cover;" loading="lazy" decoding="async">
             <div style="position: absolute; inset: 0; background: oklch(0.14 0.02 250 / 0.42); pointer-events: none;"></div>
             <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; pointer-events: none;">
               <div style="width: 52px; height: 52px; border-radius: 50%; background: white; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 22px -6px oklch(0.1 0.02 250 / 0.6);">
@@ -424,7 +425,7 @@
                 <svg width="9" height="9" viewBox="0 0 24 24" style="position: absolute; top: -10px; left: 14px;"><rect x="8" y="8" width="8" height="8" fill="oklch(0.75 0.14 90)" transform="rotate(20 12 12)"></rect></svg>
                 <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="oklch(0.65 0.13 55)" stroke-width="1.8"><rect x="3" y="8" width="18" height="13" rx="1.5"></rect><path d="M3 12h18"></path><path d="M12 8v13"></path><path d="M12 8c-1.2-3-3.2-4.5-4.6-3.3-1.2 1-.4 3.3 4.6 3.3z"></path><path d="M12 8c1.2-3 3.2-4.5 4.6-3.3 1.2 1 .4 3.3-4.6 3.3z"></path></svg>
               </div>
-              <span style="font-size: 16px; font-weight: 700; color: white">После регистрации на бесплатный вебинар вы получаете 3 бесплатных материала для старта в визовой сфере:</span>
+              <span style="font-size: 16px; font-weight: 700; color: white">После регистрации на бесплатный вебинар вы получаете <span onClick="{{ onOpenGifts }}" class="gift-link" style="color: white; font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 бесплатных материала</span> для старта в визовой сфере:</span>
             </div>
             <div style="display: flex; flex-direction: column; gap: 8px;">
               <div style="background: oklch(0.22 0.03 250); border-radius: 12px; padding: 10px 14px; display: flex; align-items: center; gap: 12px;">
@@ -459,7 +460,7 @@
                 </div><div style="font-size: 16px; color: oklch(0.5 0.02 260); line-height: 1.4">Чтобы встреча прошла эффективно и Анастасия ответила на все вопросы</div>
                 
               </div>
-            </div><p style="color: oklch(0.94 0.02 195); font-size: 16px; margin: 0 0 20px; line-height: 1.5">После регистрации на бесплатный вебинар вы получаете 3 бесплатных материала для старта в визовой сфере.</p>
+            </div><p style="color: oklch(0.94 0.02 195); font-size: 16px; margin: 0 0 20px; line-height: 1.5">После регистрации на бесплатный вебинар вы получаете <span onClick="{{ onOpenGifts }}" class="gift-link" style="color: white; font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 бесплатных материала</span> для старта в визовой сфере.</p>
             <div style="display: flex; flex-wrap: wrap; gap: 10px;">
               <input value="{{ name }}" onChange="{{ onNameChange }}" placeholder="Имя" required="" style="{{ heroNameStyle }}">
               <input value="{{ phone }}" onChange="{{ onPhoneChange }}" placeholder="Телефон" required="" style="{{ heroPhoneStyle }}">
@@ -484,7 +485,7 @@
               </div>
               <div style="flex: 1; min-width: 0;">
                 <div style="font-weight: 800; font-size: 15.5px; color: white; margin-bottom: 2px;">Записаться через Telegram-бота</div>
-                <div style="font-size: 15.5px; color: oklch(0.92 0.02 195); line-height: 1.4">Бот пришлёт ссылку на вебинар, 3 подарка и напоминание</div>
+                <div style="font-size: 15.5px; color: oklch(0.92 0.02 195); line-height: 1.4">Бот пришлёт ссылку на вебинар, <span onClick="{{ onOpenGiftsStop }}" class="gift-link" style="color: inherit; font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 подарка</span> и напоминание</div>
               </div>
             </a>
 
@@ -494,15 +495,15 @@
               </div>
               <div style="flex: 1; min-width: 0;">
                 <div style="font-weight: 800; font-size: 15.5px; color: white; margin-bottom: 2px;">Записаться через MAX-бота</div>
-                <div style="font-size: 15.5px; color: oklch(0.92 0.02 195); line-height: 1.4">Бот пришлёт ссылку на вебинар, 3 подарка и напоминание</div>
+                <div style="font-size: 15.5px; color: oklch(0.92 0.02 195); line-height: 1.4">Бот пришлёт ссылку на вебинар, <span onClick="{{ onOpenGiftsStop }}" class="gift-link" style="color: inherit; font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 подарка</span> и напоминание</div>
               </div>
             </a>
 
             <a href="https://vk.me/vizovaya_akademiya" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 12px; background: oklch(1 0 0 / 0.1); border: 1.5px solid oklch(1 0 0 / 0.25); border-radius: 14px; padding: 11px 14px; text-decoration: none; transition: background 0.15s ease; margin-top: 10px;" style-hover="background: oklch(1 0 0 / 0.18);">
               <div style="flex-shrink: 0; width: 42px; height: 42px; border-radius: 50%; background: oklch(0.5 0.16 255); display: flex; align-items: center; justify-content: center;"><span style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 15px; color: white; letter-spacing: -0.02em;">VK</span></div>
               <div style="flex: 1; min-width: 0;">
-                <div style="font-weight: 800; font-size: 15.5px; color: white; margin-bottom: 2px;">Записаться через ВК-бота</div>
-                <div style="font-size: 15.5px; color: oklch(0.92 0.02 195); line-height: 1.4">Бот пришлёт ссылку на вебинар, 3 подарка и напоминание</div>
+                <div style="font-weight: 800; font-size: 15.5px; color: white; margin-bottom: 2px;">Записаться через ВКонтакте-бота</div>
+                <div style="font-size: 15.5px; color: oklch(0.92 0.02 195); line-height: 1.4">Бот пришлёт ссылку на вебинар, <span onClick="{{ onOpenGiftsStop }}" class="gift-link" style="color: inherit; font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 подарка</span> и напоминание</div>
               </div>
             </a>
           </div>
@@ -526,10 +527,9 @@
         <sc-for list="{{ reviews }}" as="item" hint-placeholder-count="12">
           <div style="scroll-snap-align: start; display: flex; flex-direction: column; gap: 10px;">
             <a href="#" onClick="{{ item.onOpen }}" style="position: relative; display: block; aspect-ratio: 9 / 16; border-radius: 18px; overflow: hidden; background: oklch(0.94 0.012 195); border: 1px solid oklch(0.9 0.012 195); text-decoration: none;"><img src="{{ item.poster }}" alt="" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;"><div style="position: absolute; inset: 0; background: linear-gradient(180deg, transparent 45%, oklch(0.2 0.02 260 / 0.45) 100%);"></div><div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 46px; height: 46px; border-radius: 50%; background: oklch(1 0 0 / 0.92); display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 24px -10px oklch(0.2 0.03 260 / 0.6);"><svg width="17" height="17" viewBox="0 0 24 24" fill="oklch(0.5 0.13 195)"><path d="M8 5l12 7-12 7z"></path></svg></div></a>
-              <div style="font-size: 12px; font-weight: 700; color: oklch(0.55 0.03 195); letter-spacing: 0.02em;">видео-отзыв</div>
-            </div>
+              </div>
             <div>
-              <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 15px; color: oklch(0.25 0.02 260); line-height: 1.3;">{{ item.name }}, {{ item.age }}, {{ item.city }}</div>
+              <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 15px; color: oklch(0.25 0.02 260); line-height: 1.3;">{{ item.title }}</div>
               <div style="font-size: 14px; color: oklch(0.42 0.1 195); line-height: 1.4; margin-top: 4px; text-wrap: pretty;">{{ item.caption }}</div>
             </div>
           </div>
@@ -603,7 +603,7 @@
           <div>
             <div style="display: inline-block; background: oklch(0.94 0.03 195); color: oklch(0.4 0.13 195); font-weight: 800; font-size: 15.5px; padding: 6px 14px; border-radius: 100px; margin-bottom: 14px;">25 августа · 14:00 или 19:00 по Москве</div>
             <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 21px; margin: 0 0 10px; line-height: 1.2;">Забронируйте место на бесплатный онлайн-вебинар</h2>
-            <p style="font-size: 15px; color: oklch(0.45 0.02 260); line-height: 1.5; margin: 0 0 20px;">После регистрации на бесплатный вебинар вы получаете 3 бесплатных материала для старта в визовой сфере.</p>
+            <p style="font-size: 15px; color: oklch(0.45 0.02 260); line-height: 1.5; margin: 0 0 20px;">После регистрации на бесплатный вебинар вы получаете <span onClick="{{ onOpenGifts }}" class="gift-link" style="color: oklch(0.42 0.12 195); font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 бесплатных материала</span> для старта в визовой сфере.</p>
 
             <div style="background: oklch(0.96 0.015 195); border-radius: 13px; padding: 10px 14px; margin: 0 0 20px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px;">
               <div style="flex-shrink: 0; display: flex; align-items: baseline; gap: 7px;">
@@ -642,7 +642,7 @@
               </div>
               <div style="flex: 1; min-width: 0;">
                 <div style="font-weight: 800; font-size: 15.5px; color: oklch(0.25 0.02 260); margin-bottom: 2px;">Записаться через Telegram-бота</div>
-                <div style="font-size: 13.5px; color: oklch(0.5 0.02 260); line-height: 1.4; display: none;">Бот пришлёт ссылку на вебинар, 3 подарка и напоминание</div>
+                <div style="font-size: 13.5px; color: oklch(0.5 0.02 260); line-height: 1.4; display: none;">Бот пришлёт ссылку на вебинар, <span onClick="{{ onOpenGiftsStop }}" class="gift-link" style="color: inherit; font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 подарка</span> и напоминание</div>
               </div>
             </a>
 
@@ -652,15 +652,15 @@
               </div>
               <div style="flex: 1; min-width: 0;">
                 <div style="font-weight: 800; font-size: 15.5px; color: oklch(0.25 0.02 260); margin-bottom: 2px;">Записаться через MAX-бота</div>
-                <div style="font-size: 13.5px; color: oklch(0.5 0.02 260); line-height: 1.4; display: none;">Бот пришлёт ссылку на вебинар, 3 подарка и напоминание</div>
+                <div style="font-size: 13.5px; color: oklch(0.5 0.02 260); line-height: 1.4; display: none;">Бот пришлёт ссылку на вебинар, <span onClick="{{ onOpenGiftsStop }}" class="gift-link" style="color: inherit; font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 подарка</span> и напоминание</div>
               </div>
             </a>
 
             <a href="https://vk.me/vizovaya_akademiya" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 12px; background: oklch(0.96 0.025 258); border: 1.5px solid oklch(0.87 0.05 258); border-radius: 14px; padding: 11px 14px; text-decoration: none; transition: background 0.15s ease; margin-top: 10px;" style-hover="background: oklch(0.90 0.045 258);">
               <div style="flex-shrink: 0; width: 42px; height: 42px; border-radius: 50%; background: oklch(0.5 0.16 255); display: flex; align-items: center; justify-content: center;"><span style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 15px; color: white; letter-spacing: -0.02em;">VK</span></div>
               <div style="flex: 1; min-width: 0;">
-                <div style="font-weight: 800; font-size: 15.5px; color: oklch(0.25 0.02 260); margin-bottom: 2px;">Записаться через ВК-бота</div>
-                <div style="font-size: 13.5px; color: oklch(0.5 0.02 260); line-height: 1.4; display: none;">Бот пришлёт ссылку на вебинар, 3 подарка и напоминание</div>
+                <div style="font-weight: 800; font-size: 15.5px; color: oklch(0.25 0.02 260); margin-bottom: 2px;">Записаться через ВКонтакте-бота</div>
+                <div style="font-size: 13.5px; color: oklch(0.5 0.02 260); line-height: 1.4; display: none;">Бот пришлёт ссылку на вебинар, <span onClick="{{ onOpenGiftsStop }}" class="gift-link" style="color: inherit; font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 подарка</span> и напоминание</div>
               </div>
             </a>
           </div>
@@ -718,7 +718,7 @@
         <div onClick="{{ onCloseReview }}" style="position: absolute; top: -44px; right: 0; width: 34px; height: 34px; border-radius: 50%; background: oklch(1 0 0 / 0.15); display: flex; align-items: center; justify-content: center; cursor: pointer;">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.4"><path d="M6 6l12 12M18 6L6 18"></path></svg>
         </div>
-        <video src="{{ reviewSrc }}" controls autoplay playsinline style="width: 100%; height: 100%; object-fit: contain; border-radius: 16px; background: black; display: block;"></video>
+        <video src="{{ reviewSrc }}" controls autoplay playsinline preload="metadata" style="width: 100%; height: 100%; object-fit: contain; border-radius: 16px; background: black; display: block;"></video>
       </div>
     </div>
   </sc-if>
@@ -737,7 +737,7 @@
   </sc-if>
 
   <sc-if value="{{ giftsOpen }}" hint-placeholder-val="{{ false }}">
-    <div onClick="{{ onCloseGifts }}" style="position: fixed; inset: 0; background: oklch(0.12 0.02 260 / 0.75); backdrop-filter: blur(4px); z-index: 100; display: flex; align-items: center; justify-content: center; padding: 24px;">
+    <div onClick="{{ onCloseGifts }}" style="position: fixed; inset: 0; background: oklch(0.12 0.02 260 / 0.75); backdrop-filter: blur(4px); z-index: 130; display: flex; align-items: center; justify-content: center; padding: 24px;">
       <div onClick="{{ onStopPropagation }}" class="modal-card" style="background: white; border-radius: 20px; padding: 32px; max-width: 560px; width: 100%; max-height: 90vh; overflow-y: auto; position: relative;">
         <div onClick="{{ onCloseGifts }}" style="position: absolute; top: 18px; right: 18px; width: 32px; height: 32px; border-radius: 50%; background: oklch(0.96 0.005 260); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: background 0.15s ease;" style-hover="background: oklch(0.9 0.005 260);">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="oklch(0.4 0.02 260)" stroke-width="2.4"><path d="M6 6l12 12M18 6L6 18"></path></svg>
@@ -833,13 +833,13 @@
         <div onClick="{{ onCloseTourism }}" style="position: absolute; top: 18px; right: 18px; width: 32px; height: 32px; border-radius: 50%; background: oklch(0.96 0.005 260); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: background 0.15s ease;" style-hover="background: oklch(0.9 0.005 260);">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="oklch(0.4 0.02 260)" stroke-width="2.4"><path d="M6 6l12 12M18 6L6 18"></path></svg>
         </div>
-        <div style="width: 100%; border-radius: 14px; overflow: hidden; margin-bottom: 18px;"><img src="assets/lenta-article.webp" alt="Лента.ру: россияне потратили в заграничных путешествиях в 2025 году 48 миллиардов долларов" style="width: 100%; display: block; border-radius: 14px;" loading="lazy" decoding="async"></div>
+        <div style="width: 100%; border-radius: 14px; overflow: hidden; margin-bottom: 18px;"><img src="assets/lenta-article.webp" alt="Лента.ру: россияне потратили в заграничных путешествиях в 2025 году 48 миллиардов долларов" style="background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAUABQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDp/s6E5MhHtmlVbeN1R3BcqSAx7U4jn7oqteWSXhQs8kZQEfJjkH60AaCOjrlGDD1BoqK0t47aHZFwpOaKAG55PSpAoHSiigCQDAooooA//9k=);background-size:cover;background-position:center;width: 100%; display: block; border-radius: 14px;" loading="lazy" decoding="async"></div>
         <div style="background: oklch(0.94 0.03 195); border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px;">
           <div style="font-weight: 800; font-size: 15.5px; color: oklch(0.35 0.1 195);">Лента.ру: россияне потратили в заграничных путешествиях в 2025 году 48 миллиардов долларов</div>
           <a href="https://lenta.ru/news/2026/01/27/rossiyane-potratili-v-zagranichnyh-puteshestviyah-v-2025-godu-48-milliardov-dollarov/?ysclid=ms9dpij4ny575690228" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; color: oklch(0.4 0.11 195); font-weight: 700; font-size: 15.5px; text-decoration: none; transition: color 0.15s ease;" style-hover="color: oklch(0.3 0.11 195);">Прочитать статью на Лента.ру →</a>
         </div>
         <div style="height: 1px; background: oklch(0.9 0.005 260); margin-bottom: 24px;"></div>
-        <div style="width: 100%; border-radius: 14px; overflow: hidden; margin-bottom: 18px;"><img src="assets/vesti-article.webp" alt="Вести.ру: количество турпоездок россиян за рубеж выросло в 2025 году на 15,6%" style="width: 100%; display: block; border-radius: 14px;" loading="lazy" decoding="async"></div>
+        <div style="width: 100%; border-radius: 14px; overflow: hidden; margin-bottom: 18px;"><img src="assets/vesti-article.webp" alt="Вести.ру: количество турпоездок россиян за рубеж выросло в 2025 году на 15,6%" style="background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAUABEDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwB8viWcnKRAEjn5jj9DSweJLjDboVZu2HOP1NVzompidsW6omPvb1PP0zU40fUNrK0UY7Z+XJNK+mpVupJ/wlc//Pqn+fxoqp/YGpf8+a/9/F/xoqdStDrm4c8d6VOW6CiirMyxRRRQB//Z);background-size:cover;background-position:center;width: 100%; display: block; border-radius: 14px;" loading="lazy" decoding="async"></div>
         <div style="background: oklch(0.94 0.03 195); border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; gap: 8px;">
           <div style="font-weight: 800; font-size: 15.5px; color: oklch(0.35 0.1 195);">Вести.ру: ПС ФСБ — количество турпоездок россиян за рубеж выросло в 2025 году на 15,6%</div>
           <a href="https://www.vesti.ru/article/4906968?ysclid=ms9ed4k97693912101" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; color: oklch(0.4 0.11 195); font-weight: 700; font-size: 15.5px; text-decoration: none; transition: color 0.15s ease;" style-hover="color: oklch(0.3 0.11 195);">Прочитать статью на Вести.ру →</a>
@@ -1058,18 +1058,18 @@ class Component extends DCLogic {
   videoRef = React.createRef();
   reviewsRailRef = React.createRef();
   reviewsData = [
-    { name: 'Мария', age: '27 лет', city: 'Казань', caption: 'Окупила обучение за три дня' },
-    { name: 'Ольга', age: '34 года', city: 'Санкт-Петербург', caption: 'Освоила профессию в декрете' },
-    { name: 'Динара', age: '29 лет', city: 'Уфа', caption: 'Освоила визы без опыта в туризме' },
-    { name: 'Екатерина', age: '41 год', city: 'Новосибирск', caption: 'Освоила новую профессию с нуля в 39 лет' },
-    { name: 'Анна', age: '23 года', city: 'Краснодар', caption: 'Совмещает визы с учёбой' },
-    { name: 'Светлана', age: '38 лет', city: 'Екатеринбург', caption: 'Работает в офисе и совмещает' },
-    { name: 'Ирина', age: '31 год', city: 'Москва', caption: 'Освоила Шенген, теперь учит США и Великобританию' },
-    { name: 'Алина', age: '25 лет', city: 'Самара', caption: 'Освоила профессию из города с населением 80 тыс человек' },
-    { name: 'Юлия', age: '36 лет', city: 'Ростов-на-Дону', caption: 'Открыла своё визовое агентство в маленьком городе' },
-    { name: 'Наталья', age: '44 года', city: 'Пермь', caption: 'Ушла с наёмной работы через два месяца' },
-    { name: 'Ксения', age: '28 лет', city: 'Владивосток', caption: 'Получила первого клиента, ещё до старта обучения' },
-    { name: 'Дарья', age: '33 года', city: 'Тюмень', caption: 'Устроилась в визовое агентство сразу после обучения' },
+    { name: 'Анастасия', age: '28 лет', city: 'Самара', caption: 'С подругой открывают своё агентство', vid: 8 },
+    { name: 'Дарья', age: '24 года', city: 'Краснодар', caption: 'Окупила обучение за 7 дней', vid: 12 },
+    { name: 'Анна', age: '24 года', city: '', caption: 'Окупила обучение за 3 недели', vid: 4 },
+    { name: 'Александр', age: '35 лет', city: 'Челябинск', caption: 'Открывает агентство с супругой', vid: 11 },
+    { name: 'Светлана', age: '34 года', city: '', caption: 'Увеличила доход в два раза', vid: 9 },
+    { name: 'Ирина', age: '29 лет', city: '', caption: 'С нуля в первый месяц оформила 6 клиентов', vid: 5 },
+    { name: 'Анастасия', age: '30 лет', city: 'Москва', caption: 'Первый раз купила обучение', vid: 10 },
+    { name: 'Диана', age: '22 года', city: '', caption: 'Работает в визовом агентстве', vid: 2 },
+    { name: 'София', age: '19 лет', city: '', caption: 'Учится в колледже и ведёт свой блог', vid: 1 },
+    { name: 'Карина', age: '24 года', city: 'Тольятти', caption: 'Сменила основную деятельность', vid: 7 },
+    { name: 'Мария', age: '21 год', city: '', caption: 'Получает 5–6 клиентов в месяц', vid: 3 },
+    { name: 'Светлана', age: '33 года', city: '', caption: 'Работает в визовом агентстве', vid: 6 },
   ];
   onOpenReview = (src) => (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ reviewSrc: src }); };
   onCloseReview = () => this.setState({ reviewSrc: null });
@@ -1084,9 +1084,10 @@ class Component extends DCLogic {
   get reviews() {
     return this.reviewsData.map((r, i) => ({
       ...r,
-      src: 'assets/reviews/review-' + (i + 1) + '.mp4',
-      poster: 'assets/reviews/review-' + (i + 1) + '.jpg',
-      onOpen: this.onOpenReview('assets/reviews/review-' + (i + 1) + '.mp4'),
+      title: r.name + ', ' + r.age + (r.city ? ', ' + r.city : ''),
+      src: 'assets/reviews/review-' + r.vid + '.mp4',
+      poster: 'assets/reviews/review-' + r.vid + '.jpg',
+      onOpen: this.onOpenReview('assets/reviews/review-' + r.vid + '.mp4'),
     }));
   }
   onOpenVideo = (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ videoOpen: true, videoPaused: true }); };
@@ -1155,6 +1156,7 @@ class Component extends DCLogic {
   onOpenProofs = (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ proofsOpen: true }); };
   onCloseProofs = () => this.setState({ proofsOpen: false });
   onOpenGifts = (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ giftsOpen: true }); };
+  onOpenGiftsStop = (e) => { if (e) { if (e.preventDefault) e.preventDefault(); if (e.stopPropagation) e.stopPropagation(); } this.setState({ giftsOpen: true }); };
   onCloseGifts = () => this.setState({ giftsOpen: false });
 
   onNameChange = (e) => this.setState({ name: e.target.value });
@@ -1347,6 +1349,7 @@ class Component extends DCLogic {
       onCloseProofs: this.onCloseProofs,
       giftsOpen: this.state.giftsOpen,
       onOpenGifts: this.onOpenGifts,
+      onOpenGiftsStop: this.onOpenGiftsStop,
       onCloseGifts: this.onCloseGifts,
       reviews: this.reviews,
       reviewsRailRef: this.reviewsRailRef,
