@@ -1,37 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>.vp-loader{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;
-    background:oklch(0.99 0.004 90);transition:opacity .4s ease,visibility .4s ease}
-  .vp-loader.is-hidden{opacity:0;visibility:hidden}
-  .vp-loader svg{width:160px;height:160px;color:oklch(0.5 0.13 195)}          /* размер и цвет знака */
-  .vp-base{opacity:.16}                                            /* бледная подложка */
-  .vp-fill{animation:vp-fillrun 1.7s cubic-bezier(.25,.1,.25,1) 1 both}
-  .vp-fill--2{animation-delay:.1s}
-  .vp-fill--3{animation-delay:.2s}
-  .vp-fill--4{animation-delay:.3s}
-  .vp-center{transform-origin:100px 100px;animation:vp-center .5s cubic-bezier(.2,.9,.3,1.2) 2s 1 both}
-
-  @keyframes vp-fillrun{
-    0%   {stroke-dasharray:30 350;stroke-dashoffset:0}
-    17%  {stroke-dasharray:60 320;stroke-dashoffset:-45}
-    33%  {stroke-dasharray:100 280;stroke-dashoffset:-95}
-    50%  {stroke-dasharray:150 230;stroke-dashoffset:-150}
-    67%  {stroke-dasharray:205 175;stroke-dashoffset:-208}
-    81%  {stroke-dasharray:265 115;stroke-dashoffset:-265}
-    92%  {stroke-dasharray:325 55;stroke-dashoffset:-320}
-    100% {stroke-dasharray:380 0;stroke-dashoffset:-370}
-  }
-  @keyframes vp-center{
-    0%  {opacity:0;transform:scale(.94)}
-    60% {opacity:1;transform:scale(1.08)}
-    100%{opacity:1;transform:scale(1)}
-  }
-  @media (prefers-reduced-motion: reduce){
-    .vp-fill,.vp-center{animation:none}
-    .vp-center{opacity:1}
-    .vp-fill{stroke-dasharray:none}
-  }</style>
 <link rel="canonical" href="https://www.vizovaya-akademiya.ru/">
 <link rel="alternate" media="only screen and (max-width: 700px)" href="https://www.vizovaya-akademiya.ru/m.html">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,48 +25,6 @@
 <style>@keyframes dc-pulse{0%,100%{box-shadow:0 0 0 2px oklch(0.62 0.22 25 / 0.85)}50%{box-shadow:0 0 0 5px oklch(0.62 0.22 25 / 0.35)}}@keyframes dc-pulse-b{0%,100%{border-color:oklch(0.62 0.22 25)}50%{border-color:oklch(0.72 0.16 25)}}</style>
 </head>
 <body>
-<div class="vp-loader" id="vpLoader" role="status" aria-label="Загрузка">
-  <svg viewBox="0 0 200 200" fill="none" stroke-linecap="round" aria-hidden="true">
-    <defs>
-      <path id="vpRing" fill="none" stroke="currentColor" stroke-linejoin="round" d="M156.6 100.0L155.9 102.4L154.1 104.7L151.6 106.8L148.9 108.6L146.9 110.4L145.8 112.3L145.8 114.4L146.7 117.0L148.0 119.9L149.2 122.9L149.7 125.9L149.0 128.3L147.2 130.1L144.5 131.1L141.3 131.7L138.1 131.9L135.4 132.4L133.5 133.5L132.4 135.4L131.9 138.1L131.7 141.3L131.1 144.5L130.1 147.2L128.3 149.0L125.9 149.7L122.9 149.2L119.9 148.0L117.0 146.7L114.4 145.8L112.3 145.8L110.4 146.9L108.6 148.9L106.8 151.6L104.7 154.1L102.4 155.9L100.0 156.6L97.6 155.9L95.3 154.1L93.2 151.6L91.4 148.9L89.6 146.9L87.7 145.8L85.6 145.8L83.0 146.7L80.1 148.0L77.1 149.2L74.1 149.7L71.7 149.0L69.9 147.2L68.9 144.5L68.3 141.3L68.1 138.1L67.6 135.4L66.5 133.5L64.6 132.4L61.9 131.9L58.7 131.7L55.5 131.1L52.8 130.1L51.0 128.3L50.3 125.9L50.8 122.9L52.0 119.9L53.3 117.0L54.2 114.4L54.2 112.3L53.1 110.4L51.1 108.6L48.4 106.8L45.9 104.7L44.1 102.4L43.4 100.0L44.1 97.6L45.9 95.3L48.4 93.2L51.1 91.4L53.1 89.6L54.2 87.7L54.2 85.6L53.3 83.0L52.0 80.1L50.8 77.1L50.3 74.1L51.0 71.7L52.8 69.9L55.5 68.9L58.7 68.3L61.9 68.1L64.6 67.6L66.5 66.5L67.6 64.6L68.1 61.9L68.3 58.7L68.9 55.5L69.9 52.8L71.7 51.0L74.1 50.3L77.1 50.8L80.1 52.0L83.0 53.3L85.6 54.2L87.7 54.2L89.6 53.1L91.4 51.1L93.2 48.4L95.3 45.9L97.6 44.1L100.0 43.4L102.4 44.1L104.7 45.9L106.8 48.4L108.6 51.1L110.4 53.1L112.3 54.2L114.4 54.2L117.0 53.3L119.9 52.0L122.9 50.8L125.9 50.3L128.3 51.0L130.1 52.8L131.1 55.5L131.7 58.7L131.9 61.9L132.4 64.6L133.5 66.5L135.4 67.6L138.1 68.1L141.3 68.3L144.5 68.9L147.2 69.9L149.0 71.7L149.7 74.1L149.2 77.1L148.0 80.1L146.7 83.0L145.8 85.6L145.8 87.7L146.9 89.6L148.9 91.4L151.6 93.2L154.1 95.3L155.9 97.6L156.6 100.0Z"></path>
-    </defs>
-
-    <!-- бледная подложка -->
-    <g class="vp-base">
-      <use href="#vpRing" transform="translate(100 100) scale(1.75) translate(-100 -100)" stroke-width="2.05"></use>
-      <use href="#vpRing" transform="translate(100 100) scale(1.5) translate(-100 -100)" stroke-width="2.4"></use>
-      <use href="#vpRing" transform="translate(100 100) scale(1.25) translate(-100 -100)" stroke-width="2.9"></use>
-      <use href="#vpRing" stroke-width="3.6"></use>
-      <circle cx="100" cy="100" r="30" stroke="currentColor" stroke-width="3.6"></circle>
-    </g>
-
-    <!-- заливка кольцами: изнутри наружу -->
-    <use class="vp-fill vp-fill--4" href="#vpRing" transform="translate(100 100) scale(1.75) translate(-100 -100)" stroke-width="2.05"></use>
-    <use class="vp-fill vp-fill--3" href="#vpRing" transform="translate(100 100) scale(1.5) translate(-100 -100)" stroke-width="2.4"></use>
-    <use class="vp-fill vp-fill--2" href="#vpRing" transform="translate(100 100) scale(1.25) translate(-100 -100)" stroke-width="2.9"></use>
-    <use class="vp-fill" href="#vpRing" stroke-width="3.6"></use>
-
-    <!-- центральная линия: разово загорается в конце -->
-    <g class="vp-center">
-      <circle cx="100" cy="100" r="30" stroke="currentColor" stroke-width="3.6"></circle>
-    </g>
-  </svg>
-</div>
-<script>(function(){
-  var el=document.getElementById('vpLoader');
-  if(!el)return;
-  var start=Date.now(), done=false;
-  function hide(){
-    if(done)return; done=true;
-    var wait=Math.max(0, 2000-(Date.now()-start));   // анимация досматривается до конца
-    setTimeout(function(){ el.classList.add('is-hidden');
-      setTimeout(function(){ if(el.parentNode) el.parentNode.removeChild(el); }, 500);
-    }, wait);
-  }
-  if(document.readyState==='complete') hide();
-  else window.addEventListener('load', hide);
-  setTimeout(hide, 4000);   // страховка: убрать в любом случае
-})();</script>
 <x-dc>
 <helmet>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"></noscript>
