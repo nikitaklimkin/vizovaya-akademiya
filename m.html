@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="preload" as="image" href="assets/founder-3.webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="assets/founder-3-m.webp" fetchpriority="high">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>(function(){function go(){if(window.matchMedia&&window.matchMedia('(min-width:701px)').matches)location.replace('/'+location.hash)}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',go)}else{go()}window.addEventListener('load',function(){setTimeout(go,400)});window.addEventListener('resize',go);})();</script>
@@ -23,7 +24,7 @@
 <body>
 <x-dc>
 <helmet>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"></noscript>
   <style>
     * { box-sizing: border-box; }
     body .reviews-rail { grid-template-rows: auto !important; grid-auto-columns: 58% !important; }
@@ -137,7 +138,7 @@
     <div>
       <div class="hero-photo-card" style="background: white; border-radius: 24px; padding: 14px 14px 20px; box-shadow: 0 30px 60px -20px oklch(0.2 0.03 260 / 0.3);">
         <div style="border-radius: 16px; overflow: hidden; aspect-ratio: 1/1;">
-          <img src="assets/founder-3.webp" data-gallery-id="founder-hero" onClick="{{ onZoomImage }}" alt="Анастасия — основательница «Без границ»" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%; display: block; cursor: zoom-in;" fetchpriority="high">
+          <img src="assets/founder-3-m.webp" data-gallery-id="founder-hero" onClick="{{ onZoomImage }}" alt="Анастасия — основательница «Без границ»" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%; display: block; cursor: zoom-in;" fetchpriority="high">
         </div>
         <div style="padding: 22px 16px 10px; text-align: center;">
           <div style="font-size: 17px; line-height: 1.5; font-weight: 700; color: oklch(0.25 0.02 260); max-width: none; width: auto; height: auto;">Анастасия Климкина</div>
@@ -281,7 +282,7 @@
             <div style="border-radius: 10px; overflow: hidden; aspect-ratio: 3/4;"><img src="assets/founder-4.webp" data-gallery-id="founder-about" onClick="{{ onZoomImage }}" alt="Анастасия Климкина" style="width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in;" loading="lazy" decoding="async"></div>
             <div style="border-radius: 10px; overflow: hidden; aspect-ratio: 3/4;"><img src="assets/founder-1.webp" data-gallery-id="founder-about" onClick="{{ onZoomImage }}" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in;" loading="lazy" decoding="async"></div>
             <div style="border-radius: 10px; overflow: hidden; aspect-ratio: 3/4;"><img src="assets/founder-2.webp" data-gallery-id="founder-about" onClick="{{ onZoomImage }}" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in;" loading="lazy" decoding="async"></div>
-            <div style="border-radius: 10px; overflow: hidden; aspect-ratio: 3/4;"><img src="assets/founder-3.webp" data-gallery-id="founder-about" onClick="{{ onZoomImage }}" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in;" loading="lazy" decoding="async"></div>
+            <div style="border-radius: 10px; overflow: hidden; aspect-ratio: 3/4;"><img src="assets/founder-3-m.webp" data-gallery-id="founder-about" onClick="{{ onZoomImage }}" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in;" loading="lazy" decoding="async"></div>
             <div style="border-radius: 10px; overflow: hidden; aspect-ratio: 3/4;"><img src="assets/founder-5.webp" data-gallery-id="founder-about" onClick="{{ onZoomImage }}" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in;" loading="lazy" decoding="async"></div>
             <div style="border-radius: 10px; overflow: hidden; aspect-ratio: 3/4;"><img src="assets/founder-6.webp" data-gallery-id="founder-about" onClick="{{ onZoomImage }}" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in;" loading="lazy" decoding="async"></div>
             <div style="border-radius: 10px; overflow: hidden; aspect-ratio: 3/4;"><img src="assets/founder-7.webp" data-gallery-id="founder-about" onClick="{{ onZoomImage }}" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in;" loading="lazy" decoding="async"></div>
