@@ -31,23 +31,23 @@
   <style>
     * { box-sizing: border-box; }
     body .reviews-rail { grid-template-rows: auto !important; grid-auto-columns: 58% !important; }
-    .video-media > div:nth-of-type(1) { background: oklch(0.14 0.02 250 / 0.16) !important; }
+    .video-media > div:nth-of-type(1) { background: oklch(0.14 0.02 250 / 0.16) !important; }
     .video-media > div:nth-of-type(2) > div { background: oklch(1 0 0 / 0.72) !important; width: 46px !important; height: 46px !important; box-shadow: none !important; }
-    .video-media > div:nth-of-type(3) { font-size: 11.5px !important; padding: 3px 9px !important; background: oklch(0.5 0.13 195 / 0.82) !important; }
+    .video-media > div:nth-of-type(3) { font-size: 11.5px !important; padding: 3px 9px !important; background: oklch(0.5 0.13 195 / 0.82) !important; }
     .adv-row, .adv-row > div { min-width: 0 !important; overflow-wrap: break-word; }
         .adv-row a { white-space: normal !important; padding: 7px 14px !important; line-height: 1.55 !important; }
     #signup { background: oklch(0.99 0.004 90); }
     body { background: oklch(0.99 0.004 90); }
     html { scroll-behavior: smooth; }
     body { margin: 0; font-family: 'Manrope', -apple-system, sans-serif; }
-    a { color: oklch(0.5 0.13 195); }
-    a:hover { color: oklch(0.4 0.13 195); }
-    ::selection { background: oklch(0.85 0.06 195); }
-    input[type="range"] { accent-color: oklch(0.5 0.13 195); }
+    a { color: oklch(0.5 0.13 195); }
+    a:hover { color: oklch(0.4 0.13 195); }
+    ::selection { background: oklch(0.85 0.06 195); }
+    input[type="range"] { accent-color: oklch(0.5 0.13 195); }
     .fx { width: auto !important; height: auto !important; }
     .nav-cta, .reserve-btn { transition: background 0.15s ease; }
-    .nav-cta:hover { background: oklch(0.44 0.13 195) !important; }
-    .reserve-btn:hover { background: oklch(0.24 0.03 250) !important; }
+    .nav-cta:hover { background: oklch(0.44 0.13 195) !important; }
+    .reserve-btn:hover { background: oklch(0.24 0.03 250) !important; }
     img, image-slot, svg { max-width: 100%; }
     h1, h2, h3 { text-wrap: pretty; overflow-wrap: break-word; }
     .hero-photo-card { max-width: 100% !important; }
@@ -82,7 +82,7 @@
   <!-- HEADER -->
   <div style="position: fixed; top: 0; left: 0; right: 0; z-index: 70; background: oklch(0.99 0.004 90 / 0.78); backdrop-filter: blur(7px); -webkit-backdrop-filter: blur(7px); border-bottom: 1px solid oklch(0.92 0.008 260);">
     <div style="display: flex; align-items: center; justify-content: space-between; padding: 12px 18px;">
-      <a href="#hero" style="display: flex; align-items: center; gap: 9px; text-decoration: none; flex-shrink: 0;"><img src="assets/logo.png" alt="Визовая академия" style="width: 30px; height: 30px; display: block; flex-shrink: 0;"><span style="display: block; line-height: 1.12;"><span style="display: block; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 14.5px; letter-spacing: -0.015em; color: oklch(0.3 0.09 195);">Визовая академия</span><span style="display: block; margin-top: 2px; font-size: 7px; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: oklch(0.62 0.02 260);">от агентства Без границ</span></span></a>
+      <a href="#hero" style="display: flex; align-items: center; gap: 9px; text-decoration: none; flex-shrink: 0;"><img src="assets/logo.png" alt="Визовая академия" style="width: 30px; height: 30px; display: block; flex-shrink: 0;"><span style="display: block; line-height: 1.12;"><span style="display: block; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 14.5px; letter-spacing: -0.015em; color: oklch(0.3 0.09 195);">Визовая академия</span><span style="display: block; margin-top: 2px; font-size: 7px; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: oklch(0.62 0.02 260);">от агентства Без границ</span></span></a>
       <div onClick="{{ onToggleMenu }}" role="button" aria-label="Меню" style="width: 44px; height: 44px; margin-right: -8px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; cursor: pointer; border-radius: 12px;">
         <span style="display: block; width: 22px; height: 2px; border-radius: 2px; background: oklch(0.3 0.02 260);"></span>
         <span style="display: block; width: 22px; height: 2px; border-radius: 2px; background: oklch(0.3 0.02 260);"></span>
@@ -106,12 +106,12 @@
       <div style="height: 1px; background: oklch(0.93 0.008 260); margin: 0 12px;"></div>
       <a href="#about" onClick="{{ onCloseMenu }}" style="font-size: 17px; font-weight: 700; color: oklch(0.26 0.02 260); text-decoration: none; padding: 15px 12px; border-radius: 14px; line-height: 1.3;" style-active="background: oklch(0.94 0.03 195);">Главный спикер</a>
       <div style="height: 1px; background: oklch(0.93 0.008 260); margin: 0 12px;"></div>
-      <a href="#program" onClick="{{ onCloseMenu }}" style="font-size: 17px; font-weight: 700; color: oklch(0.26 0.02 260); text-decoration: none; padding: 15px 12px; border-radius: 14px; line-height: 1.3;" style-active="background: oklch(0.94 0.03 195);">Что будет на вебинаре?</a>
+      <a href="#program" onClick="{{ onCloseMenu }}" style="font-size: 17px; font-weight: 700; color: oklch(0.26 0.02 260); text-decoration: none; padding: 15px 12px; border-radius: 14px; line-height: 1.3;" style-active="background: oklch(0.94 0.03 195);">Что будет на вебинаре?</a>
       <div style="height: 1px; background: oklch(0.93 0.008 260); margin: 0 12px;"></div>
       <a href="#reviews" onClick="{{ onCloseMenu }}" style="font-size: 17px; font-weight: 700; color: oklch(0.26 0.02 260); text-decoration: none; padding: 15px 12px; border-radius: 14px; line-height: 1.3;" style-active="background: oklch(0.94 0.03 195);">Отзывы наших учеников</a>
     </div>
-    <a href="#" onClick="{{ onMenuSignup }}" style="margin-top: auto; display: flex; align-items: center; justify-content: center; text-align: center; background: oklch(0.5 0.13 195); color: white; text-decoration: none; padding: 17px 18px; border-radius: 100px; font-weight: 800; font-size: 16px; line-height: 1.3; box-shadow: 0 14px 28px -14px oklch(0.5 0.13 195 / 0.75);">Записаться и получить 3 подарка</a>
-    <div style="text-align: center; font-size: 13.5px; color: oklch(0.55 0.02 260); font-weight: 600; margin-top: 12px;">25 августа&nbsp;· 14:00 или 19:00 по Москве</div>
+    <a href="#" onClick="{{ onMenuSignup }}" style="margin-top: auto; display: flex; align-items: center; justify-content: center; text-align: center; background: oklch(0.5 0.13 195); color: white; text-decoration: none; padding: 17px 18px; border-radius: 100px; font-weight: 800; font-size: 16px; line-height: 1.3; box-shadow: 0 14px 28px -14px oklch(0.5 0.13 195 / 0.75);">Записаться и получить 3 подарка</a>
+    <div style="text-align: center; font-size: 13.5px; color: oklch(0.55 0.02 260); font-weight: 600; margin-top: 12px;">25 августа&nbsp;· 14:00 или 19:00 по Москве</div>
   </div>
 
   <!-- HERO -->
@@ -119,12 +119,12 @@
     <div style="text-align: center;">
       
       
-      <h1 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 29px; line-height: 1.14; margin: 44px 0 24px; letter-spacing: -0.01em;">Освойте профессию визового специалиста с&nbsp;нуля за 1,5 месяца</h1><div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 19px; color: oklch(0.5 0.13 195); margin: 0 0 22px;">Зарабатывайте до 220 000 руб/мес удалённо и без опыта в туризме</div>
-      <div style="margin: 0 0 44px; font-size: 18px; color: oklch(0.5 0.02 260); font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap;">Не верите? <a href="#" onClick="{{ onOpenProofs }}" style="background: oklch(0.94 0.03 195); color: oklch(0.4 0.11 195); font-weight: 700; padding: 3px 12px; border-radius: 100px; display: inline-block; white-space: nowrap; text-decoration: none; transition: background 0.15s, color 0.15s;" style-hover="background: oklch(0.5 0.13 195); color: white;">Проверить</a></div>
-      <p style="font-size: 16.5px; line-height: 1.55; color: oklch(0.4 0.02 260); margin: 0 0 28px; max-width: 560px; margin-left: auto; margin-right: auto;">На <b><span style="font-weight: normal;">бесплатном вебинаре</span></b> расскажем на простых шагах, как войти в визовую сферу с нуля, стабильно находить клиентов и выйти на доход до 220 000 ₽ в месяц — без профильного образования, без знания иностранного языка&nbsp;и без опыта в туризме.</p>
+      <h1 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 29px; line-height: 1.14; margin: 44px 0 24px; letter-spacing: -0.01em;">Освойте профессию визового специалиста с&nbsp;нуля за 1,5 месяца</h1><div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 19px; color: oklch(0.5 0.13 195); margin: 0 0 22px;">Зарабатывайте до 220 000 руб/мес удалённо и без опыта в туризме</div>
+      <div style="margin: 0 0 44px; font-size: 18px; color: oklch(0.5 0.02 260); font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap;">Не верите? <a href="#" onClick="{{ onOpenProofs }}" style="background: oklch(0.94 0.03 195); color: oklch(0.4 0.11 195); font-weight: 700; padding: 3px 12px; border-radius: 100px; display: inline-block; white-space: nowrap; text-decoration: none; transition: background 0.15s, color 0.15s;" style-hover="background: oklch(0.5 0.13 195); color: white;">Проверить</a></div>
+      <p style="font-size: 16.5px; line-height: 1.55; color: oklch(0.4 0.02 260); margin: 0 0 28px; max-width: 560px; margin-left: auto; margin-right: auto;">На <b><span style="font-weight: normal;">бесплатном вебинаре</span></b> расскажем на простых шагах, как войти в визовую сферу с нуля, стабильно находить клиентов и выйти на доход до 220 000 ₽ в месяц — без профильного образования, без знания иностранного языка&nbsp;и без опыта в туризме.</p>
       <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
-        <a href="#" onClick="{{ onOpenSignup }}" style="background: oklch(0.5 0.13 195); color: white; text-decoration: none; padding: 17px 22px; border-radius: 100px; font-weight: 800; font-size: 17px; box-shadow: 0 12px 24px -8px oklch(0.5 0.13 195 / 0.5); display: block; width: 100%; box-sizing: border-box; text-align: center; transition: background 0.15s ease;" style-hover="background: oklch(0.44 0.13 195);">Записаться и получить 3 подарка</a>
-        <span style="font-size: 16px; color: oklch(0.5 0.02 260); font-weight: 600; width: 100%; text-align: center;">25 августа&nbsp;· 14:00 или 19:00 по Москве</span>
+        <a href="#" onClick="{{ onOpenSignup }}" style="background: oklch(0.5 0.13 195); color: white; text-decoration: none; padding: 17px 22px; border-radius: 100px; font-weight: 800; font-size: 17px; box-shadow: 0 12px 24px -8px oklch(0.5 0.13 195 / 0.5); display: block; width: 100%; box-sizing: border-box; text-align: center; transition: background 0.15s ease;" style-hover="background: oklch(0.44 0.13 195);">Записаться и получить 3 подарка</a>
+        <span style="font-size: 16px; color: oklch(0.5 0.02 260); font-weight: 600; width: 100%; text-align: center;">25 августа&nbsp;· 14:00 или 19:00 по Москве</span>
       </div>
       <div style="margin-top: 40px; display: flex; flex-direction: column; align-items: center; gap: 10px; font-size: 15px; color: oklch(0.5 0.02 260); font-weight: 600; text-align: center;">
         <div style="position: relative; flex-shrink: 0; width: 46px; height: 46px; display: flex; align-items: center; justify-content: center;">
@@ -135,7 +135,7 @@
           <svg width="18" height="18" viewBox="0 0 24 24" style="position: absolute; top: -16px; left: 16px;"><path d="M4 4l3 3M4 9l4-1M9 4l1 4" stroke="oklch(0.55 0.16 300)" stroke-width="2" stroke-linecap="round"></path></svg>
           <span style="font-size: 46px; line-height: 1;">🎁</span>
         </div>
-        <span>3 подарка сразу после регистрации.<br><a href="#" onClick="{{ onOpenGifts }}" class="scp1" style="display: inline-block; margin-top: 8px; background: oklch(0.94 0.03 195); color: oklch(0.4 0.11 195); font-weight: 700; padding: 3px 12px; border-radius: 100px; display: inline-block; white-space: nowrap; text-decoration: none; transition: background 0.15s, color 0.15s;" style-hover="background: oklch(0.5 0.13 195); color: white;">Что за подарки?</a></span>
+        <span>3 подарка сразу после регистрации.<br><a href="#" onClick="{{ onOpenGifts }}" class="scp1" style="display: inline-block; margin-top: 8px; background: oklch(0.94 0.03 195); color: oklch(0.4 0.11 195); font-weight: 700; padding: 3px 12px; border-radius: 100px; display: inline-block; white-space: nowrap; text-decoration: none; transition: background 0.15s, color 0.15s;" style-hover="background: oklch(0.5 0.13 195); color: white;">Что за подарки?</a></span>
       </div>
     </div>
     <div>
@@ -145,7 +145,7 @@
         </div>
         <div style="padding: 22px 16px 10px; text-align: center;">
           <div style="font-size: 17px; line-height: 1.5; font-weight: 700; color: oklch(0.25 0.02 260); max-width: none; width: auto; height: auto;">Анастасия Климкина</div>
-          <a href="#about" style="display: inline-block; margin-top: 10px; font-size: 16px; font-weight: 700; text-decoration: none;">От официантки до основательницы ↓</a>
+          <a href="#about" style="display: inline-block; margin-top: 10px; font-size: 16px; font-weight: 700; text-decoration: none;">От официантки до основательницы ↓</a>
         </div>
       </div>
     </div>
@@ -156,62 +156,62 @@
     <div style="max-width: 1080px; margin: 0 auto;">
       <div style="text-align: center; margin-bottom: 28px;">
         <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 27px; margin: 0 0 12px;">Почему эта профессия востребована</h2>
-        <div style="color: oklch(0.5 0.02 260); font-size: 18px; max-width: 640px; margin: 0 auto; line-height: 1.5;">Шесть причин, почему сейчас — лучшее время войти в визовую сферу.</div>
+        <div style="color: oklch(0.5 0.02 260); font-size: 18px; max-width: 640px; margin: 0 auto; line-height: 1.5;">Шесть причин, почему сейчас — лучшее время войти в визовую сферу.</div>
       </div>
       <div style="display: flex; flex-direction: column; gap: 14px;">
         <div class="adv-row" style="background: white; border-radius: 24px; padding: 22px 18px; display: grid; grid-template-columns: 1fr; gap: 20px; align-items: center;">
           <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 6px;">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="oklch(0.45 0.14 55)" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20M4 19.5A2.5 2.5 0 006.5 22H20V4a2 2 0 00-2-2H6.5A2.5 2.5 0 004 4.5v15z"></path></svg>
             <div style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 32px; color: oklch(0.45 0.14 55); line-height: 1.1; white-space: normal;">300+</div>
-            <div style="font-size: 15.5px; color: oklch(0.5 0.02 260);">открытых вакансий на hh.ru прямо сейчас</div>
+            <div style="font-size: 15.5px; color: oklch(0.5 0.02 260);">открытых вакансий на hh.ru прямо сейчас</div>
           </div>
           <div>
             <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 22px; margin: 0 0 10px;">Реальное трудоустройство</div>
-            <div style="font-size: 16px; color: oklch(0.4 0.02 260); line-height: 1.6;">После курса и успешной сдачи итогового теста вы сможете претендовать на позицию в нашем визовом агентстве «Без границ» либо начать искать работу самостоятельно. <br>Расскажем, как найти работу даже без опыта.<br data-om-id="c5a9c676:69"><br data-om-id="c5a9c676:70"><b data-om-id="c5a9c676:71">Средний доход визового специалиста — от 120 000 рублей</b>. <a href="#" onClick="{{ onOpenJobs }}" class="scp2 scp2 scp2" data-om-id="c5a9c676:72" style="background: oklch(0.94 0.05 55); color: oklch(0.45 0.14 55); font-weight: 700; padding: 3px 12px; border-radius: 100px; display: inline-block; white-space: nowrap; text-decoration: none; transition: background 0.15s, color 0.15s;" style-hover="background: oklch(0.55 0.14 55); color: white;">Смотреть вакансии</a></div>
+            <div style="font-size: 16px; color: oklch(0.4 0.02 260); line-height: 1.6;">После курса и успешной сдачи итогового теста вы сможете претендовать на позицию в нашем визовом агентстве «Без границ» либо начать искать работу самостоятельно. <br>Расскажем, как найти работу даже без опыта.<br data-om-id="c5a9c676:69"><br data-om-id="c5a9c676:70"><b data-om-id="c5a9c676:71">Средний доход визового специалиста — от 120 000 рублей</b>. <a href="#" onClick="{{ onOpenJobs }}" class="scp2 scp2 scp2" data-om-id="c5a9c676:72" style="background: oklch(0.94 0.05 55); color: oklch(0.45 0.14 55); font-weight: 700; padding: 3px 12px; border-radius: 100px; display: inline-block; white-space: nowrap; text-decoration: none; transition: background 0.15s, color 0.15s;" style-hover="background: oklch(0.55 0.14 55); color: white;">Смотреть вакансии</a></div>
           </div>
         </div>
         <div class="adv-row" style="background: white; border-radius: 24px; padding: 22px 18px; display: grid; grid-template-columns: 1fr; gap: 20px; align-items: center;">
           <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 6px;">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="oklch(0.5 0.13 195)" stroke-width="2"><path d="M3 17l6-6 4 4 8-9M21 10V4h-6"></path></svg>
             <div style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 32px; color: oklch(0.35 0.1 195); line-height: 1.1; white-space: normal;">13 млн+</div>
-            <div style="font-size: 15.5px; color: oklch(0.5 0.02 260);">россиян выезжают за границу ежегодно</div>
+            <div style="font-size: 15.5px; color: oklch(0.5 0.02 260);">россиян выезжают за границу ежегодно</div>
           </div>
           <div>
             <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 22px; margin: 0 0 10px;">Туризм растёт всегда</div>
-            <div style="font-size: 16px; color: oklch(0.4 0.02 260); line-height: 1.6;">Спрос на туризм не зависит от экономических циклов: количество турпоездок россиян за рубеж выросло в 2025 году на 15,6%. <br><br>Россияне потратили в путешествиях в 2025 году 48 миллиардов долларов, а число выезжающих за границу — более 13 млн человек <a href="#" onClick="{{ onOpenTourism }}" class="scp1 scp1 scp0" style="background: oklch(0.94 0.03 195); color: oklch(0.4 0.11 195); font-weight: 700; padding: 3px 12px; border-radius: 100px; display: inline-block; white-space: nowrap; text-decoration: none; transition: background 0.15s, color 0.15s;">Проверить</a></div>
+            <div style="font-size: 16px; color: oklch(0.4 0.02 260); line-height: 1.6;">Спрос на туризм не зависит от экономических циклов: количество турпоездок россиян за рубеж выросло в 2025 году на 15,6%. <br><br>Россияне потратили в путешествиях в 2025 году 48 миллиардов долларов, а число выезжающих за границу — более 13 млн человек <a href="#" onClick="{{ onOpenTourism }}" class="scp1 scp1 scp0" style="background: oklch(0.94 0.03 195); color: oklch(0.4 0.11 195); font-weight: 700; padding: 3px 12px; border-radius: 100px; display: inline-block; white-space: nowrap; text-decoration: none; transition: background 0.15s, color 0.15s;">Проверить</a></div>
           </div>
         </div>
         <div class="adv-row" style="background: white; border-radius: 24px; padding: 22px 18px; display: grid; grid-template-columns: 1fr; gap: 20px; align-items: center;">
           <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 6px;">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="oklch(0.5 0.13 195)" stroke-width="2"><path d="M13 2L4 14h6l-1 8 9-12h-6z"></path></svg>
             <div style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 32px; color: oklch(0.35 0.1 195); line-height: 1.1; white-space: normal;">1,5 мес.</div>
-            <div style="font-size: 15.5px; color: oklch(0.5 0.02 260);">чтобы освоить визы и начать работать на себя</div>
+            <div style="font-size: 15.5px; color: oklch(0.5 0.02 260);">чтобы освоить визы и начать работать на себя</div>
           </div>
           <div>
-            <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 22px; margin: 0 0 10px;">Работа на себя</div>
-            <div style="font-size: 16px; color: oklch(0.4 0.02 260); line-height: 1.6;">Дальше вы не ограничены одной услугой: например, в нашем агентстве клиентам доступно более 20 направлений — отели, перелёты, туры, аренда авто, ж/д билеты, экскурсии, мероприятия, иностранные карты, срочные загранпаспорта, ВНЖ и многое другое. <br><br><b>Ваш доход может достигать 220 000 рублей в месяц&nbsp;</b> <a href="#" onClick="{{ onOpenCase }}" class="scp1 scp1" style="background: oklch(0.94 0.03 195); color: oklch(0.4 0.11 195); font-weight: 700; padding: 3px 12px; border-radius: 100px; display: inline-block; white-space: nowrap; text-decoration: none; transition: background 0.15s, color 0.15s;" style-hover="background: oklch(0.5 0.13 195); color: white;">Разберём на примере&nbsp;</a><br>Вы сможете так же. А где искать клиентов — подробно разберём на курсе.</div>
+            <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 22px; margin: 0 0 10px;">Работа на себя</div>
+            <div style="font-size: 16px; color: oklch(0.4 0.02 260); line-height: 1.6;">Дальше вы не ограничены одной услугой: например, в нашем агентстве клиентам доступно более 20 направлений — отели, перелёты, туры, аренда авто, ж/д билеты, экскурсии, мероприятия, иностранные карты, срочные загранпаспорта, ВНЖ и многое другое. <br><br><b>Ваш доход может достигать 220 000 рублей в месяц&nbsp;</b> <a href="#" onClick="{{ onOpenCase }}" class="scp1 scp1" style="background: oklch(0.94 0.03 195); color: oklch(0.4 0.11 195); font-weight: 700; padding: 3px 12px; border-radius: 100px; display: inline-block; white-space: nowrap; text-decoration: none; transition: background 0.15s, color 0.15s;" style-hover="background: oklch(0.5 0.13 195); color: white;">Разберём на примере&nbsp;</a><br>Вы сможете так же. А где искать клиентов — подробно разберём на курсе.</div>
           </div>
         </div>
         <div class="adv-row" style="background: white; border-radius: 24px; padding: 22px 18px; display: grid; grid-template-columns: 1fr; gap: 20px; align-items: center;">
           <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 6px;">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="oklch(0.45 0.14 55)" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
             <div style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 32px; color: oklch(0.45 0.14 55); line-height: 1.1; white-space: normal;">1–2 часа</div>
-            <div style="font-size: 15.5px; color: oklch(0.5 0.02 260);">в день достаточно, чтобы начать</div>
+            <div style="font-size: 15.5px; color: oklch(0.5 0.02 260);">в день достаточно, чтобы начать</div>
           </div>
           <div>
             <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 22px; margin: 0 0 10px;">Можно начать без риска</div>
-            <div style="font-size: 16px; color: oklch(0.4 0.02 260); line-height: 1.6;">На старте достаточно уделять всего 1–2 часа в день — этого хватает, чтобы освоить профессию и оформить первые заявки. <br><br>Это значит, что вы можете совмещать обучение и первых клиентов с текущей работой и ничем не рисковать, пока сами не убедитесь, что можете зарабатывать на визах. <br><a href="#" onClick="{{ onOpenSchedule }}" class="scp2 scp2" style="background: oklch(0.94 0.05 55); color: oklch(0.45 0.14 55); font-weight: 700; padding: 3px 12px; border-radius: 100px; display: inline-block; margin-top: 8px; white-space: nowrap; text-decoration: none; transition: background 0.15s, color 0.15s;" style-hover="background: oklch(0.55 0.14 55); color: white;">Что можно успеть за 1–2 часа в день</a></div>
+            <div style="font-size: 16px; color: oklch(0.4 0.02 260); line-height: 1.6;">На старте достаточно уделять всего 1–2 часа в день — этого хватает, чтобы освоить профессию и оформить первые заявки. <br><br>Это значит, что вы можете совмещать обучение и первых клиентов с текущей работой и ничем не рисковать, пока сами не убедитесь, что можете зарабатывать на визах. <br><a href="#" onClick="{{ onOpenSchedule }}" class="scp2 scp2" style="background: oklch(0.94 0.05 55); color: oklch(0.45 0.14 55); font-weight: 700; padding: 3px 12px; border-radius: 100px; display: inline-block; margin-top: 8px; white-space: nowrap; text-decoration: none; transition: background 0.15s, color 0.15s;" style-hover="background: oklch(0.55 0.14 55); color: white;">Что можно успеть за 1–2 часа в день</a></div>
           </div>
         </div>
         <div class="adv-row" style="background: white; border-radius: 24px; padding: 22px 18px; display: grid; grid-template-columns: 1fr; gap: 20px; align-items: center;">
           <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 6px;">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="oklch(0.5 0.13 195)" stroke-width="2"><path d="M7 21V4h6a4.5 4.5 0 010 9H7M6 14h9M6 17h9"></path></svg>
-            <div style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 28px; color: oklch(0.35 0.1 195); line-height: 1.15;">0 руб</div>
-            <div style="font-size: 15.5px; color: oklch(0.5 0.02 260);">бюджет в месяц на первых клиентов</div>
+            <div style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 28px; color: oklch(0.35 0.1 195); line-height: 1.15;">0 руб</div>
+            <div style="font-size: 15.5px; color: oklch(0.5 0.02 260);">бюджет в месяц на первых клиентов</div>
           </div>
           <div>
-            <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 22px; margin: 0 0 10px;">Нет бюджета? Не проблема</div>
-            <div style="font-size: 16px; color: oklch(0.4 0.02 260); line-height: 1.6;">Чтобы привлечь первых клиентов, не нужны вложения в рекламу. Расскажем, как получить первых клиентов бесплатно. <b>Этого достаточно, чтобы стабильно получать первых заказчиков и начать зарабатывать.</b><br><br>А что делать, когда бесплатные клиенты закончатся или если их не будет? <a href="#" onClick="{{ onOpenBudget }}" class="scp1 scp1" style="background: oklch(0.94 0.03 195); color: oklch(0.4 0.11 195); font-weight: 700; padding: 3px 12px; border-radius: 100px; display: inline-block; white-space: nowrap; text-decoration: none; transition: background 0.15s, color 0.15s;" style-hover="background: oklch(0.5 0.13 195); color: white;">Как привлекать клиентов?</a></div>
+            <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 22px; margin: 0 0 10px;">Нет бюджета? Не проблема</div>
+            <div style="font-size: 16px; color: oklch(0.4 0.02 260); line-height: 1.6;">Чтобы привлечь первых клиентов, не нужны вложения в рекламу. Расскажем, как получить первых клиентов бесплатно. <b>Этого достаточно, чтобы стабильно получать первых заказчиков и начать зарабатывать.</b><br><br>А что делать, когда бесплатные клиенты закончатся или если их не будет? <a href="#" onClick="{{ onOpenBudget }}" class="scp1 scp1" style="background: oklch(0.94 0.03 195); color: oklch(0.4 0.11 195); font-weight: 700; padding: 3px 12px; border-radius: 100px; display: inline-block; white-space: nowrap; text-decoration: none; transition: background 0.15s, color 0.15s;" style-hover="background: oklch(0.5 0.13 195); color: white;">Как привлекать клиентов?</a></div>
           </div>
         </div>
         <div class="adv-row" style="background: white; border-radius: 24px; padding: 22px 18px; display: grid; grid-template-columns: 1fr; gap: 20px; align-items: center;">
@@ -221,14 +221,14 @@
             <div style="font-size: 15.5px; color: oklch(0.5 0.02 260);">успешно прошли обучение</div>
           </div>
           <div>
-            <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 22px; margin: 0 0 10px;">А если у меня не получится?</div>
-            <div style="font-size: 16px; color: oklch(0.4 0.02 260); line-height: 1.6;">Уже более 87 учеников успешно прошли обучение и начали зарабатывать, кто-то работает на себя как визовый агент, кто-то устроился в визовое агентство, в том числе в наше. <a href="#reviews" style="background: oklch(0.94 0.05 55); color: oklch(0.45 0.14 55); font-weight: 700; padding: 3px 12px; border-radius: 100px; display: inline-block; margin-top: 8px; white-space: nowrap; text-decoration: none; transition: background 0.15s, color 0.15s;" style-hover="background: oklch(0.55 0.14 55); color: white;">Смотреть отзывы</a></div>
+            <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 22px; margin: 0 0 10px;">А если у меня не получится?</div>
+            <div style="font-size: 16px; color: oklch(0.4 0.02 260); line-height: 1.6;">Уже более 87 учеников успешно прошли обучение и начали зарабатывать, кто-то работает на себя как визовый агент, кто-то устроился в визовое агентство, в том числе в наше. <a href="#reviews" style="background: oklch(0.94 0.05 55); color: oklch(0.45 0.14 55); font-weight: 700; padding: 3px 12px; border-radius: 100px; display: inline-block; margin-top: 8px; white-space: nowrap; text-decoration: none; transition: background 0.15s, color 0.15s;" style-hover="background: oklch(0.55 0.14 55); color: white;">Смотреть отзывы</a></div>
           </div>
         </div>
       </div>
       <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; margin-top: 44px;">
         <span style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 19px; color: oklch(0.25 0.02 260);">Хочу освоить профессию ↓</span>
-        <a href="#" onClick="{{ onOpenSignup }}" style="display: inline-flex; align-items: center; gap: 10px; background: oklch(0.5 0.13 195); color: white; text-decoration: none; padding: 17px 22px; border-radius: 100px; font-weight: 800; font-size: 17px; box-shadow: 0 12px 24px -8px oklch(0.5 0.13 195 / 0.5); width: 100%; box-sizing: border-box; justify-content: center; text-align: center; transition: background 0.15s ease;" style-hover="background: oklch(0.44 0.13 195);">Записаться и получить 3 подарка</a>
+        <a href="#" onClick="{{ onOpenSignup }}" style="display: inline-flex; align-items: center; gap: 10px; background: oklch(0.5 0.13 195); color: white; text-decoration: none; padding: 17px 22px; border-radius: 100px; font-weight: 800; font-size: 17px; box-shadow: 0 12px 24px -8px oklch(0.5 0.13 195 / 0.5); width: 100%; box-sizing: border-box; justify-content: center; text-align: center; transition: background 0.15s ease;" style-hover="background: oklch(0.44 0.13 195);">Записаться и получить 3 подарка</a>
       </div>
     </div>
   </div>
@@ -239,35 +239,35 @@
     <div style="max-width: 640px; margin: 0 auto;">
       <div style="text-align: center; margin-bottom: 22px;">
         <div style="display: inline-flex; align-items: center; gap: 8px; background: oklch(0.94 0.05 55); color: oklch(0.45 0.14 55); font-weight: 800; font-size: 11.5px; letter-spacing: 0.07em; text-transform: uppercase; padding: 6px 14px; border-radius: 100px;">Бесплатно каждому участнику</div>
-        <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 25px; margin: 12px 0 8px;">3 подарка после регистрации</h2>
-        <div style="color: oklch(0.5 0.02 260); font-size: 16px; line-height: 1.5;">Все три вы получаете сразу после регистрации на бесплатный вебинар.</div>
+        <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 25px; margin: 12px 0 8px;">3 подарка после регистрации</h2>
+        <div style="color: oklch(0.5 0.02 260); font-size: 16px; line-height: 1.5;">Все три вы получаете сразу после регистрации на бесплатный вебинар.</div>
       </div>
       <div style="display: flex; flex-direction: column; gap: 12px;">
         <div style="background: white; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 22px -14px oklch(0.3 0.09 195 / 0.5); display: flex; align-items: center; gap: 14px; padding: 12px;">
           <div style="flex-shrink: 0;"><div style="flex-shrink: 0; width: 88px; height: 72px; border-radius: 12px; background: linear-gradient(145deg, oklch(0.93 0.05 195) 0%, oklch(0.86 0.08 195) 100%); display: flex; align-items: center; justify-content: center;"><svg viewBox="0 0 100 80" style="width: 72px; height: 58px; display: block;"><rect x="10" y="12" width="62" height="56" rx="6" fill="white"></rect><rect x="10" y="12" width="62" height="13" rx="6" fill="oklch(0.5 0.13 195)"></rect><rect x="10" y="19" width="62" height="6" fill="oklch(0.5 0.13 195)"></rect><line x1="10" y1="38" x2="72" y2="38" stroke="oklch(0.9 0.01 260)" stroke-width="1.6"></line><line x1="10" y1="51" x2="72" y2="51" stroke="oklch(0.9 0.01 260)" stroke-width="1.6"></line><line x1="41" y1="25" x2="41" y2="68" stroke="oklch(0.9 0.01 260)" stroke-width="1.6"></line><rect x="16" y="30" width="18" height="4" rx="2" fill="oklch(0.84 0.02 260)"></rect><rect x="16" y="43" width="18" height="4" rx="2" fill="oklch(0.84 0.02 260)"></rect><rect x="16" y="56" width="18" height="4" rx="2" fill="oklch(0.84 0.02 260)"></rect><rect x="47" y="29" width="19" height="6" rx="3" fill="oklch(0.88 0.09 145)"></rect><rect x="47" y="42" width="19" height="6" rx="3" fill="oklch(0.88 0.09 145)"></rect><rect x="47" y="55" width="19" height="6" rx="3" fill="oklch(0.75 0.15 145)"></rect><g transform="translate(56,4)"><rect x="0" y="0" width="40" height="30" rx="6" fill="white" stroke="oklch(0.88 0.02 260)" stroke-width="1.6"></rect><polyline points="7,23 16,16 23,19 34,7" fill="none" stroke="oklch(0.45 0.14 55)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></polyline><circle cx="34" cy="7" r="3.4" fill="oklch(0.45 0.14 55)"></circle></g><circle cx="17" cy="63" r="9" fill="oklch(0.85 0.13 90)" stroke="white" stroke-width="2.4"></circle><text x="17" y="67" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="900" font-size="10" fill="oklch(0.42 0.12 70)">₽</text></svg></div></div>
           <div style="min-width: 0;">
-            <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 16px; line-height: 1.25; margin-bottom: 5px;">Калькулятор дохода в Google Таблице</div>
-            <div style="font-size: 14px; color: oklch(0.45 0.02 260); line-height: 1.5;">Вписываете количество клиентов и услуг — таблица сама считает доход.</div>
+            <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 16px; line-height: 1.25; margin-bottom: 5px;">Калькулятор дохода в Google Таблице</div>
+            <div style="font-size: 14px; color: oklch(0.45 0.02 260); line-height: 1.5;">Вписываете количество клиентов и услуг — таблица сама считает доход.</div>
           </div>
         </div>
         <div style="background: white; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 22px -14px oklch(0.3 0.09 195 / 0.5); display: flex; align-items: center; gap: 14px; padding: 12px;">
           <div style="flex-shrink: 0;"><div style="flex-shrink: 0; width: 88px; height: 72px; border-radius: 12px; background: linear-gradient(145deg, oklch(0.95 0.05 90) 0%, oklch(0.89 0.09 75) 100%); display: flex; align-items: center; justify-content: center;"><svg viewBox="0 0 100 80" style="width: 72px; height: 58px; display: block;"><rect x="12" y="16" width="62" height="52" rx="7" fill="white" opacity="0.55" transform="rotate(-6 43 42)"></rect><rect x="9" y="11" width="66" height="56" rx="7" fill="white"></rect><rect x="18" y="19" width="28" height="4.5" rx="2.2" fill="oklch(0.3 0.09 195)"></rect><circle cx="23" cy="34" r="5.4" fill="oklch(0.88 0.09 145)"></circle><polyline points="20.7,34 22.4,35.8 25.6,32.2" fill="none" stroke="oklch(0.45 0.13 145)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></polyline><rect x="32" y="31.5" width="34" height="4.6" rx="2.3" fill="oklch(0.88 0.02 260)"></rect><circle cx="23" cy="46" r="5.4" fill="oklch(0.88 0.09 145)"></circle><polyline points="20.7,46 22.4,47.8 25.6,44.2" fill="none" stroke="oklch(0.45 0.13 145)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></polyline><rect x="32" y="43.5" width="27" height="4.6" rx="2.3" fill="oklch(0.88 0.02 260)"></rect><circle cx="23" cy="58" r="5.4" fill="oklch(0.88 0.09 145)"></circle><polyline points="20.7,58 22.4,59.8 25.6,56.2" fill="none" stroke="oklch(0.45 0.13 145)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></polyline><rect x="32" y="55.5" width="31" height="4.6" rx="2.3" fill="oklch(0.88 0.02 260)"></rect><circle cx="79" cy="21" r="15" fill="oklch(0.5 0.13 195)"></circle><text x="79" y="27" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="900" font-size="17" fill="white">5</text><circle cx="15" cy="65" r="8" fill="oklch(0.85 0.13 90)" stroke="white" stroke-width="2.4"></circle><text x="15" y="69" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="900" font-size="9" fill="oklch(0.42 0.12 70)">₽</text></svg></div></div>
           <div style="min-width: 0;">
-            <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 16px; line-height: 1.25; margin-bottom: 5px;">5 услуг, с которых новичок получает первые деньги</div>
-            <div style="font-size: 14px; color: oklch(0.45 0.02 260); line-height: 1.5;">Простые услуги для заработка в первые недели — без опыта и вложений.</div>
+            <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 16px; line-height: 1.25; margin-bottom: 5px;">5 услуг, с которых новичок получает первые деньги</div>
+            <div style="font-size: 14px; color: oklch(0.45 0.02 260); line-height: 1.5;">Простые услуги для заработка в первые недели — без опыта и вложений.</div>
           </div>
         </div>
         <div style="background: white; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 22px -14px oklch(0.3 0.09 195 / 0.5); display: flex; align-items: center; gap: 14px; padding: 12px;">
           <div style="flex-shrink: 0;"><div style="flex-shrink: 0; width: 88px; height: 72px; border-radius: 12px; background: linear-gradient(145deg, oklch(0.94 0.04 145) 0%, oklch(0.88 0.07 160) 100%); display: flex; align-items: center; justify-content: center;"><svg viewBox="0 0 100 80" style="width: 72px; height: 58px; display: block;"><rect x="14" y="8" width="54" height="62" rx="7" fill="oklch(0.42 0.11 25)"></rect><rect x="19" y="8" width="49" height="62" rx="6" fill="white"></rect><rect x="19" y="8" width="6" height="62" fill="oklch(0.93 0.01 260)"></rect><g transform="translate(31,15)"><rect x="0" y="0" width="7" height="15" rx="1.5" fill="oklch(0.6 0.14 145)"></rect><rect x="7" y="0" width="7" height="15" fill="oklch(0.95 0.005 90)"></rect><rect x="14" y="0" width="7" height="15" rx="1.5" fill="oklch(0.55 0.19 25)"></rect></g><g transform="translate(31,36)"><path d="M2 18 L2 8 A7.5 7.5 0 0 1 17 8 L17 18 Z" fill="none" stroke="oklch(0.55 0.03 260)" stroke-width="1.8" stroke-linejoin="round"></path><line x1="6" y1="9.5" x2="6" y2="18" stroke="oklch(0.55 0.03 260)" stroke-width="1.5"></line><line x1="9.5" y1="7" x2="9.5" y2="18" stroke="oklch(0.55 0.03 260)" stroke-width="1.5"></line><line x1="13" y1="9.5" x2="13" y2="18" stroke="oklch(0.55 0.03 260)" stroke-width="1.5"></line><rect x="0" y="18" width="19" height="3.4" rx="1.7" fill="oklch(0.55 0.03 260)"></rect></g><rect x="30" y="62" width="30" height="4" rx="2" fill="oklch(0.9 0.01 260)"></rect><g transform="translate(56,28) rotate(-14)"><rect x="0" y="0" width="40" height="28" rx="4.5" fill="oklch(0.97 0.02 195)" stroke="oklch(0.5 0.13 195)" stroke-width="1.8"></rect><rect x="6" y="6" width="19" height="3.4" rx="1.7" fill="oklch(0.5 0.13 195)" opacity="0.75"></rect><rect x="6" y="13.5" width="28" height="2.8" rx="1.4" fill="oklch(0.5 0.13 195)" opacity="0.4"></rect><rect x="6" y="19.5" width="23" height="2.8" rx="1.4" fill="oklch(0.5 0.13 195)" opacity="0.4"></rect><circle cx="31" cy="8" r="4.6" fill="none" stroke="oklch(0.45 0.14 55)" stroke-width="1.8"></circle></g></svg></div></div>
           <div style="min-width: 0;">
-            <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 16px; line-height: 1.25; margin-bottom: 5px;">Мини-гайд — виза в Италию самостоятельно</div>
-            <div style="font-size: 14px; color: oklch(0.45 0.02 260); line-height: 1.5;">Пошаговый сбор документов и подача на визу.</div>
+            <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 16px; line-height: 1.25; margin-bottom: 5px;">Мини-гайд — виза в Италию самостоятельно</div>
+            <div style="font-size: 14px; color: oklch(0.45 0.02 260); line-height: 1.5;">Пошаговый сбор документов и подача на визу.</div>
           </div>
         </div>
       </div>
       <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; margin-top: 26px;">
         <span style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 19px; color: oklch(0.25 0.02 260);">Хочу получить подарки ↓</span>
-        <a href="#" onClick="{{ onOpenSignup }}" style="display: inline-flex; align-items: center; gap: 10px; background: oklch(0.5 0.13 195); color: white; text-decoration: none; padding: 17px 22px; border-radius: 100px; font-weight: 800; font-size: 17px; box-shadow: 0 12px 24px -8px oklch(0.5 0.13 195 / 0.5); width: 100%; box-sizing: border-box; justify-content: center; text-align: center; transition: background 0.15s ease;" style-hover="background: oklch(0.44 0.13 195);">Забрать 3 подарка</a>
+        <a href="#" onClick="{{ onOpenSignup }}" style="display: inline-flex; align-items: center; gap: 10px; background: oklch(0.5 0.13 195); color: white; text-decoration: none; padding: 17px 22px; border-radius: 100px; font-weight: 800; font-size: 17px; box-shadow: 0 12px 24px -8px oklch(0.5 0.13 195 / 0.5); width: 100%; box-sizing: border-box; justify-content: center; text-align: center; transition: background 0.15s ease;" style-hover="background: oklch(0.44 0.13 195);">Забрать 3 подарка</a>
       </div>
     </div>
   </div>
@@ -277,7 +277,7 @@
     <div style="max-width: 1200px; margin: 0 auto;">
       <div style="text-align: center; margin-bottom: 24px;">
         <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 25px; margin: 0 0 10px;">Главный спикер</h2>
-        <div style="color: oklch(0.5 0.02 260); font-size: 18px; margin: 0 auto; max-width: 720px; text-align: center; line-height: 1.5">Человек, который прошёл путь от официантки до основательницы одного из крупнейших визовых агентств и автора курсов по визовой профессии — и знает эту профессию изнутри.</div>
+        <div style="color: oklch(0.5 0.02 260); font-size: 18px; margin: 0 auto; max-width: 720px; text-align: center; line-height: 1.5">Человек, который прошёл путь от официантки до основательницы одного из крупнейших визовых агентств и автора курсов по визовой профессии — и знает эту профессию изнутри.</div>
       </div>
       <div class="about-grid" style="display: grid; grid-template-columns: 1fr; gap: 24px; align-items: start;">
         <div>
@@ -293,14 +293,14 @@
         </div>
         <div>
           <h3 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 20px; margin: 0 0 12px;">Анастасия Климкина — основательница</h3>
-          <p style="font-size: 16px; line-height: 1.6; color: oklch(0.4 0.02 260); margin: 0 0 24px; max-width: 560px;">Окончила юридический факультет, работала в суде, в страховой компании, в сфере общепита и не только — прежде чем найти своё дело в визовой индустрии.</p>
+          <p style="font-size: 16px; line-height: 1.6; color: oklch(0.4 0.02 260); margin: 0 0 24px; max-width: 560px;">Окончила юридический факультет, работала в суде, в страховой компании, в сфере общепита и не только — прежде чем найти своё дело в визовой индустрии.</p>
 
           <div style="font-size: 15.5px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; color: oklch(0.5 0.02 260); margin-bottom: 16px;">Путь</div>
           <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 28px; border-left: 2px solid oklch(0.91 0.005 260); padding-left: 18px;">
             <div style="position: relative;">
               <span style="position: absolute; left: -23px; top: 4px; width: 8px; height: 8px; border-radius: 50%; background: oklch(0.5 0.13 195);"></span>
               <div style="font-weight: 800; font-size: 15.5px; color: oklch(0.5 0.13 195);">2012–2015</div>
-              <div style="font-size: 16px; color: oklch(0.45 0.02 260); line-height: 1.5;">Работала в ресторане официанткой, продавцом-консультантом в ювелирном магазине, в салоне красоты и много где ещё.</div>
+              <div style="font-size: 16px; color: oklch(0.45 0.02 260); line-height: 1.5;">Работала в ресторане официанткой, продавцом-консультантом в ювелирном магазине, в салоне красоты и много где ещё.</div>
             </div>
             <div style="position: relative;">
               <span style="position: absolute; left: -23px; top: 4px; width: 8px; height: 8px; border-radius: 50%; background: oklch(0.5 0.13 195);"></span>
@@ -310,17 +310,17 @@
             <div style="position: relative;">
               <span style="position: absolute; left: -23px; top: 4px; width: 8px; height: 8px; border-radius: 50%; background: oklch(0.5 0.13 195);"></span>
               <div style="font-weight: 800; font-size: 15.5px; color: oklch(0.5 0.13 195);">2017</div>
-              <div style="font-size: 16px; color: oklch(0.45 0.02 260); line-height: 1.5">Устроилась в страховую компанию.</div>
+              <div style="font-size: 16px; color: oklch(0.45 0.02 260); line-height: 1.5">Устроилась в страховую компанию.</div>
             </div>
             <div style="position: relative;">
               <span style="position: absolute; left: -23px; top: 4px; width: 8px; height: 8px; border-radius: 50%; background: oklch(0.5 0.13 195);"></span>
               <div style="font-weight: 800; font-size: 15.5px; color: oklch(0.5 0.13 195);">2019</div>
-              <div style="font-size: 16px; color: oklch(0.45 0.02 260); line-height: 1.5">Перешла на работу в Мособлсуд.</div>
+              <div style="font-size: 16px; color: oklch(0.45 0.02 260); line-height: 1.5">Перешла на работу в Мособлсуд.</div>
             </div>
             <div style="position: relative;">
               <span style="position: absolute; left: -23px; top: 4px; width: 8px; height: 8px; border-radius: 50%; background: oklch(0.5 0.13 195);"></span>
               <div style="font-weight: 800; font-size: 15.5px; color: oklch(0.5 0.13 195);">2021</div>
-              <div style="font-size: 16px; color: oklch(0.45 0.02 260); line-height: 1.5">Пришла в визовое агентство и изучала профессию с нуля.</div>
+              <div style="font-size: 16px; color: oklch(0.45 0.02 260); line-height: 1.5">Пришла в визовое агентство и изучала профессию с нуля.</div>
             </div>
             <div style="position: relative;">
               <span style="position: absolute; left: -23px; top: 4px; width: 8px; height: 8px; border-radius: 50%; background: oklch(0.5 0.13 195);"></span>
@@ -338,23 +338,23 @@
           <div style="display: flex; flex-direction: column; gap: 10px;">
             <div style="display: flex; gap: 10px; align-items: flex-start;">
               <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="oklch(0.5 0.13 195)" stroke-width="2.4" style="flex-shrink: 0; margin-top: 2px;"><path d="M4 12l5 5L20 6"></path></svg>
-              <span style="font-size: 16px; color: oklch(0.35 0.02 260); line-height: 1.5">31 год, молодая мама и businesswoman.</span>
+              <span style="font-size: 16px; color: oklch(0.35 0.02 260); line-height: 1.5">31 год, молодая мама и businesswoman.</span>
             </div>
             <div style="display: flex; gap: 10px; align-items: flex-start;">
               <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="oklch(0.5 0.13 195)" stroke-width="2.4" style="flex-shrink: 0; margin-top: 2px;"><path d="M4 12l5 5L20 6"></path></svg>
-              <span style="font-size: 16px; color: oklch(0.35 0.02 260); line-height: 1.5">Посетила 30+ стран, включая США, Великобританию, Францию, Италию, Испанию, Австралию, Филиппины и жила 4 месяца на Бали.</span>
+              <span style="font-size: 16px; color: oklch(0.35 0.02 260); line-height: 1.5">Посетила 30+ стран, включая США, Великобританию, Францию, Италию, Испанию, Австралию, Филиппины и жила 4 месяца на Бали.</span>
             </div>
             <div style="display: flex; gap: 10px; align-items: flex-start;">
               <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="oklch(0.5 0.13 195)" stroke-width="2.4" style="flex-shrink: 0; margin-top: 2px;"><path d="M4 12l5 5L20 6"></path></svg>
-              <span style="font-size: 16px; color: oklch(0.35 0.02 260); line-height: 1.5">Самостоятельно оформила более 2 000 виз.</span>
+              <span style="font-size: 16px; color: oklch(0.35 0.02 260); line-height: 1.5">Самостоятельно оформила более 2 000 виз.</span>
             </div>
             <div style="display: flex; gap: 10px; align-items: flex-start;">
               <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="oklch(0.5 0.13 195)" stroke-width="2.4" style="flex-shrink: 0; margin-top: 2px;"><path d="M4 12l5 5L20 6"></path></svg>
-              <span style="font-size: 16px; color: oklch(0.35 0.02 260); line-height: 1.5">Через её агентство «Без границ» прошло более 15 000 клиентов — в том числе <b style="font-weight: 800; color: oklch(0.4 0.11 195)">Анна Хилькевич</b>, <b style="font-weight: 800; color: oklch(0.4 0.11 195)">Ольга Сербякина</b> и многие другие. <a href="https://t.me/otzyvy_bezgranic/667" target="_blank" rel="noopener" style="display: inline-block; white-space: nowrap; margin: 5px 7px 0 0; padding: 3px 11px; border-radius: 100px; background: oklch(0.93 0.04 195); color: oklch(0.36 0.11 195); font-size: 13.5px; font-weight: 700; text-decoration: none; cursor: pointer;" style-active="background: oklch(0.88 0.06 195);">Смотреть отзывы</a><a href="https://t.me/otzyvy_bezgranic/667" target="_blank" rel="noopener" style="display: inline-block; white-space: nowrap; margin: 5px 0 0 0; padding: 3px 11px; border-radius: 100px; background: oklch(0.94 0.05 70); color: oklch(0.44 0.12 50); font-size: 13.5px; font-weight: 700; text-decoration: none; cursor: pointer;" style-active="background: oklch(0.9 0.07 70);">800+ отзывов и кейсов</a></span>
+              <span style="font-size: 16px; color: oklch(0.35 0.02 260); line-height: 1.5">Через её агентство «Без границ» прошло более 15 000 клиентов — в том числе <b style="font-weight: 800; color: oklch(0.4 0.11 195)">Анна Хилькевич</b>, <b style="font-weight: 800; color: oklch(0.4 0.11 195)">Ольга Сербякина</b> и многие другие. <a href="https://t.me/otzyvy_bezgranic/667" target="_blank" rel="noopener" style="display: inline-block; white-space: nowrap; margin: 5px 7px 0 0; padding: 3px 11px; border-radius: 100px; background: oklch(0.93 0.04 195); color: oklch(0.36 0.11 195); font-size: 13.5px; font-weight: 700; text-decoration: none; cursor: pointer;" style-active="background: oklch(0.88 0.06 195);">Смотреть отзывы</a><a href="https://t.me/otzyvy_bezgranic/667" target="_blank" rel="noopener" style="display: inline-block; white-space: nowrap; margin: 5px 0 0 0; padding: 3px 11px; border-radius: 100px; background: oklch(0.94 0.05 70); color: oklch(0.44 0.12 50); font-size: 13.5px; font-weight: 700; text-decoration: none; cursor: pointer;" style-active="background: oklch(0.9 0.07 70);">800+ отзывов и кейсов</a></span>
             </div>
             <div style="display: flex; gap: 10px; align-items: flex-start;">
               <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="oklch(0.5 0.13 195)" stroke-width="2.4" style="flex-shrink: 0; margin-top: 2px;"><path d="M4 12l5 5L20 6"></path></svg>
-              <span style="font-size: 16px; color: oklch(0.35 0.02 260); line-height: 1.7;">Лично ведёт один из самых крупных Telegram-каналов про визы&nbsp;<br>&nbsp;<a href="https://t.me/vizoviy_bezgranic" target="_blank" rel="noopener" style="background: oklch(0.94 0.03 195); color: oklch(0.4 0.11 195); font-weight: 700; padding: 1px 7px; border-radius: 100px; display: inline-block; white-space: nowrap; text-decoration: none; transition: background 0.15s ease;" style-hover="background: oklch(0.88 0.06 195);">@vizoviy_bezgranic</a> <a href="https://t.me/vizoviy_bezgranic" target="_blank" rel="noopener" style="background: oklch(0.94 0.05 55); color: oklch(0.45 0.14 55); font-weight: 700; padding: 1px 7px; border-radius: 100px; display: inline-block; white-space: nowrap; text-decoration: none; transition: background 0.15s ease;" style-hover="background: oklch(0.89 0.09 55);">50 000+ подписчиков</a>.</span>
+              <span style="font-size: 16px; color: oklch(0.35 0.02 260); line-height: 1.7;">Лично ведёт один из самых крупных Telegram-каналов про визы&nbsp;<br>&nbsp;<a href="https://t.me/vizoviy_bezgranic" target="_blank" rel="noopener" style="background: oklch(0.94 0.03 195); color: oklch(0.4 0.11 195); font-weight: 700; padding: 1px 7px; border-radius: 100px; display: inline-block; white-space: nowrap; text-decoration: none; transition: background 0.15s ease;" style-hover="background: oklch(0.88 0.06 195);">@vizoviy_bezgranic</a> <a href="https://t.me/vizoviy_bezgranic" target="_blank" rel="noopener" style="background: oklch(0.94 0.05 55); color: oklch(0.45 0.14 55); font-weight: 700; padding: 1px 7px; border-radius: 100px; display: inline-block; white-space: nowrap; text-decoration: none; transition: background 0.15s ease;" style-hover="background: oklch(0.89 0.09 55);">50 000+ подписчиков</a>.</span>
             </div>
           </div>
         </div>
@@ -364,7 +364,7 @@
 
   <div style="background: oklch(0.99 0.004 90); padding: 4px 18px 36px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;">
     <span style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 19px; color: oklch(0.25 0.02 260);">Хочу так же ↓</span>
-    <a href="#" onClick="{{ onOpenSignup }}" style="display: inline-flex; align-items: center; gap: 10px; background: oklch(0.5 0.13 195); color: white; text-decoration: none; padding: 17px 22px; border-radius: 100px; font-weight: 800; font-size: 17px; box-shadow: 0 12px 24px -8px oklch(0.5 0.13 195 / 0.5); width: 100%; box-sizing: border-box; justify-content: center; text-align: center; transition: background 0.15s ease;" style-hover="background: oklch(0.44 0.13 195);">Записаться и получить 3 подарка</a>
+    <a href="#" onClick="{{ onOpenSignup }}" style="display: inline-flex; align-items: center; gap: 10px; background: oklch(0.5 0.13 195); color: white; text-decoration: none; padding: 17px 22px; border-radius: 100px; font-weight: 800; font-size: 17px; box-shadow: 0 12px 24px -8px oklch(0.5 0.13 195 / 0.5); width: 100%; box-sizing: border-box; justify-content: center; text-align: center; transition: background 0.15s ease;" style-hover="background: oklch(0.44 0.13 195);">Записаться и получить 3 подарка</a>
   </div>
 
   <!-- SIGNUP -->
@@ -376,32 +376,32 @@
     <div>
         <div id="program" style="text-align: center; margin-bottom: 24px; scroll-margin-top: 90px;">
           
-          <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 24px; margin: 0 0 10px;">Что расскажем на бесплатном вебинаре</h2>
+          <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 24px; margin: 0 0 10px;">Что расскажем на бесплатном вебинаре</h2>
         </div>
         <div class="program-grid" style="display: grid; grid-template-columns: 1fr; gap: 18px; margin-bottom: 32px;">
           <div style="background: oklch(0.96 0.015 195); border-radius: 18px; padding: 18px 16px; display: flex; gap: 14px; align-items: flex-start;">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="oklch(0.5 0.13 195)" stroke-width="1.8" style="flex-shrink: 0;"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"></path></svg>
-            <div style="font-weight: 500; font-size: 17px; line-height: 1.4">Что за профессия визового специалиста и почему можно работать удалённо.</div>
+            <div style="font-weight: 500; font-size: 17px; line-height: 1.4">Что за профессия визового специалиста и почему можно работать удалённо.</div>
           </div>
           <div style="background: oklch(0.96 0.015 195); border-radius: 18px; padding: 18px 16px; display: flex; gap: 14px; align-items: flex-start;">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="oklch(0.5 0.13 195)" stroke-width="1.8" style="flex-shrink: 0;"><path d="M13 2L4 14h6l-1 8 9-12h-6z"></path></svg>
-            <div style="font-weight: 500; font-size: 17px; line-height: 1.4">Как быстро освоить эту профессию и начать зарабатывать.</div>
+            <div style="font-weight: 500; font-size: 17px; line-height: 1.4">Как быстро освоить эту профессию и начать зарабатывать.</div>
           </div>
           <div style="background: oklch(0.96 0.015 195); border-radius: 18px; padding: 18px 16px; display: flex; gap: 14px; align-items: flex-start;">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="oklch(0.5 0.13 195)" stroke-width="1.8" style="flex-shrink: 0;"><path d="M12 2v20M17 6.5c0-1.9-2-3-5-3s-5 1.3-5 3 2 2.7 5 3 5 1.1 5 3-2 3-5 3-5-1.1-5-3"></path></svg>
-            <div style="font-weight: 500; font-size: 17px; line-height: 1.4">Как выйти на доход до 220 000 ₽ в месяц — в найме или работать как визовый агент.</div>
+            <div style="font-weight: 500; font-size: 17px; line-height: 1.4">Как выйти на доход до 220 000 ₽ в месяц — в найме или работать как визовый агент.</div>
           </div>
           <div style="background: oklch(0.96 0.015 195); border-radius: 18px; padding: 18px 16px; display: flex; gap: 14px; align-items: flex-start;">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="oklch(0.5 0.13 195)" stroke-width="1.8" style="flex-shrink: 0;"><path d="M4 19.5A2.5 2.5 0 016.5 17H20M4 19.5A2.5 2.5 0 006.5 22H20V4a2 2 0 00-2-2H6.5A2.5 2.5 0 004 4.5v15z"></path></svg>
-            <div style="font-weight: 500; font-size: 17px; line-height: 1.4">Личную историю Анастасии — от официантки без опыта и связей до основательницы одного из крупнейших визовых агентств и собственных курсов по визовой профессии.</div>
+            <div style="font-weight: 500; font-size: 17px; line-height: 1.4">Личную историю Анастасии — от официантки без опыта и связей до основательницы одного из крупнейших визовых агентств и собственных курсов по визовой профессии.</div>
           </div>
           <div style="background: oklch(0.96 0.015 195); border-radius: 18px; padding: 18px 16px; display: flex; gap: 14px; align-items: flex-start;">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="oklch(0.5 0.13 195)" stroke-width="1.8" style="flex-shrink: 0;"><path d="M3 17l6-6 4 4 8-9M21 10V4h-6"></path></svg>
-            <div style="font-weight: 500; font-size: 17px; line-height: 1.4">Почему профессия востребована, а рынок туристических услуг растёт даже в кризис.</div>
+            <div style="font-weight: 500; font-size: 17px; line-height: 1.4">Почему профессия востребована, а рынок туристических услуг растёт даже в кризис.</div>
           </div>
           <div style="background: oklch(0.96 0.015 195); border-radius: 18px; padding: 18px 16px; display: flex; gap: 14px; align-items: flex-start;">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="oklch(0.5 0.13 195)" stroke-width="1.8" style="flex-shrink: 0;"><circle cx="10" cy="10" r="7"></circle><path d="M20 20l-5-5"></path></svg>
-            <div style="font-weight: 500; font-size: 17px; line-height: 1.4">Как стабильно получать клиентов и не зависеть от внешних факторов. Этому будет посвящена отдельная тема.</div>
+            <div style="font-weight: 500; font-size: 17px; line-height: 1.4">Как стабильно получать клиентов и не зависеть от внешних факторов. Этому будет посвящена отдельная тема.</div>
           </div>
         </div>
 
@@ -418,33 +418,33 @@
           </div>
           <div style="color: white;">
             
-            <h3 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 18px; margin: 0 0 18px; line-height: 1.3;">10 фактов, почему сейчас идеально войти в визовую сферу и начать зарабатывать до 220 000 ₽ в месяц</h3><div style="background: oklch(0.65 0.13 55 / 0.16); border: 1px solid oklch(0.65 0.13 55 / 0.4); border-radius: 12px; padding: 12px 16px; margin: 0 0 16px; display: flex; align-items: center; gap: 12px;">
+            <h3 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 18px; margin: 0 0 18px; line-height: 1.3;">10 фактов, почему сейчас идеально войти в визовую сферу и начать зарабатывать до 220 000 ₽ в месяц</h3><div style="background: oklch(0.65 0.13 55 / 0.16); border: 1px solid oklch(0.65 0.13 55 / 0.4); border-radius: 12px; padding: 12px 16px; margin: 0 0 16px; display: flex; align-items: center; gap: 12px;">
               <div style="position: relative; flex-shrink: 0; width: 34px; height: 34px;">
                 <svg width="14" height="14" viewBox="0 0 24 24" style="position: absolute; top: -9px; left: -8px;"><path d="M2 2l1.5 1.5M2 6l2-.5M6 2l.5 2" stroke="oklch(0.7 0.13 55)" stroke-width="1.6" stroke-linecap="round"></path></svg>
                 <svg width="10" height="10" viewBox="0 0 24 24" style="position: absolute; top: -6px; right: -9px;"><circle cx="12" cy="12" r="3" fill="oklch(0.6 0.16 195)"></circle></svg>
                 <svg width="9" height="9" viewBox="0 0 24 24" style="position: absolute; top: -10px; left: 14px;"><rect x="8" y="8" width="8" height="8" fill="oklch(0.75 0.14 90)" transform="rotate(20 12 12)"></rect></svg>
                 <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="oklch(0.65 0.13 55)" stroke-width="1.8"><rect x="3" y="8" width="18" height="13" rx="1.5"></rect><path d="M3 12h18"></path><path d="M12 8v13"></path><path d="M12 8c-1.2-3-3.2-4.5-4.6-3.3-1.2 1-.4 3.3 4.6 3.3z"></path><path d="M12 8c1.2-3 3.2-4.5 4.6-3.3 1.2 1 .4 3.3-4.6 3.3z"></path></svg>
               </div>
-              <span style="font-size: 16px; font-weight: 700; color: white">После регистрации на бесплатный вебинар вы получаете <span onClick="{{ onOpenGifts }}" class="gift-link" style="color: white; font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 бесплатных материала</span> для старта в визовой сфере:</span>
+              <span style="font-size: 16px; font-weight: 700; color: white">После регистрации на бесплатный вебинар вы получаете <span onClick="{{ onOpenGifts }}" class="gift-link" style="color: white; font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 бесплатных материала</span> для старта в визовой сфере:</span>
             </div>
             <div style="display: flex; flex-direction: column; gap: 8px;">
               <div style="background: oklch(0.22 0.03 250); border-radius: 12px; padding: 10px 14px; display: flex; align-items: center; gap: 12px;">
-                <span style="font-size: 16px; font-weight: 600">Калькулятор дохода в Google Таблице&nbsp;</span>
+                <span style="font-size: 16px; font-weight: 600">Калькулятор дохода в Google Таблице&nbsp;</span>
               </div>
               <div style="background: oklch(0.22 0.03 250); border-radius: 12px; padding: 10px 14px; display: flex; align-items: center; gap: 12px;">
-                <span style="font-size: 16px; font-weight: 600">Мини-гайд — как оформить визу в Италию самостоятельно</span>
+                <span style="font-size: 16px; font-weight: 600">Мини-гайд — как оформить визу в Италию самостоятельно</span>
               </div>
               <div style="background: oklch(0.22 0.03 250); border-radius: 12px; padding: 10px 14px; display: flex; align-items: center; gap: 12px;">
-                <span style="font-size: 16px; font-weight: 600">5 услуг, с которых новичок получает первые деньги</span>
+                <span style="font-size: 16px; font-weight: 600">5 услуг, с которых новичок получает первые деньги</span>
               </div>
             </div>
           </div>
         </div>
 
         <div id="reserve" style="position: relative; background: oklch(0.5 0.13 195); border-radius: 24px; padding: 30px 18px; display: grid; grid-template-columns: 1fr; gap: 20px; align-items: center; margin-top: 56px; scroll-margin-top: 90px;">
-          <div style="position: absolute; left: 50%; top: 0; transform: translate(-50%, -50%); background: oklch(0.65 0.13 55); color: white; font-weight: 800; font-size: 18px; padding: 11px 26px; border-radius: 100px; white-space: normal; box-shadow: 0 8px 18px -6px oklch(0.2 0.03 260 / 0.4); width: 251px; height: 51px" class="reserve-badge">25 августа в 14:00<br>или в 19:00 по Москве</div>
+          <div style="position: absolute; left: 50%; top: 0; transform: translate(-50%, -50%); background: oklch(0.65 0.13 55); color: white; font-weight: 800; font-size: 18px; padding: 11px 26px; border-radius: 100px; white-space: normal; box-shadow: 0 8px 18px -6px oklch(0.2 0.03 260 / 0.4); width: 251px; height: 51px" class="reserve-badge">25 августа в 14:00<br>или в 19:00 по Москве</div>
           <div style="min-width: 0;">
-            <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; color: white; font-size: 22px; margin: 0 0 16px;">Забронируйте место на бесплатный онлайн-вебинар</h2>
+            <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; color: white; font-size: 22px; margin: 0 0 16px;">Забронируйте место на бесплатный онлайн-вебинар</h2>
 
             
 
@@ -454,13 +454,13 @@
                 <div style="font-size: 13.5px; font-weight: 800; color: oklch(0.5 0.02 260); text-transform: uppercase; letter-spacing: 0.03em; white-space: nowrap;">мест осталось</div>
               </div>
               <div style="width: 100%; min-width: 0;">
-                <div style="font-size: 17px; font-weight: 800; color: oklch(0.25 0.02 260); margin-bottom: 8px; line-height: 1.3;">Всего 100 участников</div>
+                <div style="font-size: 17px; font-weight: 800; color: oklch(0.25 0.02 260); margin-bottom: 8px; line-height: 1.3;">Всего 100 участников</div>
                 <div style="height: 8px; border-radius: 100px; background: oklch(0.92 0.01 260); overflow: hidden; margin-bottom: 7px;">
                   <div style="height: 100%; width: 73%; border-radius: 100px; background: oklch(0.65 0.13 55);"></div>
-                </div><div style="font-size: 16px; color: oklch(0.5 0.02 260); line-height: 1.4">Чтобы встреча прошла эффективно и Анастасия ответила на все вопросы</div>
+                </div><div style="font-size: 16px; color: oklch(0.5 0.02 260); line-height: 1.4">Чтобы встреча прошла эффективно и Анастасия ответила на все вопросы</div>
                 
               </div>
-            </div><p style="color: oklch(0.94 0.02 195); font-size: 16px; margin: 0 0 20px; line-height: 1.5">После регистрации на бесплатный вебинар вы получаете <span onClick="{{ onOpenGifts }}" class="gift-link" style="color: white; font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 бесплатных материала</span> для старта в визовой сфере.</p>
+            </div><p style="color: oklch(0.94 0.02 195); font-size: 16px; margin: 0 0 20px; line-height: 1.5">После регистрации на бесплатный вебинар вы получаете <span onClick="{{ onOpenGifts }}" class="gift-link" style="color: white; font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 бесплатных материала</span> для старта в визовой сфере.</p>
             <div style="display: flex; flex-wrap: wrap; gap: 10px;">
               <input value="{{ name }}" onChange="{{ onNameChange }}" placeholder="Имя" required="" style="{{ heroNameStyle }}">
               <input value="{{ phone }}" onChange="{{ onPhoneChange }}" placeholder="Телефон" required="" style="{{ heroPhoneStyle }}">
@@ -469,9 +469,9 @@
                 <div onClick="{{ onSelectSlot14 }}" style="{{ slot14Style }}">14:00 (Мск)</div>
                 <div onClick="{{ onSelectSlot19 }}" style="{{ slot19Style }}">19:00 (Мск)</div>
               </div>
-              <button onClick="{{ onSubmit }}" class="reserve-btn" style="background: oklch(0.16 0.025 250); color: white; border: none; padding: 13px 22px; border-radius: 12px; font-weight: 800; font-size: 16px; cursor: pointer; width: 100%; height: 54px">Записаться и получить 3 подарка</button>
+              <button onClick="{{ onSubmit }}" class="reserve-btn" style="background: oklch(0.16 0.025 250); color: white; border: none; padding: 13px 22px; border-radius: 12px; font-weight: 800; font-size: 16px; cursor: pointer; width: 100%; height: 54px">Записаться и получить 3 подарка</button>
             </div>
-            <div style="margin-top: 12px; display: flex; flex-direction: column; gap: 10px; font-size: 12px; line-height: 1.45; color: oklch(0.92 0.02 195);"><div onClick="{{ onToggleOffer }}" style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; user-select: none;"><div style="{{ offerBoxStyle }}"><span style="{{ offerCheckStyle }}">✓</span></div><div style="flex: 1; min-width: 0;">Нажимая кнопку, я принимаю условия <a href="/offer.html" target="_blank" rel="noopener" data-doc="offer" style="color: white; font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">оферты</a>. Персональные данные будут обрабатываться в целях заключения и исполнения договора согласно <a href="/policy.html" target="_blank" rel="noopener" data-doc="policy" style="color: white; font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">Политике обработки персональных данных</a>.</div></div><div onClick="{{ onToggleAds }}" style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; user-select: none;"><div style="{{ adsBoxStyle }}"><span style="{{ adsCheckStyle }}">✓</span></div><div style="flex: 1; min-width: 0;">Я согласен на <a href="/ads.html" target="_blank" rel="noopener" data-doc="ads" style="color: white; font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">получение рекламы</a> и <a href="/pdn.html" target="_blank" rel="noopener" data-doc="pdn" style="color: white; font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">обработку персональных данных</a> в целях получения удобных уведомлений и рекламных предложений.</div></div></div>
+            <div style="margin-top: 12px; display: flex; flex-direction: column; gap: 10px; font-size: 12px; line-height: 1.45; color: oklch(0.92 0.02 195);"><div onClick="{{ onToggleOffer }}" style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; user-select: none;"><div style="{{ offerBoxStyle }}"><span style="{{ offerCheckStyle }}">✓</span></div><div style="flex: 1; min-width: 0;">Нажимая кнопку, я принимаю условия <a href="/offer.html" target="_blank" rel="noopener" data-doc="offer" style="color: white; font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">оферты</a>. Персональные данные будут обрабатываться в целях заключения и исполнения договора согласно <a href="/policy.html" target="_blank" rel="noopener" data-doc="policy" style="color: white; font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">Политике обработки персональных данных</a>.</div></div><div onClick="{{ onToggleAds }}" style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; user-select: none;"><div style="{{ adsBoxStyle }}"><span style="{{ adsCheckStyle }}">✓</span></div><div style="flex: 1; min-width: 0;">Я согласен на <a href="/ads.html" target="_blank" rel="noopener" data-doc="ads" style="color: white; font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">получение рекламы</a> и <a href="/pdn.html" target="_blank" rel="noopener" data-doc="pdn" style="color: white; font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">обработку персональных данных</a> в целях получения удобных уведомлений и рекламных предложений.</div></div></div>
 
             <div style="display: flex; align-items: center; gap: 12px; margin: 22px 0 18px;">
               <div style="flex: 1; height: 1px; background: oklch(1 0 0 / 0.25);"></div>
@@ -485,7 +485,7 @@
               </div>
               <div style="flex: 1; min-width: 0;">
                 <div style="font-weight: 800; font-size: 15.5px; color: white; margin-bottom: 2px;">Записаться через Telegram-бота</div>
-                <div style="font-size: 15.5px; color: oklch(0.92 0.02 195); line-height: 1.4">Бот пришлёт ссылку на вебинар, <span onClick="{{ onOpenGiftsStop }}" class="gift-link" style="color: inherit; font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 подарка</span> и напоминание</div>
+                <div style="font-size: 15.5px; color: oklch(0.92 0.02 195); line-height: 1.4">Бот пришлёт ссылку на вебинар, <span onClick="{{ onOpenGiftsStop }}" class="gift-link" style="color: inherit; font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 подарка</span> и напоминание</div>
               </div>
             </a>
 
@@ -495,7 +495,7 @@
               </div>
               <div style="flex: 1; min-width: 0;">
                 <div style="font-weight: 800; font-size: 15.5px; color: white; margin-bottom: 2px;">Записаться через MAX-бота</div>
-                <div style="font-size: 15.5px; color: oklch(0.92 0.02 195); line-height: 1.4">Бот пришлёт ссылку на вебинар, <span onClick="{{ onOpenGiftsStop }}" class="gift-link" style="color: inherit; font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 подарка</span> и напоминание</div>
+                <div style="font-size: 15.5px; color: oklch(0.92 0.02 195); line-height: 1.4">Бот пришлёт ссылку на вебинар, <span onClick="{{ onOpenGiftsStop }}" class="gift-link" style="color: inherit; font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 подарка</span> и напоминание</div>
               </div>
             </a>
 
@@ -503,7 +503,7 @@
               <div style="flex-shrink: 0; width: 42px; height: 42px; border-radius: 50%; background: oklch(0.5 0.16 255); display: flex; align-items: center; justify-content: center;"><span style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 15px; color: white; letter-spacing: -0.02em;">VK</span></div>
               <div style="flex: 1; min-width: 0;">
                 <div style="font-weight: 800; font-size: 15.5px; color: white; margin-bottom: 2px;">Записаться через ВКонтакте-бота</div>
-                <div style="font-size: 15.5px; color: oklch(0.92 0.02 195); line-height: 1.4">Бот пришлёт ссылку на вебинар, <span onClick="{{ onOpenGiftsStop }}" class="gift-link" style="color: inherit; font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 подарка</span> и напоминание</div>
+                <div style="font-size: 15.5px; color: oklch(0.92 0.02 195); line-height: 1.4">Бот пришлёт ссылку на вебинар, <span onClick="{{ onOpenGiftsStop }}" class="gift-link" style="color: inherit; font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 подарка</span> и напоминание</div>
               </div>
             </a>
           </div>
@@ -516,10 +516,10 @@
   <div id="reviews" style="background: oklch(0.985 0.006 195); padding: 40px 0 40px 18px;">
     <div style="text-align: center; margin-bottom: 22px; padding-right: 18px;">
       <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 27px; margin: 0 0 12px;">Отзывы наших учеников</h2>
-      <div style="color: oklch(0.5 0.02 260); font-size: 17px; line-height: 1.5;">Выпускники прошлых потоков записали короткие видео о том, как изменилась их работа и доход после обучения.</div>
+      <div style="color: oklch(0.5 0.02 260); font-size: 17px; line-height: 1.5;">Выпускники прошлых потоков записали короткие видео о том, как изменилась их работа и доход после обучения.</div>
       <div style="display: inline-flex; align-items: center; gap: 10px; margin-top: 14px; background: white; border: 1px solid oklch(0.91 0.015 195); border-radius: 20px; padding: 11px 16px; text-align: left; box-shadow: 0 8px 20px -14px oklch(0.2 0.03 260 / 0.5);">
         <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="oklch(0.5 0.13 195)" stroke-width="2" style="flex: 0 0 auto;"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"></path></svg>
-        <span style="font-size: 14.5px; color: oklch(0.35 0.05 260); line-height: 1.4;">И это лишь малая часть отзывов, которые записали наши ученики</span>
+        <span style="font-size: 14.5px; color: oklch(0.35 0.05 260); line-height: 1.4;">И это лишь малая часть отзывов, которые записали наши ученики</span>
       </div>
     </div>
     <div style="position: relative;">
@@ -538,7 +538,7 @@
     </div>
     <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; margin-top: 32px; padding-right: 18px;">
       <span style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 19px; color: oklch(0.25 0.02 260);">Хочу так же ↓</span>
-      <a href="#" onClick="{{ onOpenSignup }}" style="display: inline-flex; align-items: center; gap: 10px; background: oklch(0.5 0.13 195); color: white; text-decoration: none; padding: 17px 22px; border-radius: 100px; font-weight: 800; font-size: 17px; box-shadow: 0 12px 24px -8px oklch(0.5 0.13 195 / 0.5); width: 100%; box-sizing: border-box; justify-content: center; text-align: center; transition: background 0.15s ease;" style-hover="background: oklch(0.44 0.13 195);">Записаться и получить 3 подарка</a>
+      <a href="#" onClick="{{ onOpenSignup }}" style="display: inline-flex; align-items: center; gap: 10px; background: oklch(0.5 0.13 195); color: white; text-decoration: none; padding: 17px 22px; border-radius: 100px; font-weight: 800; font-size: 17px; box-shadow: 0 12px 24px -8px oklch(0.5 0.13 195 / 0.5); width: 100%; box-sizing: border-box; justify-content: center; text-align: center; transition: background 0.15s ease;" style-hover="background: oklch(0.44 0.13 195);">Записаться и получить 3 подарка</a>
     </div>
   </div>
 
@@ -546,7 +546,7 @@
     <div style="max-width: 800px; margin: 0 auto;">
       <div style="text-align: center; margin-bottom: 26px;">
         <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 27px; margin: 0 0 12px;">Остались вопросы?</h2>
-        <div style="color: oklch(0.5 0.02 260); font-size: 18px; max-width: 620px; margin: 0 auto; line-height: 1.5;">Собрали то, о чём чаще всего спрашивают перед вебинаром — на остальное ответим в прямом эфире.</div>
+        <div style="color: oklch(0.5 0.02 260); font-size: 18px; max-width: 620px; margin: 0 auto; line-height: 1.5;">Собрали то, о чём чаще всего спрашивают перед вебинаром — на остальное ответим в прямом эфире.</div>
       </div>
       <div style="display: flex; flex-direction: column; gap: 12px;">
         <sc-for list="{{ faqItems }}" as="item" hint-placeholder-count="10">
@@ -564,7 +564,7 @@
         </sc-for>
       </div>
       <div style="display: flex; align-items: center; justify-content: center; margin-top: 40px;">
-        <a href="#" onClick="{{ onOpenSignup }}" style="display: inline-flex; align-items: center; gap: 10px; background: oklch(0.5 0.13 195); color: white; text-decoration: none; padding: 17px 22px; border-radius: 100px; font-weight: 800; font-size: 17px; box-shadow: 0 12px 24px -8px oklch(0.5 0.13 195 / 0.5); width: 100%; box-sizing: border-box; justify-content: center; text-align: center; transition: background 0.15s ease;" style-hover="background: oklch(0.44 0.13 195);">Хочу на бесплатный вебинар и 3 подарка</a>
+        <a href="#" onClick="{{ onOpenSignup }}" style="display: inline-flex; align-items: center; gap: 10px; background: oklch(0.5 0.13 195); color: white; text-decoration: none; padding: 17px 22px; border-radius: 100px; font-weight: 800; font-size: 17px; box-shadow: 0 12px 24px -8px oklch(0.5 0.13 195 / 0.5); width: 100%; box-sizing: border-box; justify-content: center; text-align: center; transition: background 0.15s ease;" style-hover="background: oklch(0.44 0.13 195);">Хочу на бесплатный вебинар и 3 подарка</a>
       </div>
     </div>
   </div>
@@ -588,7 +588,7 @@
             <a href="/policy.html" target="_blank" rel="noopener" style="color: oklch(0.55 0.01 260); text-decoration: underline; ">Политика конфиденциальности</a>
           </div>
         </div>
-        <div style="font-size: 13.5px; color: oklch(0.55 0.01 260); line-height: 1.6; max-width: 100%; text-align: left;">Посещая сайт, вы соглашаетесь с политикой конфиденциальности, обработкой персональных данных и использованием файлов cookies.</div>
+        <div style="font-size: 13.5px; color: oklch(0.55 0.01 260); line-height: 1.6; max-width: 100%; text-align: left;">Посещая сайт, вы соглашаетесь с политикой конфиденциальности, обработкой персональных данных и использованием файлов cookies.</div>
       </div>
     </div>
   </div>
@@ -601,9 +601,9 @@
 
         <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
           <div>
-            <div style="display: inline-block; background: oklch(0.94 0.03 195); color: oklch(0.4 0.13 195); font-weight: 800; font-size: 15.5px; padding: 6px 14px; border-radius: 100px; margin-bottom: 14px;">25 августа · 14:00 или 19:00 по Москве</div>
-            <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 21px; margin: 0 0 10px; line-height: 1.2;">Забронируйте место на бесплатный онлайн-вебинар</h2>
-            <p style="font-size: 15px; color: oklch(0.45 0.02 260); line-height: 1.5; margin: 0 0 20px;">После регистрации на бесплатный вебинар вы получаете <span onClick="{{ onOpenGifts }}" class="gift-link" style="color: oklch(0.42 0.12 195); font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 бесплатных материала</span> для старта в визовой сфере.</p>
+            <div style="display: inline-block; background: oklch(0.94 0.03 195); color: oklch(0.4 0.13 195); font-weight: 800; font-size: 15.5px; padding: 6px 14px; border-radius: 100px; margin-bottom: 14px;">25 августа · 14:00 или 19:00 по Москве</div>
+            <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 21px; margin: 0 0 10px; line-height: 1.2;">Забронируйте место на бесплатный онлайн-вебинар</h2>
+            <p style="font-size: 15px; color: oklch(0.45 0.02 260); line-height: 1.5; margin: 0 0 20px;">После регистрации на бесплатный вебинар вы получаете <span onClick="{{ onOpenGifts }}" class="gift-link" style="color: oklch(0.42 0.12 195); font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 бесплатных материала</span> для старта в визовой сфере.</p>
 
             <div style="background: oklch(0.96 0.015 195); border-radius: 13px; padding: 10px 14px; margin: 0 0 20px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px;">
               <div style="flex-shrink: 0; display: flex; align-items: baseline; gap: 7px;">
@@ -614,7 +614,7 @@
                 <div style="height: 8px; border-radius: 100px; background: oklch(0.9 0.01 260); overflow: hidden; margin-bottom: 6px;">
                   <div style="height: 100%; width: 73%; border-radius: 100px; background: oklch(0.65 0.13 55);"></div>
                 </div>
-                <div style="font-size: 15.5px; color: oklch(0.45 0.02 260); line-height: 1.3;">Всего 100 мест — чтобы Анастасия успела ответить на вопросы каждого</div>
+                <div style="font-size: 15.5px; color: oklch(0.45 0.02 260); line-height: 1.3;">Всего 100 мест — чтобы Анастасия успела ответить на вопросы каждого</div>
               </div>
             </div>
 
@@ -626,9 +626,9 @@
                 <div onClick="{{ onSelectSlot14 }}" style="{{ slot14Style }}">14:00 (Мск)</div>
                 <div onClick="{{ onSelectSlot19 }}" style="{{ slot19Style }}">19:00 (Мск)</div>
               </div>
-              <button onClick="{{ onSubmit }}" style="background: oklch(0.5 0.13 195); color: white; border: none; padding: 13px 20px; border-radius: 12px; font-weight: 800; font-size: 16px; cursor: pointer; box-shadow: 0 12px 24px -8px oklch(0.5 0.13 195 / 0.5); transition: background 0.15s ease;" style-hover="background: oklch(0.44 0.13 195);">Записаться и получить 3 подарка</button>
+              <button onClick="{{ onSubmit }}" style="background: oklch(0.5 0.13 195); color: white; border: none; padding: 13px 20px; border-radius: 12px; font-weight: 800; font-size: 16px; cursor: pointer; box-shadow: 0 12px 24px -8px oklch(0.5 0.13 195 / 0.5); transition: background 0.15s ease;" style-hover="background: oklch(0.44 0.13 195);">Записаться и получить 3 подарка</button>
             </div>
-            <div style="margin-bottom: 12px; margin-top: 10px; display: flex; flex-direction: column; gap: 8px; font-size: 11.5px; line-height: 1.45; color: oklch(0.42 0.02 260);"><div onClick="{{ onToggleOffer }}" style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; user-select: none;"><div style="{{ offerBoxStyle }}"><span style="{{ offerCheckStyle }}">✓</span></div><div style="flex: 1; min-width: 0;">Нажимая кнопку, я принимаю условия <a href="/offer.html" target="_blank" rel="noopener" data-doc="offer" style="color: oklch(0.35 0.11 195); font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">оферты</a>. Персональные данные будут обрабатываться в целях заключения и исполнения договора согласно <a href="/policy.html" target="_blank" rel="noopener" data-doc="policy" style="color: oklch(0.35 0.11 195); font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">Политике обработки персональных данных</a>.</div></div><div onClick="{{ onToggleAds }}" style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; user-select: none;"><div style="{{ adsBoxStyle }}"><span style="{{ adsCheckStyle }}">✓</span></div><div style="flex: 1; min-width: 0;">Я согласен на <a href="/ads.html" target="_blank" rel="noopener" data-doc="ads" style="color: oklch(0.35 0.11 195); font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">получение рекламы</a> и <a href="/pdn.html" target="_blank" rel="noopener" data-doc="pdn" style="color: oklch(0.35 0.11 195); font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">обработку персональных данных</a> в целях получения удобных уведомлений и рекламных предложений.</div></div></div>
+            <div style="margin-bottom: 12px; margin-top: 10px; display: flex; flex-direction: column; gap: 8px; font-size: 11.5px; line-height: 1.45; color: oklch(0.42 0.02 260);"><div onClick="{{ onToggleOffer }}" style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; user-select: none;"><div style="{{ offerBoxStyle }}"><span style="{{ offerCheckStyle }}">✓</span></div><div style="flex: 1; min-width: 0;">Нажимая кнопку, я принимаю условия <a href="/offer.html" target="_blank" rel="noopener" data-doc="offer" style="color: oklch(0.35 0.11 195); font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">оферты</a>. Персональные данные будут обрабатываться в целях заключения и исполнения договора согласно <a href="/policy.html" target="_blank" rel="noopener" data-doc="policy" style="color: oklch(0.35 0.11 195); font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">Политике обработки персональных данных</a>.</div></div><div onClick="{{ onToggleAds }}" style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; user-select: none;"><div style="{{ adsBoxStyle }}"><span style="{{ adsCheckStyle }}">✓</span></div><div style="flex: 1; min-width: 0;">Я согласен на <a href="/ads.html" target="_blank" rel="noopener" data-doc="ads" style="color: oklch(0.35 0.11 195); font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">получение рекламы</a> и <a href="/pdn.html" target="_blank" rel="noopener" data-doc="pdn" style="color: oklch(0.35 0.11 195); font-weight: 700; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;">обработку персональных данных</a> в целях получения удобных уведомлений и рекламных предложений.</div></div></div>
 
             <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
               <div style="flex: 1; height: 1px; background: oklch(0.91 0.005 260);"></div>
@@ -642,7 +642,7 @@
               </div>
               <div style="flex: 1; min-width: 0;">
                 <div style="font-weight: 800; font-size: 15.5px; color: oklch(0.25 0.02 260); margin-bottom: 2px;">Записаться через Telegram-бота</div>
-                <div style="font-size: 13.5px; color: oklch(0.5 0.02 260); line-height: 1.4; display: none;">Бот пришлёт ссылку на вебинар, <span onClick="{{ onOpenGiftsStop }}" class="gift-link" style="color: inherit; font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 подарка</span> и напоминание</div>
+                <div style="font-size: 13.5px; color: oklch(0.5 0.02 260); line-height: 1.4; display: none;">Бот пришлёт ссылку на вебинар, <span onClick="{{ onOpenGiftsStop }}" class="gift-link" style="color: inherit; font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 подарка</span> и напоминание</div>
               </div>
             </a>
 
@@ -652,7 +652,7 @@
               </div>
               <div style="flex: 1; min-width: 0;">
                 <div style="font-weight: 800; font-size: 15.5px; color: oklch(0.25 0.02 260); margin-bottom: 2px;">Записаться через MAX-бота</div>
-                <div style="font-size: 13.5px; color: oklch(0.5 0.02 260); line-height: 1.4; display: none;">Бот пришлёт ссылку на вебинар, <span onClick="{{ onOpenGiftsStop }}" class="gift-link" style="color: inherit; font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 подарка</span> и напоминание</div>
+                <div style="font-size: 13.5px; color: oklch(0.5 0.02 260); line-height: 1.4; display: none;">Бот пришлёт ссылку на вебинар, <span onClick="{{ onOpenGiftsStop }}" class="gift-link" style="color: inherit; font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 подарка</span> и напоминание</div>
               </div>
             </a>
 
@@ -660,7 +660,7 @@
               <div style="flex-shrink: 0; width: 42px; height: 42px; border-radius: 50%; background: oklch(0.5 0.16 255); display: flex; align-items: center; justify-content: center;"><span style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 15px; color: white; letter-spacing: -0.02em;">VK</span></div>
               <div style="flex: 1; min-width: 0;">
                 <div style="font-weight: 800; font-size: 15.5px; color: oklch(0.25 0.02 260); margin-bottom: 2px;">Записаться через ВКонтакте-бота</div>
-                <div style="font-size: 13.5px; color: oklch(0.5 0.02 260); line-height: 1.4; display: none;">Бот пришлёт ссылку на вебинар, <span onClick="{{ onOpenGiftsStop }}" class="gift-link" style="color: inherit; font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 подарка</span> и напоминание</div>
+                <div style="font-size: 13.5px; color: oklch(0.5 0.02 260); line-height: 1.4; display: none;">Бот пришлёт ссылку на вебинар, <span onClick="{{ onOpenGiftsStop }}" class="gift-link" style="color: inherit; font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 подарка</span> и напоминание</div>
               </div>
             </a>
           </div>
@@ -679,8 +679,8 @@
           <div style="width: 56px; height: 56px; border-radius: 50%; background: oklch(0.5 0.13 195); display: flex; align-items: center; justify-content: center; margin: 0 auto 18px;">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><path d="M4 12l5 5L20 6"></path></svg>
           </div>
-          <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 24px; margin: 0 0 8px;">Вы записаны на вебинар!</h2>
-          <p style="font-size: 15px; color: oklch(0.4 0.02 260); margin: 0;">За 10 минут до старта пришлём ссылку для подключения к вебинару.</p>
+          <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 24px; margin: 0 0 8px;">Вы записаны на вебинар!</h2>
+          <p style="font-size: 15px; color: oklch(0.4 0.02 260); margin: 0;">За 10 минут до старта пришлём ссылку для подключения к вебинару.</p>
         </div>
 
         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
@@ -694,8 +694,8 @@
             <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M21.9 3.7L2.7 11.2c-1.3.5-1.3 1.3-.2 1.6l4.9 1.5 1.9 5.8c.2.6.4.8.9.8.5 0 .7-.2 1-.5l2.4-2.3 5 3.6c.9.5 1.5.2 1.8-.9l3.2-15c.4-1.4-.5-2-1.7-1.6zM9 14.5l10.5-6.6c.5-.3 1-.1.6.2L11 15.9l-.3 3.2-1.4-4.6z"></path></svg>
           </div>
           <div style="width: 100%; min-width: 0;">
-            <div style="font-weight: 800; font-size: 15.5px; color: oklch(0.25 0.02 260); margin-bottom: 2px;">Подключить уведомления в Telegram</div>
-            <div style="font-size: 13.5px; color: oklch(0.5 0.02 260); line-height: 1.4;">Бот напомнит о вебинаре и продублирует бесплатные материалы</div>
+            <div style="font-weight: 800; font-size: 15.5px; color: oklch(0.25 0.02 260); margin-bottom: 2px;">Подключить уведомления в Telegram</div>
+            <div style="font-size: 13.5px; color: oklch(0.5 0.02 260); line-height: 1.4;">Бот напомнит о вебинаре и продублирует бесплатные материалы</div>
           </div>
         </a>
 
@@ -704,8 +704,8 @@
             <img src="assets/max-logo.svg" alt="MAX" style="width: 100%; height: 100%; display: block; object-fit: cover;" loading="lazy" decoding="async">
           </div>
           <div style="width: 100%; min-width: 0;">
-            <div style="font-weight: 800; font-size: 15.5px; color: oklch(0.25 0.02 260); margin-bottom: 2px;">Подключить уведомления в MAX</div>
-            <div style="font-size: 13.5px; color: oklch(0.5 0.02 260); line-height: 1.4;">Бот напомнит о вебинаре и продублирует бесплатные материалы</div>
+            <div style="font-weight: 800; font-size: 15.5px; color: oklch(0.25 0.02 260); margin-bottom: 2px;">Подключить уведомления в MAX</div>
+            <div style="font-size: 13.5px; color: oklch(0.5 0.02 260); line-height: 1.4;">Бот напомнит о вебинаре и продублирует бесплатные материалы</div>
           </div>
         </a>
       </div>
@@ -742,19 +742,19 @@
         <div onClick="{{ onCloseGifts }}" style="position: absolute; top: 18px; right: 18px; width: 32px; height: 32px; border-radius: 50%; background: oklch(0.96 0.005 260); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: background 0.15s ease;" style-hover="background: oklch(0.9 0.005 260);">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="oklch(0.4 0.02 260)" stroke-width="2.4"><path d="M6 6l12 12M18 6L6 18"></path></svg>
         </div>
-        <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 22px; margin: 0 0 20px;">3 подарка после регистрации</h2>
+        <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 22px; margin: 0 0 20px;">3 подарка после регистрации</h2>
         <div style="display: flex; flex-direction: column; gap: 14px;">
-          <div style="background: oklch(0.96 0.015 195); border-radius: 14px; padding: 14px 16px; display: flex; align-items: center; gap: 14px;"><div style="flex-shrink: 0; width: 88px; height: 72px; border-radius: 12px; background: linear-gradient(145deg, oklch(0.93 0.05 195) 0%, oklch(0.86 0.08 195) 100%); display: flex; align-items: center; justify-content: center;"><svg viewBox="0 0 100 80" style="width: 72px; height: 58px; display: block;"><rect x="10" y="12" width="62" height="56" rx="6" fill="white"></rect><rect x="10" y="12" width="62" height="13" rx="6" fill="oklch(0.5 0.13 195)"></rect><rect x="10" y="19" width="62" height="6" fill="oklch(0.5 0.13 195)"></rect><line x1="10" y1="38" x2="72" y2="38" stroke="oklch(0.9 0.01 260)" stroke-width="1.6"></line><line x1="10" y1="51" x2="72" y2="51" stroke="oklch(0.9 0.01 260)" stroke-width="1.6"></line><line x1="41" y1="25" x2="41" y2="68" stroke="oklch(0.9 0.01 260)" stroke-width="1.6"></line><rect x="16" y="30" width="18" height="4" rx="2" fill="oklch(0.84 0.02 260)"></rect><rect x="16" y="43" width="18" height="4" rx="2" fill="oklch(0.84 0.02 260)"></rect><rect x="16" y="56" width="18" height="4" rx="2" fill="oklch(0.84 0.02 260)"></rect><rect x="47" y="29" width="19" height="6" rx="3" fill="oklch(0.88 0.09 145)"></rect><rect x="47" y="42" width="19" height="6" rx="3" fill="oklch(0.88 0.09 145)"></rect><rect x="47" y="55" width="19" height="6" rx="3" fill="oklch(0.75 0.15 145)"></rect><g transform="translate(56,4)"><rect x="0" y="0" width="40" height="30" rx="6" fill="white" stroke="oklch(0.88 0.02 260)" stroke-width="1.6"></rect><polyline points="7,23 16,16 23,19 34,7" fill="none" stroke="oklch(0.45 0.14 55)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></polyline><circle cx="34" cy="7" r="3.4" fill="oklch(0.45 0.14 55)"></circle></g><circle cx="17" cy="63" r="9" fill="oklch(0.85 0.13 90)" stroke="white" stroke-width="2.4"></circle><text x="17" y="67" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="900" font-size="10" fill="oklch(0.42 0.12 70)">₽</text></svg></div><div style="min-width: 0;"><div style="font-weight: 800; font-size: 16px; margin-bottom: 6px;">Калькулятор дохода в Google Таблице</div>
-            <div style="font-size: 15.5px; color: oklch(0.4 0.02 260); line-height: 1.55;">Готовая таблица, где достаточно вписать количество клиентов и услуг — и она сама рассчитает ваш потенциальный доход, если работать визовым агентом.</div></div>
+          <div style="background: oklch(0.96 0.015 195); border-radius: 14px; padding: 14px 16px; display: flex; align-items: center; gap: 14px;"><div style="flex-shrink: 0; width: 88px; height: 72px; border-radius: 12px; background: linear-gradient(145deg, oklch(0.93 0.05 195) 0%, oklch(0.86 0.08 195) 100%); display: flex; align-items: center; justify-content: center;"><svg viewBox="0 0 100 80" style="width: 72px; height: 58px; display: block;"><rect x="10" y="12" width="62" height="56" rx="6" fill="white"></rect><rect x="10" y="12" width="62" height="13" rx="6" fill="oklch(0.5 0.13 195)"></rect><rect x="10" y="19" width="62" height="6" fill="oklch(0.5 0.13 195)"></rect><line x1="10" y1="38" x2="72" y2="38" stroke="oklch(0.9 0.01 260)" stroke-width="1.6"></line><line x1="10" y1="51" x2="72" y2="51" stroke="oklch(0.9 0.01 260)" stroke-width="1.6"></line><line x1="41" y1="25" x2="41" y2="68" stroke="oklch(0.9 0.01 260)" stroke-width="1.6"></line><rect x="16" y="30" width="18" height="4" rx="2" fill="oklch(0.84 0.02 260)"></rect><rect x="16" y="43" width="18" height="4" rx="2" fill="oklch(0.84 0.02 260)"></rect><rect x="16" y="56" width="18" height="4" rx="2" fill="oklch(0.84 0.02 260)"></rect><rect x="47" y="29" width="19" height="6" rx="3" fill="oklch(0.88 0.09 145)"></rect><rect x="47" y="42" width="19" height="6" rx="3" fill="oklch(0.88 0.09 145)"></rect><rect x="47" y="55" width="19" height="6" rx="3" fill="oklch(0.75 0.15 145)"></rect><g transform="translate(56,4)"><rect x="0" y="0" width="40" height="30" rx="6" fill="white" stroke="oklch(0.88 0.02 260)" stroke-width="1.6"></rect><polyline points="7,23 16,16 23,19 34,7" fill="none" stroke="oklch(0.45 0.14 55)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></polyline><circle cx="34" cy="7" r="3.4" fill="oklch(0.45 0.14 55)"></circle></g><circle cx="17" cy="63" r="9" fill="oklch(0.85 0.13 90)" stroke="white" stroke-width="2.4"></circle><text x="17" y="67" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="900" font-size="10" fill="oklch(0.42 0.12 70)">₽</text></svg></div><div style="min-width: 0;"><div style="font-weight: 800; font-size: 16px; margin-bottom: 6px;">Калькулятор дохода в Google Таблице</div>
+            <div style="font-size: 15.5px; color: oklch(0.4 0.02 260); line-height: 1.55;">Готовая таблица, где достаточно вписать количество клиентов и услуг — и она сама рассчитает ваш потенциальный доход, если работать визовым агентом.</div></div>
           </div>
-          <div style="background: oklch(0.96 0.015 195); border-radius: 14px; padding: 14px 16px; display: flex; align-items: center; gap: 14px;"><div style="flex-shrink: 0; width: 88px; height: 72px; border-radius: 12px; background: linear-gradient(145deg, oklch(0.94 0.04 145) 0%, oklch(0.88 0.07 160) 100%); display: flex; align-items: center; justify-content: center;"><svg viewBox="0 0 100 80" style="width: 72px; height: 58px; display: block;"><rect x="14" y="8" width="54" height="62" rx="7" fill="oklch(0.42 0.11 25)"></rect><rect x="19" y="8" width="49" height="62" rx="6" fill="white"></rect><rect x="19" y="8" width="6" height="62" fill="oklch(0.93 0.01 260)"></rect><g transform="translate(31,15)"><rect x="0" y="0" width="7" height="15" rx="1.5" fill="oklch(0.6 0.14 145)"></rect><rect x="7" y="0" width="7" height="15" fill="oklch(0.95 0.005 90)"></rect><rect x="14" y="0" width="7" height="15" rx="1.5" fill="oklch(0.55 0.19 25)"></rect></g><g transform="translate(31,36)"><path d="M2 18 L2 8 A7.5 7.5 0 0 1 17 8 L17 18 Z" fill="none" stroke="oklch(0.55 0.03 260)" stroke-width="1.8" stroke-linejoin="round"></path><line x1="6" y1="9.5" x2="6" y2="18" stroke="oklch(0.55 0.03 260)" stroke-width="1.5"></line><line x1="9.5" y1="7" x2="9.5" y2="18" stroke="oklch(0.55 0.03 260)" stroke-width="1.5"></line><line x1="13" y1="9.5" x2="13" y2="18" stroke="oklch(0.55 0.03 260)" stroke-width="1.5"></line><rect x="0" y="18" width="19" height="3.4" rx="1.7" fill="oklch(0.55 0.03 260)"></rect></g><rect x="30" y="62" width="30" height="4" rx="2" fill="oklch(0.9 0.01 260)"></rect><g transform="translate(56,28) rotate(-14)"><rect x="0" y="0" width="40" height="28" rx="4.5" fill="oklch(0.97 0.02 195)" stroke="oklch(0.5 0.13 195)" stroke-width="1.8"></rect><rect x="6" y="6" width="19" height="3.4" rx="1.7" fill="oklch(0.5 0.13 195)" opacity="0.75"></rect><rect x="6" y="13.5" width="28" height="2.8" rx="1.4" fill="oklch(0.5 0.13 195)" opacity="0.4"></rect><rect x="6" y="19.5" width="23" height="2.8" rx="1.4" fill="oklch(0.5 0.13 195)" opacity="0.4"></rect><circle cx="31" cy="8" r="4.6" fill="none" stroke="oklch(0.45 0.14 55)" stroke-width="1.8"></circle></g></svg></div><div style="min-width: 0;"><div style="font-weight: 800; font-size: 16px; margin-bottom: 6px;">Мини-гайд — как оформить визу в Италию самостоятельно</div>
-            <div style="font-size: 15.5px; color: oklch(0.4 0.02 260); line-height: 1.55;">Пошаговая инструкция по сбору документов и подаче на визу — чтобы сразу понять логику работы визового специалиста.</div></div>
+          <div style="background: oklch(0.96 0.015 195); border-radius: 14px; padding: 14px 16px; display: flex; align-items: center; gap: 14px;"><div style="flex-shrink: 0; width: 88px; height: 72px; border-radius: 12px; background: linear-gradient(145deg, oklch(0.94 0.04 145) 0%, oklch(0.88 0.07 160) 100%); display: flex; align-items: center; justify-content: center;"><svg viewBox="0 0 100 80" style="width: 72px; height: 58px; display: block;"><rect x="14" y="8" width="54" height="62" rx="7" fill="oklch(0.42 0.11 25)"></rect><rect x="19" y="8" width="49" height="62" rx="6" fill="white"></rect><rect x="19" y="8" width="6" height="62" fill="oklch(0.93 0.01 260)"></rect><g transform="translate(31,15)"><rect x="0" y="0" width="7" height="15" rx="1.5" fill="oklch(0.6 0.14 145)"></rect><rect x="7" y="0" width="7" height="15" fill="oklch(0.95 0.005 90)"></rect><rect x="14" y="0" width="7" height="15" rx="1.5" fill="oklch(0.55 0.19 25)"></rect></g><g transform="translate(31,36)"><path d="M2 18 L2 8 A7.5 7.5 0 0 1 17 8 L17 18 Z" fill="none" stroke="oklch(0.55 0.03 260)" stroke-width="1.8" stroke-linejoin="round"></path><line x1="6" y1="9.5" x2="6" y2="18" stroke="oklch(0.55 0.03 260)" stroke-width="1.5"></line><line x1="9.5" y1="7" x2="9.5" y2="18" stroke="oklch(0.55 0.03 260)" stroke-width="1.5"></line><line x1="13" y1="9.5" x2="13" y2="18" stroke="oklch(0.55 0.03 260)" stroke-width="1.5"></line><rect x="0" y="18" width="19" height="3.4" rx="1.7" fill="oklch(0.55 0.03 260)"></rect></g><rect x="30" y="62" width="30" height="4" rx="2" fill="oklch(0.9 0.01 260)"></rect><g transform="translate(56,28) rotate(-14)"><rect x="0" y="0" width="40" height="28" rx="4.5" fill="oklch(0.97 0.02 195)" stroke="oklch(0.5 0.13 195)" stroke-width="1.8"></rect><rect x="6" y="6" width="19" height="3.4" rx="1.7" fill="oklch(0.5 0.13 195)" opacity="0.75"></rect><rect x="6" y="13.5" width="28" height="2.8" rx="1.4" fill="oklch(0.5 0.13 195)" opacity="0.4"></rect><rect x="6" y="19.5" width="23" height="2.8" rx="1.4" fill="oklch(0.5 0.13 195)" opacity="0.4"></rect><circle cx="31" cy="8" r="4.6" fill="none" stroke="oklch(0.45 0.14 55)" stroke-width="1.8"></circle></g></svg></div><div style="min-width: 0;"><div style="font-weight: 800; font-size: 16px; margin-bottom: 6px;">Мини-гайд — как оформить визу в Италию самостоятельно</div>
+            <div style="font-size: 15.5px; color: oklch(0.4 0.02 260); line-height: 1.55;">Пошаговая инструкция по сбору документов и подаче на визу — чтобы сразу понять логику работы визового специалиста.</div></div>
           </div>
-          <div style="background: oklch(0.96 0.015 195); border-radius: 14px; padding: 14px 16px; display: flex; align-items: center; gap: 14px;"><div style="flex-shrink: 0; width: 88px; height: 72px; border-radius: 12px; background: linear-gradient(145deg, oklch(0.95 0.05 90) 0%, oklch(0.89 0.09 75) 100%); display: flex; align-items: center; justify-content: center;"><svg viewBox="0 0 100 80" style="width: 72px; height: 58px; display: block;"><rect x="12" y="16" width="62" height="52" rx="7" fill="white" opacity="0.55" transform="rotate(-6 43 42)"></rect><rect x="9" y="11" width="66" height="56" rx="7" fill="white"></rect><rect x="18" y="19" width="28" height="4.5" rx="2.2" fill="oklch(0.3 0.09 195)"></rect><circle cx="23" cy="34" r="5.4" fill="oklch(0.88 0.09 145)"></circle><polyline points="20.7,34 22.4,35.8 25.6,32.2" fill="none" stroke="oklch(0.45 0.13 145)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></polyline><rect x="32" y="31.5" width="34" height="4.6" rx="2.3" fill="oklch(0.88 0.02 260)"></rect><circle cx="23" cy="46" r="5.4" fill="oklch(0.88 0.09 145)"></circle><polyline points="20.7,46 22.4,47.8 25.6,44.2" fill="none" stroke="oklch(0.45 0.13 145)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></polyline><rect x="32" y="43.5" width="27" height="4.6" rx="2.3" fill="oklch(0.88 0.02 260)"></rect><circle cx="23" cy="58" r="5.4" fill="oklch(0.88 0.09 145)"></circle><polyline points="20.7,58 22.4,59.8 25.6,56.2" fill="none" stroke="oklch(0.45 0.13 145)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></polyline><rect x="32" y="55.5" width="31" height="4.6" rx="2.3" fill="oklch(0.88 0.02 260)"></rect><circle cx="79" cy="21" r="15" fill="oklch(0.5 0.13 195)"></circle><text x="79" y="27" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="900" font-size="17" fill="white">5</text><circle cx="15" cy="65" r="8" fill="oklch(0.85 0.13 90)" stroke="white" stroke-width="2.4"></circle><text x="15" y="69" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="900" font-size="9" fill="oklch(0.42 0.12 70)">₽</text></svg></div><div style="min-width: 0;"><div style="font-weight: 800; font-size: 16px; margin-bottom: 6px;">5 услуг, с которых новичок получает первые деньги</div>
-            <div style="font-size: 15.5px; color: oklch(0.4 0.02 260); line-height: 1.55;">Список простых услуг, с которыми можно начать зарабатывать уже в первые недели — без опыта и вложений.</div></div>
+          <div style="background: oklch(0.96 0.015 195); border-radius: 14px; padding: 14px 16px; display: flex; align-items: center; gap: 14px;"><div style="flex-shrink: 0; width: 88px; height: 72px; border-radius: 12px; background: linear-gradient(145deg, oklch(0.95 0.05 90) 0%, oklch(0.89 0.09 75) 100%); display: flex; align-items: center; justify-content: center;"><svg viewBox="0 0 100 80" style="width: 72px; height: 58px; display: block;"><rect x="12" y="16" width="62" height="52" rx="7" fill="white" opacity="0.55" transform="rotate(-6 43 42)"></rect><rect x="9" y="11" width="66" height="56" rx="7" fill="white"></rect><rect x="18" y="19" width="28" height="4.5" rx="2.2" fill="oklch(0.3 0.09 195)"></rect><circle cx="23" cy="34" r="5.4" fill="oklch(0.88 0.09 145)"></circle><polyline points="20.7,34 22.4,35.8 25.6,32.2" fill="none" stroke="oklch(0.45 0.13 145)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></polyline><rect x="32" y="31.5" width="34" height="4.6" rx="2.3" fill="oklch(0.88 0.02 260)"></rect><circle cx="23" cy="46" r="5.4" fill="oklch(0.88 0.09 145)"></circle><polyline points="20.7,46 22.4,47.8 25.6,44.2" fill="none" stroke="oklch(0.45 0.13 145)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></polyline><rect x="32" y="43.5" width="27" height="4.6" rx="2.3" fill="oklch(0.88 0.02 260)"></rect><circle cx="23" cy="58" r="5.4" fill="oklch(0.88 0.09 145)"></circle><polyline points="20.7,58 22.4,59.8 25.6,56.2" fill="none" stroke="oklch(0.45 0.13 145)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></polyline><rect x="32" y="55.5" width="31" height="4.6" rx="2.3" fill="oklch(0.88 0.02 260)"></rect><circle cx="79" cy="21" r="15" fill="oklch(0.5 0.13 195)"></circle><text x="79" y="27" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="900" font-size="17" fill="white">5</text><circle cx="15" cy="65" r="8" fill="oklch(0.85 0.13 90)" stroke="white" stroke-width="2.4"></circle><text x="15" y="69" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="900" font-size="9" fill="oklch(0.42 0.12 70)">₽</text></svg></div><div style="min-width: 0;"><div style="font-weight: 800; font-size: 16px; margin-bottom: 6px;">5 услуг, с которых новичок получает первые деньги</div>
+            <div style="font-size: 15.5px; color: oklch(0.4 0.02 260); line-height: 1.55;">Список простых услуг, с которыми можно начать зарабатывать уже в первые недели — без опыта и вложений.</div></div>
           </div>
         </div>
-        <a href="#" onClick="{{ onOpenSignup }}" style="display: flex; align-items: center; justify-content: center; gap: 10px; background: oklch(0.5 0.13 195); color: white; text-decoration: none; padding: 17px 22px; border-radius: 100px; font-weight: 800; font-size: 17px; box-shadow: 0 12px 24px -8px oklch(0.5 0.13 195 / 0.5); width: 100%; box-sizing: border-box; justify-content: center; text-align: center; transition: background 0.15s ease; margin-top: 24px;" style-hover="background: oklch(0.44 0.13 195);">Записаться и получить 3 подарка</a>
+        <a href="#" onClick="{{ onOpenSignup }}" style="display: flex; align-items: center; justify-content: center; gap: 10px; background: oklch(0.5 0.13 195); color: white; text-decoration: none; padding: 17px 22px; border-radius: 100px; font-weight: 800; font-size: 17px; box-shadow: 0 12px 24px -8px oklch(0.5 0.13 195 / 0.5); width: 100%; box-sizing: border-box; justify-content: center; text-align: center; transition: background 0.15s ease; margin-top: 24px;" style-hover="background: oklch(0.44 0.13 195);">Записаться и получить 3 подарка</a>
       </div>
     </div>
   </sc-if>
@@ -768,8 +768,8 @@
         <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 22px; margin: 0 0 20px;">Доказательства дохода</h2>
         <div style="display: grid; grid-template-columns: 1fr; gap: 28px;" class="proofs-grid">
           <div>
-            <div style="display: inline-block; background: oklch(0.94 0.05 55); color: oklch(0.45 0.14 55); font-weight: 800; font-size: 15.5px; padding: 5px 14px; border-radius: 100px; margin: 0 0 12px;">если работать в найме</div>
-            <div style="font-size: 15px; color: oklch(0.4 0.02 260); line-height: 1.6; margin-bottom: 14px;">На hh.ru открыто более 300 вакансий визового специалиста, средний доход — от 120 000 рублей.</div>
+            <div style="display: inline-block; background: oklch(0.94 0.05 55); color: oklch(0.45 0.14 55); font-weight: 800; font-size: 15.5px; padding: 5px 14px; border-radius: 100px; margin: 0 0 12px;">если работать в найме</div>
+            <div style="font-size: 15px; color: oklch(0.4 0.02 260); line-height: 1.6; margin-bottom: 14px;">На hh.ru открыто более 300 вакансий визового специалиста, средний доход — от 120 000 рублей.</div>
             <div style="display: flex; flex-direction: column; gap: 12px;">
               <img src="assets/hh-7.webp" data-gallery-id="proof-jobs" onClick="{{ onZoomImage }}" alt="Найдено 309 вакансий «визовый менеджер»" style="width: 100%; border-radius: 12px; border: 1px solid oklch(0.9 0.005 260); cursor: zoom-in; transition: opacity 0.15s ease;" style-hover="opacity: 0.85;" loading="lazy" decoding="async">
               <img src="assets/hh-1.webp" data-gallery-id="proof-jobs" onClick="{{ onZoomImage }}" alt="Вакансия hh.ru" style="width: 100%; border-radius: 12px; border: 1px solid oklch(0.9 0.005 260); cursor: zoom-in; transition: opacity 0.15s ease;" style-hover="opacity: 0.85;" loading="lazy" decoding="async">
@@ -781,48 +781,48 @@
             </div>
           </div>
           <div>
-            <div style="display: inline-block; background: oklch(0.94 0.03 195); color: oklch(0.4 0.11 195); font-weight: 800; font-size: 15.5px; padding: 5px 14px; border-radius: 100px; margin: 0 0 12px;">если работать на себя</div>
-            <div style="font-size: 15px; color: oklch(0.4 0.02 260); line-height: 1.6; margin-bottom: 14px;">Реальные клиенты нашего агентства за последний месяц — с такими же заказами скоро сможете работать и вы:</div>
+            <div style="display: inline-block; background: oklch(0.94 0.03 195); color: oklch(0.4 0.11 195); font-weight: 800; font-size: 15.5px; padding: 5px 14px; border-radius: 100px; margin: 0 0 12px;">если работать на себя</div>
+            <div style="font-size: 15px; color: oklch(0.4 0.02 260); line-height: 1.6; margin-bottom: 14px;">Реальные клиенты нашего агентства за последний месяц — с такими же заказами скоро сможете работать и вы:</div>
             <div style="display: flex; flex-direction: column; gap: 14px;">
               <div style="background: oklch(0.98 0.008 260); border-radius: 16px; padding: 18px 20px;">
-                <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 15.5px; margin-bottom: 8px;">Поездка по Италии под ключ</div>
+                <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 15.5px; margin-bottom: 8px;">Поездка по Италии под ключ</div>
                 <ul style="margin: 0 0 12px; padding-left: 18px; display: flex; flex-direction: column; gap: 4px; font-size: 15.5px; color: oklch(0.45 0.02 260); line-height: 1.5;">
                   <li>2 визы под ключ</li>
-                  <li>Отели в Риме, Флоренции и Венеции — 16 ночей</li>
-                  <li>Обзорные экскурсии в Колизей, по Риму и Венеции</li>
-                  <li>Нашли русского гида и организовали экскурсии</li>
+                  <li>Отели в Риме, Флоренции и Венеции — 16 ночей</li>
+                  <li>Обзорные экскурсии в Колизей, по Риму и Венеции</li>
+                  <li>Нашли русского гида и организовали экскурсии</li>
                 </ul>
-                <div style="display: inline-block; background: oklch(0.94 0.03 195); border-radius: 100px; padding: 7px 16px; font-weight: 800; font-size: 15.5px; color: oklch(0.35 0.1 195);">Доход ≈ 129 000 ₽</div>
+                <div style="display: inline-block; background: oklch(0.94 0.03 195); border-radius: 100px; padding: 7px 16px; font-weight: 800; font-size: 15.5px; color: oklch(0.35 0.1 195);">Доход ≈ 129 000 ₽</div>
               </div>
               <div style="background: oklch(0.98 0.008 260); border-radius: 16px; padding: 18px 20px;">
-                <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 15.5px; margin-bottom: 8px;">Виза в США + Шенген виза</div>
-                <div style="font-size: 15.5px; color: oklch(0.45 0.02 260); line-height: 1.5; margin-bottom: 12px;">Подготовили клиента к собеседованию на визу США в Польше и параллельно оформили Шенгенскую визу.</div>
-                <div style="display: inline-block; background: oklch(0.94 0.03 195); border-radius: 100px; padding: 7px 16px; font-weight: 800; font-size: 15.5px; color: oklch(0.35 0.1 195);">Доход ≈ 45 000 ₽</div>
+                <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 15.5px; margin-bottom: 8px;">Виза в США + Шенген виза</div>
+                <div style="font-size: 15.5px; color: oklch(0.45 0.02 260); line-height: 1.5; margin-bottom: 12px;">Подготовили клиента к собеседованию на визу США в Польше и параллельно оформили Шенгенскую визу.</div>
+                <div style="display: inline-block; background: oklch(0.94 0.03 195); border-radius: 100px; padding: 7px 16px; font-weight: 800; font-size: 15.5px; color: oklch(0.35 0.1 195);">Доход ≈ 45 000 ₽</div>
               </div>
               <div style="background: oklch(0.98 0.008 260); border-radius: 16px; padding: 18px 20px;">
-                <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 15.5px; margin-bottom: 8px;">Виза в Японию на двоих</div>
+                <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 15.5px; margin-bottom: 8px;">Виза в Японию на двоих</div>
                 <div style="font-size: 15.5px; color: oklch(0.45 0.02 260); line-height: 1.5; margin-bottom: 12px;">Оформили визу без присутствия заявителей.</div>
-                <div style="display: inline-block; background: oklch(0.94 0.03 195); border-radius: 100px; padding: 7px 16px; font-weight: 800; font-size: 15.5px; color: oklch(0.35 0.1 195);">Доход ≈ 27 000 ₽</div>
+                <div style="display: inline-block; background: oklch(0.94 0.03 195); border-radius: 100px; padding: 7px 16px; font-weight: 800; font-size: 15.5px; color: oklch(0.35 0.1 195);">Доход ≈ 27 000 ₽</div>
               </div>
               <div style="background: oklch(0.98 0.008 260); border-radius: 16px; padding: 18px 20px;">
                 <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 15.5px; margin-bottom: 8px;">Карта иностранного банка</div>
                 <div style="font-size: 15.5px; color: oklch(0.45 0.02 260); line-height: 1.5; margin-bottom: 12px;">Оформили клиенту карту иностранного банка под ключ.</div>
-                <div style="display: inline-block; background: oklch(0.94 0.03 195); border-radius: 100px; padding: 7px 16px; font-weight: 800; font-size: 15.5px; color: oklch(0.35 0.1 195);">Доход ≈ 24 000 ₽</div>
+                <div style="display: inline-block; background: oklch(0.94 0.03 195); border-radius: 100px; padding: 7px 16px; font-weight: 800; font-size: 15.5px; color: oklch(0.35 0.1 195);">Доход ≈ 24 000 ₽</div>
               </div>
               <div style="background: oklch(0.98 0.008 260); border-radius: 16px; padding: 18px 20px;">
-                <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 15.5px; margin-bottom: 8px;">Виза во Францию</div>
-                <div style="font-size: 15.5px; color: oklch(0.45 0.02 260); line-height: 1.5; margin-bottom: 12px;">Записали клиента на подачу и подготовили документы под ключ.</div>
-                <div style="display: inline-block; background: oklch(0.94 0.03 195); border-radius: 100px; padding: 7px 16px; font-weight: 800; font-size: 15.5px; color: oklch(0.35 0.1 195);">Доход ≈ 24 000 ₽</div>
+                <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 15.5px; margin-bottom: 8px;">Виза во Францию</div>
+                <div style="font-size: 15.5px; color: oklch(0.45 0.02 260); line-height: 1.5; margin-bottom: 12px;">Записали клиента на подачу и подготовили документы под ключ.</div>
+                <div style="display: inline-block; background: oklch(0.94 0.03 195); border-radius: 100px; padding: 7px 16px; font-weight: 800; font-size: 15.5px; color: oklch(0.35 0.1 195);">Доход ≈ 24 000 ₽</div>
               </div>
             </div>
             <div style="display: flex; flex-direction: column; gap: 8px; background: oklch(0.94 0.03 195); border-radius: 14px; padding: 16px 20px; margin-top: 14px;">
-              <span style="font-weight: 700; font-size: 15.5px; color: oklch(0.35 0.1 195);">Суммарный доход с пяти клиентов</span>
-              <span style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 22px; color: oklch(0.35 0.1 195); white-space: nowrap;">≈ 249 000 ₽</span>
+              <span style="font-weight: 700; font-size: 15.5px; color: oklch(0.35 0.1 195);">Суммарный доход с пяти клиентов</span>
+              <span style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 22px; color: oklch(0.35 0.1 195); white-space: nowrap;">≈ 249 000 ₽</span>
             </div>
-            <div style="text-align: center; font-weight: 700; font-size: 15.5px; color: oklch(0.4 0.02 260); margin-top: 16px;">А если у вас будет 6, 10 или 20 таких клиентов?</div>
+            <div style="text-align: center; font-weight: 700; font-size: 15.5px; color: oklch(0.4 0.02 260); margin-top: 16px;">А если у вас будет 6, 10 или 20 таких клиентов?</div>
           </div>
         </div>
-        <a href="#" onClick="{{ onOpenSignup }}" style="display: flex; align-items: center; justify-content: center; gap: 10px; background: oklch(0.5 0.13 195); color: white; text-decoration: none; padding: 17px 22px; border-radius: 100px; font-weight: 800; font-size: 17px; box-shadow: 0 12px 24px -8px oklch(0.5 0.13 195 / 0.5); width: 100%; box-sizing: border-box; justify-content: center; text-align: center; transition: background 0.15s ease; margin-top: 20px;" style-hover="background: oklch(0.44 0.13 195);">Записаться и получить 3 подарка</a>
+        <a href="#" onClick="{{ onOpenSignup }}" style="display: flex; align-items: center; justify-content: center; gap: 10px; background: oklch(0.5 0.13 195); color: white; text-decoration: none; padding: 17px 22px; border-radius: 100px; font-weight: 800; font-size: 17px; box-shadow: 0 12px 24px -8px oklch(0.5 0.13 195 / 0.5); width: 100%; box-sizing: border-box; justify-content: center; text-align: center; transition: background 0.15s ease; margin-top: 20px;" style-hover="background: oklch(0.44 0.13 195);">Записаться и получить 3 подарка</a>
       </div>
     </div>
   </sc-if>
@@ -835,14 +835,14 @@
         </div>
         <div style="width: 100%; border-radius: 14px; overflow: hidden; margin-bottom: 18px;"><img src="assets/lenta-article.webp" alt="Лента.ру: россияне потратили в заграничных путешествиях в 2025 году 48 миллиардов долларов" style="background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAUABQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDp/s6E5MhHtmlVbeN1R3BcqSAx7U4jn7oqteWSXhQs8kZQEfJjkH60AaCOjrlGDD1BoqK0t47aHZFwpOaKAG55PSpAoHSiigCQDAooooA//9k=);background-size:cover;background-position:center;width: 100%; display: block; border-radius: 14px;" loading="lazy" decoding="async"></div>
         <div style="background: oklch(0.94 0.03 195); border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px;">
-          <div style="font-weight: 800; font-size: 15.5px; color: oklch(0.35 0.1 195);">Лента.ру: россияне потратили в заграничных путешествиях в 2025 году 48 миллиардов долларов</div>
-          <a href="https://lenta.ru/news/2026/01/27/rossiyane-potratili-v-zagranichnyh-puteshestviyah-v-2025-godu-48-milliardov-dollarov/?ysclid=ms9dpij4ny575690228" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; color: oklch(0.4 0.11 195); font-weight: 700; font-size: 15.5px; text-decoration: none; transition: color 0.15s ease;" style-hover="color: oklch(0.3 0.11 195);">Прочитать статью на Лента.ру →</a>
+          <div style="font-weight: 800; font-size: 15.5px; color: oklch(0.35 0.1 195);">Лента.ру: россияне потратили в заграничных путешествиях в 2025 году 48 миллиардов долларов</div>
+          <a href="https://lenta.ru/news/2026/01/27/rossiyane-potratili-v-zagranichnyh-puteshestviyah-v-2025-godu-48-milliardov-dollarov/?ysclid=ms9dpij4ny575690228" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; color: oklch(0.4 0.11 195); font-weight: 700; font-size: 15.5px; text-decoration: none; transition: color 0.15s ease;" style-hover="color: oklch(0.3 0.11 195);">Прочитать статью на Лента.ру →</a>
         </div>
         <div style="height: 1px; background: oklch(0.9 0.005 260); margin-bottom: 24px;"></div>
         <div style="width: 100%; border-radius: 14px; overflow: hidden; margin-bottom: 18px;"><img src="assets/vesti-article.webp" alt="Вести.ру: количество турпоездок россиян за рубеж выросло в 2025 году на 15,6%" style="background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAUABEDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwB8viWcnKRAEjn5jj9DSweJLjDboVZu2HOP1NVzompidsW6omPvb1PP0zU40fUNrK0UY7Z+XJNK+mpVupJ/wlc//Pqn+fxoqp/YGpf8+a/9/F/xoqdStDrm4c8d6VOW6CiirMyxRRRQB//Z);background-size:cover;background-position:center;width: 100%; display: block; border-radius: 14px;" loading="lazy" decoding="async"></div>
         <div style="background: oklch(0.94 0.03 195); border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; gap: 8px;">
-          <div style="font-weight: 800; font-size: 15.5px; color: oklch(0.35 0.1 195);">Вести.ру: ПС ФСБ — количество турпоездок россиян за рубеж выросло в 2025 году на 15,6%</div>
-          <a href="https://www.vesti.ru/article/4906968?ysclid=ms9ed4k97693912101" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; color: oklch(0.4 0.11 195); font-weight: 700; font-size: 15.5px; text-decoration: none; transition: color 0.15s ease;" style-hover="color: oklch(0.3 0.11 195);">Прочитать статью на Вести.ру →</a>
+          <div style="font-weight: 800; font-size: 15.5px; color: oklch(0.35 0.1 195);">Вести.ру: ПС ФСБ — количество турпоездок россиян за рубеж выросло в 2025 году на 15,6%</div>
+          <a href="https://www.vesti.ru/article/4906968?ysclid=ms9ed4k97693912101" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; color: oklch(0.4 0.11 195); font-weight: 700; font-size: 15.5px; text-decoration: none; transition: color 0.15s ease;" style-hover="color: oklch(0.3 0.11 195);">Прочитать статью на Вести.ру →</a>
         </div>
       </div>
     </div>
@@ -854,11 +854,11 @@
         <div onClick="{{ onCloseSchedule }}" style="position: absolute; top: 18px; right: 18px; width: 32px; height: 32px; border-radius: 50%; background: oklch(0.96 0.005 260); display: flex; align-items: center; justify-content: center; cursor: pointer;">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="oklch(0.4 0.02 260)" stroke-width="2.4"><path d="M6 6l12 12M18 6L6 18"></path></svg>
         </div>
-        <div style="display: inline-block; background: oklch(0.94 0.05 55); color: oklch(0.45 0.14 55); font-weight: 800; font-size: 15.5px; padding: 5px 14px; border-radius: 100px; margin: 0 0 12px;">1–2 часа в день</div>
-        <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 22px; margin: 0 0 16px;">Что можно успеть за 1–2 часа в день</h2>
+        <div style="display: inline-block; background: oklch(0.94 0.05 55); color: oklch(0.45 0.14 55); font-weight: 800; font-size: 15.5px; padding: 5px 14px; border-radius: 100px; margin: 0 0 12px;">1–2 часа в день</div>
+        <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 22px; margin: 0 0 16px;">Что можно успеть за 1–2 часа в день</h2>
         <div style="font-size: 15px; color: oklch(0.4 0.02 260); line-height: 1.6;">
-          <p style="margin: 0 0 14px;">Если уделять профессии 1–2 часа в день, то уже за одну неделю вы сможете подготовить под ключ <b>12–15 пакетов документов на Шенгенские визы</b> — то есть полноценно поработать с 12–15 клиентами, не увольняясь с текущей работы.</p>
-          <p style="margin: 0;">Этого времени достаточно, чтобы освоить курс, начать брать первые заказы и убедиться, что профессия приносит доход — и только после этого решать, переходить ли в неё полностью.</p>
+          <p style="margin: 0 0 14px;">Если уделять профессии 1–2 часа в день, то уже за одну неделю вы сможете подготовить под ключ <b>12–15 пакетов документов на Шенгенские визы</b> — то есть полноценно поработать с 12–15 клиентами, не увольняясь с текущей работы.</p>
+          <p style="margin: 0;">Этого времени достаточно, чтобы освоить курс, начать брать первые заказы и убедиться, что профессия приносит доход — и только после этого решать, переходить ли в неё полностью.</p>
         </div>
       </div>
     </div>
@@ -873,7 +873,7 @@
         <div style="display: inline-block; background: oklch(0.94 0.03 195); color: oklch(0.4 0.11 195); font-weight: 800; font-size: 15.5px; padding: 5px 14px; border-radius: 100px; margin: 0 0 12px;">Клиенты</div>
         <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 22px; margin: 0 0 16px;">Что делать, когда бесплатные клиенты закончатся?</h2>
         <div style="font-size: 15px; color: oklch(0.4 0.02 260); line-height: 1.6;">
-          <p style="margin: 0;">Мы отдельно разберём, как привлекать до 15 клиентов с бюджетом до 15 000 рублей в месяц.</p>
+          <p style="margin: 0;">Мы отдельно разберём, как привлекать до 15 клиентов с бюджетом до 15 000 рублей в месяц.</p>
         </div>
       </div>
     </div>
@@ -885,45 +885,45 @@
         <div onClick="{{ onCloseCase }}" style="position: absolute; top: 18px; right: 18px; width: 32px; height: 32px; border-radius: 50%; background: oklch(0.96 0.005 260); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: background 0.15s ease;" style-hover="background: oklch(0.9 0.005 260);">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="oklch(0.4 0.02 260)" stroke-width="2.4"><path d="M6 6l12 12M18 6L6 18"></path></svg>
         </div>
-        <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 22px; margin: 0 0 16px;">Разберём на примере одного клиента</h2>
+        <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 22px; margin: 0 0 16px;">Разберём на примере одного клиента</h2>
         <div style="font-size: 15.5px; line-height: 1.6; color: oklch(0.3 0.02 260);">
-          <p style="margin: 0 0 14px;">Пара — девушка и мужчина — обратились к нам за организацией поездки по Италии. Мы взяли на себя весь маршрут под ключ:</p>
+          <p style="margin: 0 0 14px;">Пара — девушка и мужчина — обратились к нам за организацией поездки по Италии. Мы взяли на себя весь маршрут под ключ:</p>
           <ul style="margin: 0 0 18px; padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
             <li>Оформили 2 визы — все документы под ключ</li>
-            <li>Отели в Риме, Флоренции и Венеции — 16 ночей в общей сложности</li>
-            <li>Обзорная экскурсия в Колизей и обзорная по городу на автобусе с открытой крышей</li>
-            <li>Обзорная экскурсия по Венеции с русским гидом</li>
+            <li>Отели в Риме, Флоренции и Венеции — 16 ночей в общей сложности</li>
+            <li>Обзорная экскурсия в Колизей и обзорная по городу на автобусе с открытой крышей</li>
+            <li>Обзорная экскурсия по Венеции с русским гидом</li>
           </ul>
-          <div style="background: oklch(0.94 0.03 195); border-radius: 14px; padding: 16px 18px; font-weight: 800; font-size: 16px; color: oklch(0.35 0.1 195);">Общий доход с этого клиента составил ≈ 129 000 рублей</div>
-          <div style="font-weight: 700; font-size: 15.5px; color: oklch(0.22 0.02 260); margin-top: 24px; margin-bottom: 4px;">И это не единственный пример — вот ещё реальные клиенты нашего агентства:</div>
+          <div style="background: oklch(0.94 0.03 195); border-radius: 14px; padding: 16px 18px; font-weight: 800; font-size: 16px; color: oklch(0.35 0.1 195);">Общий доход с этого клиента составил ≈ 129 000 рублей</div>
+          <div style="font-weight: 700; font-size: 15.5px; color: oklch(0.22 0.02 260); margin-top: 24px; margin-bottom: 4px;">И это не единственный пример — вот ещё реальные клиенты нашего агентства:</div>
           <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 10px;">
             <div style="background: oklch(0.97 0.008 260); border-radius: 16px; padding: 18px 20px;">
-              <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 15.5px; margin-bottom: 8px;">Виза в США + Шенген виза</div>
-              <div style="font-size: 15.5px; color: oklch(0.45 0.02 260); line-height: 1.5; margin-bottom: 12px;">Подготовили клиента к собеседованию на визу США в Польше и параллельно оформили Шенгенскую визу.</div>
-              <div style="display: inline-block; background: oklch(0.94 0.03 195); border-radius: 100px; padding: 7px 16px; font-weight: 800; font-size: 15.5px; color: oklch(0.35 0.1 195);">Доход ≈ 45 000 ₽</div>
+              <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 15.5px; margin-bottom: 8px;">Виза в США + Шенген виза</div>
+              <div style="font-size: 15.5px; color: oklch(0.45 0.02 260); line-height: 1.5; margin-bottom: 12px;">Подготовили клиента к собеседованию на визу США в Польше и параллельно оформили Шенгенскую визу.</div>
+              <div style="display: inline-block; background: oklch(0.94 0.03 195); border-radius: 100px; padding: 7px 16px; font-weight: 800; font-size: 15.5px; color: oklch(0.35 0.1 195);">Доход ≈ 45 000 ₽</div>
             </div>
             <div style="background: oklch(0.97 0.008 260); border-radius: 16px; padding: 18px 20px;">
-              <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 15.5px; margin-bottom: 8px;">Виза в Японию на двоих</div>
+              <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 15.5px; margin-bottom: 8px;">Виза в Японию на двоих</div>
               <div style="font-size: 15.5px; color: oklch(0.45 0.02 260); line-height: 1.5; margin-bottom: 12px;">Оформили визу без присутствия заявителей.</div>
-              <div style="display: inline-block; background: oklch(0.94 0.03 195); border-radius: 100px; padding: 7px 16px; font-weight: 800; font-size: 15.5px; color: oklch(0.35 0.1 195);">Доход ≈ 27 000 ₽</div>
+              <div style="display: inline-block; background: oklch(0.94 0.03 195); border-radius: 100px; padding: 7px 16px; font-weight: 800; font-size: 15.5px; color: oklch(0.35 0.1 195);">Доход ≈ 27 000 ₽</div>
             </div>
             <div style="background: oklch(0.97 0.008 260); border-radius: 16px; padding: 18px 20px;">
               <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 15.5px; margin-bottom: 8px;">Карта иностранного банка</div>
               <div style="font-size: 15.5px; color: oklch(0.45 0.02 260); line-height: 1.5; margin-bottom: 12px;">Оформили клиенту карту иностранного банка под ключ.</div>
-              <div style="display: inline-block; background: oklch(0.94 0.03 195); border-radius: 100px; padding: 7px 16px; font-weight: 800; font-size: 15.5px; color: oklch(0.35 0.1 195);">Доход ≈ 24 000 ₽</div>
+              <div style="display: inline-block; background: oklch(0.94 0.03 195); border-radius: 100px; padding: 7px 16px; font-weight: 800; font-size: 15.5px; color: oklch(0.35 0.1 195);">Доход ≈ 24 000 ₽</div>
             </div>
             <div style="background: oklch(0.97 0.008 260); border-radius: 16px; padding: 18px 20px;">
-              <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 15.5px; margin-bottom: 8px;">Виза во Францию</div>
-              <div style="font-size: 15.5px; color: oklch(0.45 0.02 260); line-height: 1.5; margin-bottom: 12px;">Записали клиента на подачу и подготовили документы под ключ.</div>
-              <div style="display: inline-block; background: oklch(0.94 0.03 195); border-radius: 100px; padding: 7px 16px; font-weight: 800; font-size: 15.5px; color: oklch(0.35 0.1 195);">Доход ≈ 24 000 ₽</div>
+              <div style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 15.5px; margin-bottom: 8px;">Виза во Францию</div>
+              <div style="font-size: 15.5px; color: oklch(0.45 0.02 260); line-height: 1.5; margin-bottom: 12px;">Записали клиента на подачу и подготовили документы под ключ.</div>
+              <div style="display: inline-block; background: oklch(0.94 0.03 195); border-radius: 100px; padding: 7px 16px; font-weight: 800; font-size: 15.5px; color: oklch(0.35 0.1 195);">Доход ≈ 24 000 ₽</div>
             </div>
           </div>
           <div style="display: flex; flex-direction: column; gap: 8px; background: oklch(0.94 0.03 195); border-radius: 14px; padding: 16px 20px; margin-top: 14px;">
-            <span style="font-weight: 700; font-size: 15.5px; color: oklch(0.35 0.1 195);">Суммарный доход с пяти клиентов</span>
-            <span style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 22px; color: oklch(0.35 0.1 195); white-space: nowrap;">≈ 249 000 ₽</span>
+            <span style="font-weight: 700; font-size: 15.5px; color: oklch(0.35 0.1 195);">Суммарный доход с пяти клиентов</span>
+            <span style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 22px; color: oklch(0.35 0.1 195); white-space: nowrap;">≈ 249 000 ₽</span>
           </div>
-          <div style="text-align: center; font-weight: 800; font-size: 17px; color: oklch(0.35 0.1 195); margin-top: 16px;">А если у вас будет 6, 10 или 20 таких клиентов?</div>
-          <a href="#" onClick="{{ onOpenSignup }}" style="display: flex; align-items: center; justify-content: center; gap: 10px; background: oklch(0.5 0.13 195); color: white; text-decoration: none; padding: 17px 22px; border-radius: 100px; font-weight: 800; font-size: 17px; box-shadow: 0 12px 24px -8px oklch(0.5 0.13 195 / 0.5); width: 100%; box-sizing: border-box; justify-content: center; text-align: center; transition: background 0.15s ease; margin-top: 20px;" style-hover="background: oklch(0.44 0.13 195);">Записаться и получить 3 подарка</a>
+          <div style="text-align: center; font-weight: 800; font-size: 17px; color: oklch(0.35 0.1 195); margin-top: 16px;">А если у вас будет 6, 10 или 20 таких клиентов?</div>
+          <a href="#" onClick="{{ onOpenSignup }}" style="display: flex; align-items: center; justify-content: center; gap: 10px; background: oklch(0.5 0.13 195); color: white; text-decoration: none; padding: 17px 22px; border-radius: 100px; font-weight: 800; font-size: 17px; box-shadow: 0 12px 24px -8px oklch(0.5 0.13 195 / 0.5); width: 100%; box-sizing: border-box; justify-content: center; text-align: center; transition: background 0.15s ease; margin-top: 20px;" style-hover="background: oklch(0.44 0.13 195);">Записаться и получить 3 подарка</a>
         </div>
       </div>
     </div>
@@ -935,8 +935,8 @@
         <div onClick="{{ onCloseJobs }}" style="position: absolute; top: 18px; right: 18px; width: 32px; height: 32px; border-radius: 50%; background: oklch(0.96 0.005 260); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: background 0.15s ease;" style-hover="background: oklch(0.9 0.005 260);">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="oklch(0.4 0.02 260)" stroke-width="2.4"><path d="M6 6l12 12M18 6L6 18"></path></svg>
         </div>
-        <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 22px; margin: 0 0 10px;">300+ открытых вакансий визового специалиста на hh.ru</h2>
-        <div style="font-size: 15px; color: oklch(0.4 0.02 260); line-height: 1.6; margin-bottom: 16px;">Средний доход визового специалиста — от 120 000 рублей.</div>
+        <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 22px; margin: 0 0 10px;">300+ открытых вакансий визового специалиста на hh.ru</h2>
+        <div style="font-size: 15px; color: oklch(0.4 0.02 260); line-height: 1.6; margin-bottom: 16px;">Средний доход визового специалиста — от 120 000 рублей.</div>
         <div style="display: flex; flex-direction: column; gap: 14px;">
           <img src="assets/hh-new-1.webp" data-gallery-id="jobs-modal" onClick="{{ onZoomImage }}" alt="Вакансия hh.ru" style="width: 100%; border-radius: 12px; border: 1px solid oklch(0.9 0.005 260); cursor: zoom-in; transition: opacity 0.15s ease;" style-hover="opacity: 0.85;" loading="lazy" decoding="async">
           <img src="assets/hh-new-2.webp" data-gallery-id="jobs-modal" onClick="{{ onZoomImage }}" alt="Вакансия hh.ru" style="width: 100%; border-radius: 12px; border: 1px solid oklch(0.9 0.005 260); cursor: zoom-in; transition: opacity 0.15s ease;" style-hover="opacity: 0.85;" loading="lazy" decoding="async">
@@ -984,7 +984,7 @@
           <p style="margin: 0 0 10px;"><b>Индивидуальный предприниматель Климкин Никита Сергеевич</b></p>
           <p style="margin: 0 0 6px;">ИНН: 971501295187</p>
           <p style="margin: 0 0 14px;">ОГРНИП: 319774600227832</p>
-          <p style="margin: 0;">Зарегистрирован в качестве индивидуального предпринимателя в соответствии с законодательством Российской Федерации и осуществляет деятельность по предоставлению информационно-консультационных услуг в сфере визовой поддержки. Все расчёты с клиентами проводятся в соответствии с Договором оферты, размещённым на сайте.</p>
+          <p style="margin: 0;">Зарегистрирован в качестве индивидуального предпринимателя в соответствии с законодательством Российской Федерации и осуществляет деятельность по предоставлению информационно-консультационных услуг в сфере визовой поддержки. Все расчёты с клиентами проводятся в соответствии с Договором оферты, размещённым на сайте.</p>
         </div>
       </div>
     </div>
@@ -996,11 +996,11 @@
         <div onClick="{{ onCloseData }}" style="position: absolute; top: 18px; right: 18px; width: 32px; height: 32px; border-radius: 50%; background: oklch(0.96 0.005 260); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: background 0.15s ease;" style-hover="background: oklch(0.9 0.005 260);">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="oklch(0.4 0.02 260)" stroke-width="2.4"><path d="M6 6l12 12M18 6L6 18"></path></svg>
         </div>
-        <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 22px; margin: 0 0 16px;">Согласие на обработку персональных данных</h2>
+        <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 22px; margin: 0 0 16px;">Согласие на обработку персональных данных</h2>
         <div style="font-size: 15.5px; line-height: 1.7; color: oklch(0.3 0.02 260);">
-          <p style="margin: 0 0 10px;">Оставляя заявку на сайте, вы даёте согласие ИП Климкину Никите Сергеевичу (ИНН 971501295187, ОГРНИП 319774600227832) на обработку своих персональных данных (имени, адреса электронной почты и иных предоставленных данных) в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных».</p>
-          <p style="margin: 0 0 10px;">Персональные данные обрабатываются в целях связи с вами, отправки материалов вебинара и информирования о мероприятиях школы «Без границ». Данные не передаются третьим лицам, за исключением случаев, предусмотренных законодательством РФ.</p>
-          <p style="margin: 0;">Согласие может быть отозвано в любой момент путём направления письменного заявления на контактные данные, указанные на сайте.</p>
+          <p style="margin: 0 0 10px;">Оставляя заявку на сайте, вы даёте согласие ИП Климкину Никите Сергеевичу (ИНН 971501295187, ОГРНИП 319774600227832) на обработку своих персональных данных (имени, адреса электронной почты и иных предоставленных данных) в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных».</p>
+          <p style="margin: 0 0 10px;">Персональные данные обрабатываются в целях связи с вами, отправки материалов вебинара и информирования о мероприятиях школы «Без границ». Данные не передаются третьим лицам, за исключением случаев, предусмотренных законодательством РФ.</p>
+          <p style="margin: 0;">Согласие может быть отозвано в любой момент путём направления письменного заявления на контактные данные, указанные на сайте.</p>
         </div>
       </div>
     </div>
@@ -1014,9 +1014,9 @@
         </div>
         <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 22px; margin: 0 0 16px;">Политика конфиденциальности</h2>
         <div style="font-size: 15.5px; line-height: 1.7; color: oklch(0.3 0.02 260);">
-          <p style="margin: 0 0 10px;">Настоящая политика определяет порядок обработки и защиты информации о посетителях сайта ИП Климкина Никиты Сергеевича (ИНН 971501295187, ОГРНИП 319774600227832).</p>
-          <p style="margin: 0 0 10px;">Сайт может собирать техническую информацию (файлы cookie, данные об устройстве и действиях на сайте) для улучшения работы сервиса, а также данные, добровольно оставленные в формах (имя, e-mail) — для связи с пользователем и отправки запрошенных материалов.</p>
-          <p style="margin: 0;">Используя сайт, пользователь соглашается с условиями настоящей политики. Данные не используются для целей, не связанных с работой сайта, и не передаются третьим лицам без законных на то оснований.</p>
+          <p style="margin: 0 0 10px;">Настоящая политика определяет порядок обработки и защиты информации о посетителях сайта ИП Климкина Никиты Сергеевича (ИНН 971501295187, ОГРНИП 319774600227832).</p>
+          <p style="margin: 0 0 10px;">Сайт может собирать техническую информацию (файлы cookie, данные об устройстве и действиях на сайте) для улучшения работы сервиса, а также данные, добровольно оставленные в формах (имя, e-mail) — для связи с пользователем и отправки запрошенных материалов.</p>
+          <p style="margin: 0;">Используя сайт, пользователь соглашается с условиями настоящей политики. Данные не используются для целей, не связанных с работой сайта, и не передаются третьим лицам без законных на то оснований.</p>
         </div>
       </div>
     </div>
@@ -1058,20 +1058,20 @@ class Component extends DCLogic {
   videoRef = React.createRef();
   reviewsRailRef = React.createRef();
   reviewsData = [
-    { name: 'Анастасия', age: '28 лет', city: 'Самара', caption: 'С подругой открывают своё агентство', vid: 8 },
-    { name: 'Дарья', age: '24 года', city: 'Краснодар', caption: 'Окупила обучение за 7 дней', vid: 12 },
-    { name: 'Анна', age: '24 года', city: '', caption: 'Окупила обучение за 3 недели', vid: 4 },
-    { name: 'Александр', age: '35 лет', city: 'Челябинск', caption: 'Открывает агентство с супругой', vid: 11 },
-    { name: 'Светлана', age: '34 года', city: '', caption: 'Увеличила доход в два раза', vid: 9 },
-    { name: 'Ирина', age: '29 лет', city: '', caption: 'С нуля в первый месяц оформила 6 клиентов', vid: 5 },
-    { name: 'Анастасия', age: '30 лет', city: 'Москва', caption: 'Первый раз купила обучение', vid: 10 },
-    { name: 'Диана', age: '22 года', city: '', caption: 'Работает в визовом агентстве', vid: 2 },
-    { name: 'София', age: '19 лет', city: '', caption: 'Учится в колледже и ведёт свой блог', vid: 1 },
-    { name: 'Карина', age: '24 года', city: 'Тольятти', caption: 'Сменила основную деятельность', vid: 7 },
-    { name: 'Мария', age: '21 год', city: '', caption: 'Получает 5–6 клиентов в месяц', vid: 3 },
-    { name: 'Светлана', age: '33 года', city: '', caption: 'Работает в визовом агентстве', vid: 6 },
+    { name: 'Анастасия', age: '28 лет', city: 'Самара', caption: 'С подругой открывают своё агентство', vid: 8 },
+    { name: 'Дарья', age: '24 года', city: 'Краснодар', caption: 'Окупила обучение за 7 дней', vid: 12 },
+    { name: 'Анна', age: '24 года', city: '', caption: 'Окупила обучение за 3 недели', vid: 4 },
+    { name: 'Александр', age: '35 лет', city: 'Челябинск', caption: 'Открывает агентство с супругой', vid: 11 },
+    { name: 'Светлана', age: '34 года', city: '', caption: 'Увеличила доход в два раза', vid: 9 },
+    { name: 'Ирина', age: '29 лет', city: '', caption: 'С нуля в первый месяц оформила 6 клиентов', vid: 5 },
+    { name: 'Анастасия', age: '30 лет', city: 'Москва', caption: 'Первый раз купила обучение', vid: 10 },
+    { name: 'Диана', age: '22 года', city: '', caption: 'Работает в визовом агентстве', vid: 2 },
+    { name: 'София', age: '19 лет', city: '', caption: 'Учится в колледже и ведёт свой блог', vid: 1 },
+    { name: 'Карина', age: '24 года', city: 'Тольятти', caption: 'Сменила основную деятельность', vid: 7 },
+    { name: 'Мария', age: '21 год', city: '', caption: 'Получает 5–6 клиентов в месяц', vid: 3 },
+    { name: 'Светлана', age: '33 года', city: '', caption: 'Работает в визовом агентстве', vid: 6 },
   ];
-  onOpenReview = (src) => (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ reviewSrc: src }); };
+  onOpenReview = (src) => (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ signupOpen: false, giftsOpen: false, proofsOpen: false, tourismOpen: false, scheduleOpen: false, budgetOpen: false, caseOpen: false, jobsOpen: false, videoOpen: false, thanksOpen: false, legalOpen: false, dataOpen: false, privacyOpen: false, reviewSrc: null, zoomedGallery: null, reviewSrc: src }); };
   onCloseReview = () => this.setState({ reviewSrc: null });
   onReviewsPrev = () => {
     const el = this.reviewsRailRef.current;
@@ -1090,7 +1090,7 @@ class Component extends DCLogic {
       onOpen: this.onOpenReview('assets/reviews/review-' + r.vid + '.mp4'),
     }));
   }
-  onOpenVideo = (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ videoOpen: true, videoPaused: true }); };
+  onOpenVideo = (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ signupOpen: false, giftsOpen: false, proofsOpen: false, tourismOpen: false, scheduleOpen: false, budgetOpen: false, caseOpen: false, jobsOpen: false, videoOpen: false, thanksOpen: false, legalOpen: false, dataOpen: false, privacyOpen: false, reviewSrc: null, zoomedGallery: null, videoOpen: true, videoPaused: true }); };
   onCloseVideo = () => {
     const v = this.videoRef.current;
     if (v) { v.pause(); v.currentTime = 0; }
@@ -1117,30 +1117,30 @@ class Component extends DCLogic {
 
   onOpenSignup = (e) => {
     if (e && e.preventDefault) e.preventDefault();
-    this.setState({ signupOpen: true, submitted: false });
+    this.setState({ signupOpen: false, giftsOpen: false, proofsOpen: false, tourismOpen: false, scheduleOpen: false, budgetOpen: false, caseOpen: false, jobsOpen: false, videoOpen: false, thanksOpen: false, legalOpen: false, dataOpen: false, privacyOpen: false, reviewSrc: null, zoomedGallery: null, signupOpen: true, submitted: false });
   };
   onCloseSignup = () => this.setState({ signupOpen: false });
-  onOpenCase = (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ caseOpen: true }); };
+  onOpenCase = (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ signupOpen: false, giftsOpen: false, proofsOpen: false, tourismOpen: false, scheduleOpen: false, budgetOpen: false, caseOpen: false, jobsOpen: false, videoOpen: false, thanksOpen: false, legalOpen: false, dataOpen: false, privacyOpen: false, reviewSrc: null, zoomedGallery: null, caseOpen: true }); };
   onCloseCase = () => this.setState({ caseOpen: false });
-  onOpenSchedule = (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ scheduleOpen: true }); };
+  onOpenSchedule = (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ signupOpen: false, giftsOpen: false, proofsOpen: false, tourismOpen: false, scheduleOpen: false, budgetOpen: false, caseOpen: false, jobsOpen: false, videoOpen: false, thanksOpen: false, legalOpen: false, dataOpen: false, privacyOpen: false, reviewSrc: null, zoomedGallery: null, scheduleOpen: true }); };
   onCloseSchedule = () => this.setState({ scheduleOpen: false });
-  onOpenBudget = (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ budgetOpen: true }); };
+  onOpenBudget = (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ signupOpen: false, giftsOpen: false, proofsOpen: false, tourismOpen: false, scheduleOpen: false, budgetOpen: false, caseOpen: false, jobsOpen: false, videoOpen: false, thanksOpen: false, legalOpen: false, dataOpen: false, privacyOpen: false, reviewSrc: null, zoomedGallery: null, budgetOpen: true }); };
   onCloseBudget = () => this.setState({ budgetOpen: false });
   toggleFaq = (i) => this.setState(s => ({ openFaq: s.openFaq === i ? -1 : i }));
   faqData = [
-    { q: 'А если я пойму, что профессия мне не подходит?', a: 'Это нормально, и мы относимся к такому выбору с пониманием. Вернуть деньги можно в течение 14 дней после старта обучения — без заявлений и объяснения причин. Достаточно сказать куратору, что вы хотите прекратить обучение, и в течение 24 часов средства поступят на тот же счёт, с которого была оплата.', accent: true },
-    { q: 'Нужен ли английский или профильное образование?', a: 'Нет, английский не требуется. Работа на русском, с русскоязычными клиентами, анкеты заполняются по шаблонам. Анастасия пришла в визовую сферу из суда, без опыта в туризме. Нужны внимательность и готовность разобраться.' },
-    { q: 'Я живу не в Москве. Смогу работать?', a: 'Да. Клиент и специалист почти никогда не встречаются лично: документы — в мессенджере, запись на подачу — онлайн. Работать можно из любой точки, где есть интернет.' },
-    { q: 'Сколько времени это занимает? У меня работа и семья.', a: 'Обучение — 1,5 месяца, большинство совмещает с работой. Дальше нагрузку выбираете сами: один заказ — это несколько точек контакта с клиентом, а не занятость сутками.' },
-    { q: 'Нужно ли вкладывать деньги на старте?', a: 'Расскажем, как привлекать первых клиентов бесплатно, и отдельно разберём, как с бюджетом до 15 000 ₽ в месяц получать до 15 клиентов.' },
-    { q: 'Где брать клиентов и куда идти работать?', a: 'Два пути, разберём оба. Трудоустройство — на hh.ru больше 300 открытых вакансий, лучших выпускников зовём к себе в «Без границ». Или работа на себя: как находить клиентов, на эфире будет отдельная часть.' },
-    { q: 'Разве ниша уже не занята?', a: 'Нет, рынок растёт из года в год. Более 13 млн выездов за границу в год и несколько сотен вакансий.\nК тому же виза это только вход: дальше отели, перелёты, страховки, экскурсии. У нас клиенту доступно больше 20 услуг, помимо виз. Вы сможете так же.' },
-    { q: 'А если границы закроют?', a: 'Правила меняются постоянно, а поток растёт: в 2025-м поток выезжающих за границу вырос на 15,6%.<br><br>Чем сложнее правила, тем нужнее специалист — люди перестают подавать сами и идут к профессионалу. Плюс всегда остаются другие страны и услуги помимо виз, их более 20.' },
-    { q: 'Мне всего 19 лет или мне уже за 30. Не рано и не поздно?', a: 'Клиент оценивает результат, а не возраст. Анастасия пришла в профессию в 26, ничего о ней не зная, и через год открыла агентство.' },
-    { q: 'А если клиенту откажут в визе — буду ли я виноват(а)?', a: 'Решение принимает консульство, гарантий не даёт никто. Но большинство отказов — это ошибки в документах, а не произвол: правильно собранный пакет резко снижает риск. Как работать с ожиданиями клиента и что делать при отказе — разбираем на обучении.' },
-    { q: 'Сколько длится вебинар и будет ли запись?', a: 'Около часа и в конце — ответы на вопросы вживую. Записи не будет: два потока в один день, в 14:00 и 19:00, выбирайте удобное время.' }
+    { q: 'А если я пойму, что профессия мне не подходит?', a: 'Это нормально, и мы относимся к такому выбору с пониманием. Вернуть деньги можно в течение 14 дней после старта обучения — без заявлений и объяснения причин. Достаточно сказать куратору, что вы хотите прекратить обучение, и в течение 24 часов средства поступят на тот же счёт, с которого была оплата.', accent: true },
+    { q: 'Нужен ли английский или профильное образование?', a: 'Нет, английский не требуется. Работа на русском, с русскоязычными клиентами, анкеты заполняются по шаблонам. Анастасия пришла в визовую сферу из суда, без опыта в туризме. Нужны внимательность и готовность разобраться.' },
+    { q: 'Я живу не в Москве. Смогу работать?', a: 'Да. Клиент и специалист почти никогда не встречаются лично: документы — в мессенджере, запись на подачу — онлайн. Работать можно из любой точки, где есть интернет.' },
+    { q: 'Сколько времени это занимает? У меня работа и семья.', a: 'Обучение — 1,5 месяца, большинство совмещает с работой. Дальше нагрузку выбираете сами: один заказ — это несколько точек контакта с клиентом, а не занятость сутками.' },
+    { q: 'Нужно ли вкладывать деньги на старте?', a: 'Расскажем, как привлекать первых клиентов бесплатно, и отдельно разберём, как с бюджетом до 15 000 ₽ в месяц получать до 15 клиентов.' },
+    { q: 'Где брать клиентов и куда идти работать?', a: 'Два пути, разберём оба. Трудоустройство — на hh.ru больше 300 открытых вакансий, лучших выпускников зовём к себе в «Без границ». Или работа на себя: как находить клиентов, на эфире будет отдельная часть.' },
+    { q: 'Разве ниша уже не занята?', a: 'Нет, рынок растёт из года в год. Более 13 млн выездов за границу в год и несколько сотен вакансий.\nК тому же виза это только вход: дальше отели, перелёты, страховки, экскурсии. У нас клиенту доступно больше 20 услуг, помимо виз. Вы сможете так же.' },
+    { q: 'А если границы закроют?', a: 'Правила меняются постоянно, а поток растёт: в 2025-м поток выезжающих за границу вырос на 15,6%.<br><br>Чем сложнее правила, тем нужнее специалист — люди перестают подавать сами и идут к профессионалу. Плюс всегда остаются другие страны и услуги помимо виз, их более 20.' },
+    { q: 'Мне всего 19 лет или мне уже за 30. Не рано и не поздно?', a: 'Клиент оценивает результат, а не возраст. Анастасия пришла в профессию в 26, ничего о ней не зная, и через год открыла агентство.' },
+    { q: 'А если клиенту откажут в визе — буду ли я виноват(а)?', a: 'Решение принимает консульство, гарантий не даёт никто. Но большинство отказов — это ошибки в документах, а не произвол: правильно собранный пакет резко снижает риск. Как работать с ожиданиями клиента и что делать при отказе — разбираем на обучении.' },
+    { q: 'Сколько длится вебинар и будет ли запись?', a: 'Около часа и в конце — ответы на вопросы вживую. Записи не будет: два потока в один день, в 14:00 и 19:00, выбирайте удобное время.' }
   ];
-  onOpenJobs = (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ jobsOpen: true }); };
+  onOpenJobs = (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ signupOpen: false, giftsOpen: false, proofsOpen: false, tourismOpen: false, scheduleOpen: false, budgetOpen: false, caseOpen: false, jobsOpen: false, videoOpen: false, thanksOpen: false, legalOpen: false, dataOpen: false, privacyOpen: false, reviewSrc: null, zoomedGallery: null, jobsOpen: true }); };
   onCloseJobs = () => this.setState({ jobsOpen: false });
   onZoomImage = (e) => {
     e.stopPropagation();
@@ -1151,12 +1151,12 @@ class Component extends DCLogic {
   onCloseZoom = () => this.setState({ zoomedGallery: null, zoomedIndex: 0 });
   onZoomPrev = (e) => { e.stopPropagation(); this.setState(s => ({ zoomedIndex: (s.zoomedIndex - 1 + s.zoomedGallery.length) % s.zoomedGallery.length })); };
   onZoomNext = (e) => { e.stopPropagation(); this.setState(s => ({ zoomedIndex: (s.zoomedIndex + 1) % s.zoomedGallery.length })); };
-  onOpenTourism = (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ tourismOpen: true }); };
+  onOpenTourism = (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ signupOpen: false, giftsOpen: false, proofsOpen: false, tourismOpen: false, scheduleOpen: false, budgetOpen: false, caseOpen: false, jobsOpen: false, videoOpen: false, thanksOpen: false, legalOpen: false, dataOpen: false, privacyOpen: false, reviewSrc: null, zoomedGallery: null, tourismOpen: true }); };
   onCloseTourism = () => this.setState({ tourismOpen: false });
-  onOpenProofs = (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ proofsOpen: true }); };
+  onOpenProofs = (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ signupOpen: false, giftsOpen: false, proofsOpen: false, tourismOpen: false, scheduleOpen: false, budgetOpen: false, caseOpen: false, jobsOpen: false, videoOpen: false, thanksOpen: false, legalOpen: false, dataOpen: false, privacyOpen: false, reviewSrc: null, zoomedGallery: null, proofsOpen: true }); };
   onCloseProofs = () => this.setState({ proofsOpen: false });
-  onOpenGifts = (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ giftsOpen: true }); };
-  onOpenGiftsStop = (e) => { if (e) { if (e.preventDefault) e.preventDefault(); if (e.stopPropagation) e.stopPropagation(); } this.setState({ giftsOpen: true }); };
+  onOpenGifts = (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ giftsOpen: false, proofsOpen: false, tourismOpen: false, scheduleOpen: false, budgetOpen: false, caseOpen: false, jobsOpen: false, videoOpen: false, thanksOpen: false, legalOpen: false, dataOpen: false, privacyOpen: false, reviewSrc: null, zoomedGallery: null, giftsOpen: true }); };
+  onOpenGiftsStop = (e) => { if (e) { if (e.preventDefault) e.preventDefault(); if (e.stopPropagation) e.stopPropagation(); } this.setState({ giftsOpen: false, proofsOpen: false, tourismOpen: false, scheduleOpen: false, budgetOpen: false, caseOpen: false, jobsOpen: false, videoOpen: false, thanksOpen: false, legalOpen: false, dataOpen: false, privacyOpen: false, reviewSrc: null, zoomedGallery: null, giftsOpen: true }); };
   onCloseGifts = () => this.setState({ giftsOpen: false });
 
   onNameChange = (e) => this.setState({ name: e.target.value });
@@ -1169,15 +1169,15 @@ class Component extends DCLogic {
   }
   slotBtnStyle(active, invalid) {
     return (invalid ? 'animation: dc-pulse-b 0.9s ease-in-out infinite; ' : '') + 'flex: 1; text-align: center; cursor: pointer; border-radius: 12px; padding: 13px 10px; font-weight: 700; font-size: 15px; border: 1.5px solid ' +
-      (invalid ? 'oklch(0.62 0.22 25)' : (active ? 'oklch(0.65 0.13 55)' : 'oklch(0.88 0.01 260)')) + '; background: ' + (invalid ? 'oklch(0.97 0.035 25)' : (active ? 'oklch(0.97 0.03 55)' : 'oklch(0.97 0.005 260)')) + '; color: ' + (active ? 'oklch(0.4 0.13 55)' : 'oklch(0.4 0.02 260)') + '; transition: border-color ' + (invalid ? '0s' : '1s ease') + ';';
+      (invalid ? 'oklch(0.62 0.22 25)' : (active ? 'oklch(0.65 0.13 55)' : 'oklch(0.88 0.01 260)')) + '; background: ' + (invalid ? 'oklch(0.97 0.035 25)' : (active ? 'oklch(0.97 0.03 55)' : 'oklch(0.97 0.005 260)')) + '; color: ' + (active ? 'oklch(0.4 0.13 55)' : 'oklch(0.4 0.02 260)') + '; transition: border-color ' + (invalid ? '0s' : '1s ease') + ';';
   }
   onToggleAds = () => this.setState({ adsOk: !this.state.adsOk });
   onToggleOffer = () => this.setState({ offerOk: !this.state.offerOk });
   boxStyle(on, invalid) {
     return 'flex-shrink: 0; width: 19px; height: 19px; border-radius: 5px; margin-top: 1px; '
       + 'display: flex; align-items: center; justify-content: center; '
-      + 'background: ' + (on ? 'oklch(0.5 0.13 195)' : (invalid ? 'oklch(0.96 0.04 25)' : 'transparent')) + '; '
-      + 'border: 1.5px solid ' + (on ? 'oklch(0.5 0.13 195)' : (invalid ? 'oklch(0.62 0.19 25)' : 'oklch(0.75 0.03 260)')) + '; '
+      + 'background: ' + (on ? 'oklch(0.5 0.13 195)' : (invalid ? 'oklch(0.96 0.04 25)' : 'transparent')) + '; '
+      + 'border: 1.5px solid ' + (on ? 'oklch(0.5 0.13 195)' : (invalid ? 'oklch(0.62 0.19 25)' : 'oklch(0.75 0.03 260)')) + '; '
       + (invalid && !on ? 'animation: dc-pulse-b 0.9s ease-in-out infinite; ' : '')
       + 'transition: background 0.15s ease, border-color ' + (invalid ? '0s' : '1s ease') + ';';
   }
@@ -1213,7 +1213,7 @@ class Component extends DCLogic {
       const viewH = viewBottom - viewTop;
       const blockH = bottom - top;
 
-      // если всё уже видно целиком — не двигаем
+      // если всё уже видно целиком — не двигаем
       if (top >= viewTop && bottom <= viewBottom) return;
 
       // сдвиг: помещаем весь блок в кадр, а если не влезает — показываем его начало
@@ -1322,12 +1322,12 @@ class Component extends DCLogic {
           a: item.a,
           toggle: () => this.toggleFaq(i),
           cardStyle: item.accent
-            ? 'background: oklch(0.97 0.02 195); border-radius: 16px; overflow: hidden; border: 1.5px solid oklch(0.8 0.07 195); border-left: 5px solid oklch(0.5 0.13 195); box-shadow: 0 10px 26px -18px oklch(0.3 0.09 195 / 0.6);'
-            : 'background: white; border-radius: 16px; overflow: hidden; border: 1px solid oklch(0.92 0.005 260);',
+            ? 'background: oklch(0.97 0.02 195); border-radius: 16px; overflow: hidden; border: 1.5px solid oklch(0.8 0.07 195); border-left: 5px solid oklch(0.5 0.13 195); box-shadow: 0 10px 26px -18px oklch(0.3 0.09 195 / 0.6);'
+            : 'background: white; border-radius: 16px; overflow: hidden; border: 1px solid oklch(0.92 0.005 260);',
           qStyle: item.accent
-            ? "font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 17px; color: oklch(0.3 0.09 195);"
-            : "font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 17px; color: oklch(0.22 0.02 260);",
-          iconStyle: 'flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; background: ' + (item.accent ? 'oklch(0.88 0.06 195)' : 'oklch(0.94 0.03 195)') + '; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease; transform: rotate(' + (open ? 180 : 0) + 'deg);',
+            ? "font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 17px; color: oklch(0.3 0.09 195);"
+            : "font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 17px; color: oklch(0.22 0.02 260);",
+          iconStyle: 'flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; background: ' + (item.accent ? 'oklch(0.88 0.06 195)' : 'oklch(0.94 0.03 195)') + '; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease; transform: rotate(' + (open ? 180 : 0) + 'deg);',
           bodyStyle: open ? 'max-height: 400px; opacity: 1; transition: max-height 0.25s ease, opacity 0.2s ease;' : 'max-height: 0; opacity: 0; overflow: hidden; transition: max-height 0.25s ease, opacity 0.2s ease;'
         };
       }),
