@@ -23,6 +23,35 @@
   <script src="./legal.js?v=4" defer></script>
 <style>@keyframes dc-pulse{0%,100%{box-shadow:0 0 0 2px oklch(0.62 0.22 25 / 0.85)}50%{box-shadow:0 0 0 5px oklch(0.62 0.22 25 / 0.35)}}@keyframes dc-pulse-b{0%,100%{border-color:oklch(0.62 0.22 25)}50%{border-color:oklch(0.72 0.16 25)}}</style>
 <style>.gift-link:hover{opacity:.72;text-decoration-style:solid}.gift-link:active{opacity:.55}</style>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112035611', 'ym');
+   ym(112035611, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112035611" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<script>(function(){
+  var CID=112035611;
+  function goal(n,p){ try{ if(window.ym) ym(CID,'reachGoal',n,p||{}); }catch(e){} }
+  window.__vaGoal=goal;
+
+  // переходы в ботов
+  document.addEventListener('click', function(ev){
+    var a = ev.target && ev.target.closest ? ev.target.closest('a') : null;
+    if(!a) return;
+    var href = a.getAttribute('href') || '';
+    if(href.indexOf('t.me/')>-1)        goal('bot_telegram');
+    else if(href.indexOf('max.ru/')>-1) goal('bot_max');
+    else if(href.indexOf('vk.me/')>-1)  goal('bot_vk');
+  }, true);
+
+  // заявка отправлена: страница «Спасибо» открывается только после успешной отправки
+  if(location.pathname.indexOf('thanks')>-1){ goal('form_submit'); }
+})();</script>
 </head>
 <body>
 <x-dc>
