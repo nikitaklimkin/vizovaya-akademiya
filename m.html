@@ -113,7 +113,7 @@
   function reveal(){
     if(done)return; done=true;
     var root=document.getElementById('dc-root');
-    if(root){root.style.removeProperty('display');}
+    if(root){root.style.setProperty('display','block','important');}
     if(fast.parentNode)fast.parentNode.removeChild(fast);
   }
   function ready(){
