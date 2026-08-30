@@ -1270,6 +1270,30 @@ class Component extends DCLogic {
       this.scrollToFirstInvalid();
       return;
     }
+    (function(){
+      try {
+        var q = new URLSearchParams(location.search);
+        var utm = [];
+        ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(function(k){
+          if (q.get(k)) utm.push(k + '=' + q.get(k));
+        });
+        var payload = {
+          name:  s.name,
+          phone: s.phone,
+          email: s.email,
+          slot:  s.slot,
+          utm:   utm.join('&'),
+          page:  location.pathname
+        };
+        var body = JSON.stringify(payload);
+        if (navigator.sendBeacon) {
+          navigator.sendBeacon('/zayavka.php', new Blob([body], {type:'application/json'}));
+        } else {
+          fetch('/zayavka.php', {method:'POST', headers:{'Content-Type':'application/json'},
+                                 body: body, keepalive: true});
+        }
+      } catch(e) {}
+    })();
     window.location.href = '/thanks-m.html';
     this.setState({
       submitted: true, thanksOpen: false,
