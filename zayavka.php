@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST')    { http_response_code(405); echo '{
 $MAIL_TO   = 'vizovaya.akademiy@yandex.com';
 $PAGE_14   = '209357:vizaakademiya';    // страница регистрации на 14:00
 $PAGE_19   = '209357:vizaakademiya19';  // страница регистрации на 19:00
-$LOG_FILE  = __DIR__ . '/zayavki.txt';
+$LOG_FILE  = __DIR__ . '/zayavki.php';   // .php — чтобы файл нельзя было открыть в браузере
 // ───────────────────────────────────────────────────────
 
 $raw  = file_get_contents('php://input');
@@ -50,34 +50,59 @@ $ip     = $_SERVER['REMOTE_ADDR'] ?? '';
 $bizPage = ($slot === '19:00') ? $PAGE_19 : $PAGE_14;
 
 // ── 1. записываем заявку ───────────────────────────────
+if (!file_exists($LOG_FILE)) {
+    @file_put_contents($LOG_FILE, "<?php exit; // заявки с сайта\n", LOCK_EX);
+}
 $line = sprintf("%s | %s | %s | %s | %s | %s | %s\n",
     $when, $name, $phone, $email, $slot, $utm, $ip);
 @file_put_contents($LOG_FILE, $line, FILE_APPEND | LOCK_EX);
 
 // ── 2. отправляем в Bizon365 ───────────────────────────
+// Повторяем обычную отправку формы регистрации — токен не нужен
 $bizonOk = false;
 $bizonMsg = '';
 if (function_exists('curl_init')) {
-    $post = http_build_query([
-        'page'  => $bizPage,
-        'email' => $email,
-        'name'  => $name,
-        'phone' => $phone,
-    ]);
-    $ch = curl_init('https://online.bizon365.ru/api/v1/webinars/subpages/addSubscriber');
+    // дата ближайшего сеанса и выбранное время
+    $day  = '2026-09-08';
+    $time = ($slot === '19:00') ? '19:00' : '14:00';
+
+    $fields = [
+        'day'            => $day,
+        'time'           => $time,
+        'email'          => $email,
+        'privacy-agree'  => 'on',
+        'timeoffset'     => '-180',
+        'name'           => $name,
+        'phone'          => $phone,
+    ];
+    // прокидываем метки рекламы, если они пришли
+    if ($utm !== '') {
+        parse_str(str_replace('&amp;', '&', $utm), $utmArr);
+        foreach ($utmArr as $k => $v) {
+            if (strpos($k, 'utm_') === 0) $fields[$k] = $clean($v, 100);
+        }
+    }
+
+    $url = 'https://start.bizon365.ru/subscriber/' . rawurlencode($bizPage) . '/register';
+    $ch = curl_init($url);
     curl_setopt_array($ch, [
         CURLOPT_POST           => true,
-        CURLOPT_POSTFIELDS     => $post,
+        CURLOPT_POSTFIELDS     => http_build_query($fields),
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_TIMEOUT        => 12,
         CURLOPT_SSL_VERIFYPEER => true,
+        CURLOPT_HTTPHEADER     => [
+            'Content-Type: application/x-www-form-urlencoded',
+            'Referer: https://start.bizon365.ru/page/209357/' . explode(':', $bizPage)[1],
+            'User-Agent: Mozilla/5.0 (compatible; vizovaya-akademiya)',
+        ],
     ]);
     $resp = curl_exec($ch);
     $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     if ($resp === false) $bizonMsg = curl_error($ch);
     curl_close($ch);
-    $bizonOk  = ($code >= 200 && $code < 300);
-    $bizonMsg = $bizonMsg ?: ('HTTP ' . $code . ' ' . mb_substr((string)$resp, 0, 200));
+    $bizonOk  = ($code >= 200 && $code < 400);
+    $bizonMsg = $bizonMsg ?: ('HTTP ' . $code . ' ' . mb_substr(strip_tags((string)$resp), 0, 200));
 } else {
     $bizonMsg = 'curl недоступен';
 }
