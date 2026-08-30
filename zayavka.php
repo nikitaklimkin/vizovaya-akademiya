@@ -16,6 +16,9 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST')    { http_response_code(405); echo '{
 
 // ── настройки ──────────────────────────────────────────
 $MAIL_TO   = 'vizovaya.akademiy@yandex.com';
+$MAIL_FROM = 'support@bezgranicvisa.ru';   // ящик, от имени которого уходит письмо
+$TG_TOKEN  = '8942163692:AAG0DVX3L4O97rfMsX-pYNdkbyH1m8wqJ0M';  // бот уведомлений
+$TG_CHAT   = '1630009226';                  // кому слать
 $PAGE_14   = '209357:vizaakademiya';    // страница регистрации на 14:00
 $PAGE_19   = '209357:vizaakademiya19';  // страница регистрации на 19:00
 $LOG_FILE  = __DIR__ . '/zayavki.php';   // .php — чтобы файл нельзя было открыть в браузере
@@ -131,9 +134,36 @@ $body =
     "Время:    $when\n\n" .
     "Bizon365: " . ($bizonOk ? 'принято' : 'ОШИБКА — ' . $bizonMsg) . "\n";
 
-$headers  = "From: Сайт <noreply@vizovaya-akademiya.ru>\r\n";
+$headers  = "From: =?UTF-8?B?" . base64_encode('Заявки с сайта') . "?= <$MAIL_FROM>\r\n";
 $headers .= "Reply-To: $email\r\n";
 $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 @mail($MAIL_TO, $subject, $body, $headers);
 
 echo json_encode(['ok' => true, 'bizon' => $bizonOk], JSON_UNESCAPED_UNICODE);
+
+// ── 4. уведомление в Telegram ──────────────────────────
+if ($TG_TOKEN !== '' && $TG_CHAT !== '' && function_exists('curl_init')) {
+    $tgText =
+        "Новая заявка с сайта\n\n" .
+        "Имя: $name\n" .
+        "Телефон: $phone\n" .
+        "Почта: $email\n" .
+        "Время: $slot\n" .
+        "Источник: " . ($utm ?: '—') . "\n" .
+        "Bizon: " . ($bizonOk ? 'принято' : 'ошибка') . "\n" .
+        "$when";
+    $ch = curl_init('https://api.telegram.org/bot' . $TG_TOKEN . '/sendMessage');
+    curl_setopt_array($ch, [
+        CURLOPT_POST           => true,
+        CURLOPT_POSTFIELDS     => http_build_query([
+            'chat_id' => $TG_CHAT,
+            'text'    => $tgText,
+            'disable_web_page_preview' => 'true',
+        ]),
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_TIMEOUT        => 8,
+        CURLOPT_CONNECTTIMEOUT => 5,
+    ]);
+    curl_exec($ch);
+    curl_close($ch);
+}
