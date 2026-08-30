@@ -21,6 +21,17 @@ $PAGE_19   = '209357:vizaakademiya19';  // страница регистраци
 $LOG_FILE  = __DIR__ . '/zayavki.php';   // .php — чтобы файл нельзя было открыть в браузере
 // ───────────────────────────────────────────────────────
 
+
+// безопасная обрезка (работает и без расширения mbstring)
+function va_cut($v, $max) {
+    if (function_exists('mb_substr')) return mb_substr($v, 0, $max, 'UTF-8');
+    if (strlen($v) <= $max) return $v;
+    $out = substr($v, 0, $max);
+    // не режем символ посередине
+    while ($out !== '' && (ord($out[strlen($out)-1]) & 0xC0) === 0x80) $out = substr($out, 0, -1);
+    return $out;
+}
+
 $raw  = file_get_contents('php://input');
 $data = json_decode($raw, true);
 if (!is_array($data)) $data = $_POST;
@@ -29,7 +40,7 @@ $clean = function ($v, $max = 200) {
     $v = is_string($v) ? $v : '';
     $v = trim(strip_tags($v));
     $v = str_replace(["\r", "\n", "\0"], ' ', $v);
-    return mb_substr($v, 0, $max);
+    return va_cut($v, $max);
 };
 
 $name  = $clean($data['name']  ?? '');
@@ -102,7 +113,7 @@ if (function_exists('curl_init')) {
     if ($resp === false) $bizonMsg = curl_error($ch);
     curl_close($ch);
     $bizonOk  = ($code >= 200 && $code < 400);
-    $bizonMsg = $bizonMsg ?: ('HTTP ' . $code . ' ' . mb_substr(strip_tags((string)$resp), 0, 200));
+    $bizonMsg = $bizonMsg ?: ('HTTP ' . $code . ' ' . va_cut(strip_tags((string)$resp), 200));
 } else {
     $bizonMsg = 'curl недоступен';
 }
