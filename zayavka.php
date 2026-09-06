@@ -15,10 +15,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') { http_response_code(204); exit; }
 if ($_SERVER['REQUEST_METHOD'] !== 'POST')    { http_response_code(405); echo '{"ok":false}'; exit; }
 
 // ── настройки ──────────────────────────────────────────
-$MAIL_TO   = 'vizovaya.akademiy@yandex.com';
-$MAIL_FROM = 'support@bezgranicvisa.ru';   // ящик, от имени которого уходит письмо
-$TG_TOKEN  = '8942163692:AAG0DVX3L4O97rfMsX-pYNdkbyH1m8wqJ0M';  // бот уведомлений
-$TG_CHAT   = '1630009226';                  // кому слать
+$MAIL_TO   = 'info@vizovaya-akademiya.ru';
+$MAIL_FROM = 'info@vizovaya-akademiya.ru';   // ящик, от имени которого уходит письмо
+$TG_TOKEN  = '';  // отправка в Telegram отключена: заявки с формы идут только на почту
+$TG_CHAT   = '';  // (чтобы вернуть — впишите обратно токен и chat_id)
 $PAGE_14   = '209357:vizaakademiya';    // страница регистрации на 14:00
 $PAGE_19   = '209357:vizaakademiya19';  // страница регистрации на 19:00
 $LOG_FILE  = __DIR__ . '/zayavki.php';   // .php — чтобы файл нельзя было открыть в браузере
