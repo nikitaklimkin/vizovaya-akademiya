@@ -447,7 +447,7 @@
           </div>
           <div style="color: white;">
             
-            <h3 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 18px; margin: 0 0 18px; line-height: 1.3;">10 фактов, почему сейчас идеально войти в визовую сферу и начать зарабатывать до 220 000 ₽ в месяц</h3><div style="background: oklch(0.65 0.13 55 / 0.16); border: 1px solid oklch(0.65 0.13 55 / 0.4); border-radius: 12px; padding: 12px 16px; margin: 0 0 16px; display: flex; align-items: center; gap: 12px;">
+            <h3 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 18px; margin: 0 0 18px; line-height: 1.3;">10 фактов, почему сейчас идеально войти в визовую сферу и начать зарабатывать до 220 000 ₽ в месяц</h3><div style="background: oklch(0.65 0.13 55 / 0.16); border: 1px solid oklch(0.65 0.13 55 / 0.4); border-radius: 12px; padding: 14px 16px; margin: 0 0 16px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px;">
               <div style="position: relative; flex-shrink: 0; width: 34px; height: 34px;">
                 <svg width="14" height="14" viewBox="0 0 24 24" style="position: absolute; top: -9px; left: -8px;"><path d="M2 2l1.5 1.5M2 6l2-.5M6 2l.5 2" stroke="oklch(0.7 0.13 55)" stroke-width="1.6" stroke-linecap="round"></path></svg>
                 <svg width="10" height="10" viewBox="0 0 24 24" style="position: absolute; top: -6px; right: -9px;"><circle cx="12" cy="12" r="3" fill="oklch(0.6 0.16 195)"></circle></svg>
@@ -492,7 +492,7 @@
             </div><p style="color: oklch(0.94 0.02 195); font-size: 16px; margin: 0 0 20px; line-height: 1.5">После регистрации на бесплатный вебинар вы получаете <span onClick="{{ onOpenGifts }}" class="gift-link" style="color: white; font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 бесплатных материала</span> для старта в визовой сфере.</p>
             <div style="display: flex; flex-wrap: wrap; gap: 10px;">
               <input value="{{ name }}" onChange="{{ onNameChange }}" placeholder="Имя" required="" style="{{ heroNameStyle }}">
-              <input value="{{ phone }}" onChange="{{ onPhoneChange }}" placeholder="Телефон" required="" style="{{ heroPhoneStyle }}">
+              <input value="{{ phone }}" onChange="{{ onPhoneChange }}" onFocus="{{ onPhoneFocus }}" type="tel" inputmode="tel" placeholder="Телефон" required="" style="{{ heroPhoneStyle }}">
               <input value="{{ email }}" onChange="{{ onEmailChange }}" placeholder="Почта" required="" style="{{ heroEmailStyle }}">
               <div style="display: flex; gap: 10px; flex-basis: 100%;">
                 <div onClick="{{ onSelectSlot14 }}" style="{{ slot14Style }}">14:00 (Мск)</div>
@@ -510,7 +510,7 @@
 
             <a href="https://t.me/vizovaya_akademiya_bot?start=c1786562678912-ds" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 12px; background: oklch(1 0 0 / 0.1); border: 1.5px solid oklch(1 0 0 / 0.25); border-radius: 14px; padding: 11px 14px; text-decoration: none; transition: background 0.15s ease;" style-hover="background: oklch(1 0 0 / 0.18);">
               <div style="flex-shrink: 0; width: 42px; height: 42px; border-radius: 50%; background: oklch(0.58 0.16 245); display: flex; align-items: center; justify-content: center;">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M21.9 3.7L2.7 11.2c-1.3.5-1.3 1.3-.2 1.6l4.9 1.5 1.9 5.8c.2.6.4.8.9.8.5 0 .7-.2 1-.5l2.4-2.3 5 3.6c.9.5 1.5.2 1.8-.9l3.2-15c.4-1.4-.5-2-1.7-1.6zM9 14.5l10.5-6.6c.5-.3 1-.1.6.2L11 15.9l-.3 3.2-1.4-4.6z"></path></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white" style="display: block;"><path transform="translate(-0.9 0.6)" d="M21.9 3.7L2.7 11.2c-1.3.5-1.3 1.3-.2 1.6l4.9 1.5 1.9 5.8c.2.6.4.8.9.8.5 0 .7-.2 1-.5l2.4-2.3 5 3.6c.9.5 1.5.2 1.8-.9l3.2-15c.4-1.4-.5-2-1.7-1.6zM9 14.5l10.5-6.6c.5-.3 1-.1.6.2L11 15.9l-.3 3.2-1.4-4.6z"></path></svg>
               </div>
               <div style="flex: 1; min-width: 0;">
                 <div style="font-weight: 800; font-size: 15.5px; color: white; margin-bottom: 2px;">Записаться через Telegram-бота</div>
@@ -542,8 +542,8 @@
   </div>
   
 
-  <div id="reviews" style="background: oklch(0.985 0.006 195); padding: 40px 0 40px 18px;">
-    <div style="text-align: center; margin-bottom: 22px;">
+  <div id="reviews" style="background: oklch(0.985 0.006 195); padding: 40px 0;">
+    <div style="text-align: center; margin-bottom: 22px; padding: 0 18px;">
       <h2 style="font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 27px; margin: 0 0 12px;">Отзывы наших учеников</h2>
       <div style="color: oklch(0.5 0.02 260); font-size: 17px; line-height: 1.5;">Выпускники прошлых потоков записали короткие видео о том, как изменилась их работа и доход после обучения.</div>
       <div style="display: inline-flex; align-items: center; gap: 10px; margin-top: 14px; background: white; border: 1px solid oklch(0.91 0.015 195); border-radius: 20px; padding: 11px 16px; text-align: left; box-shadow: 0 8px 20px -14px oklch(0.2 0.03 260 / 0.5);">
@@ -552,7 +552,7 @@
       </div>
     </div>
     <div style="position: relative;">
-      <div ref="{{ reviewsRailRef }}" class="reviews-rail" style="display: grid; grid-auto-flow: column; grid-auto-columns: 44%; grid-template-rows: auto auto; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 2px 60px 2px 0;">
+      <div ref="{{ reviewsRailRef }}" class="reviews-rail" style="display: grid; grid-auto-flow: column; grid-auto-columns: 44%; grid-template-rows: auto auto; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 2px 60px 2px 18px;">
         <sc-for list="{{ reviews }}" as="item" hint-placeholder-count="12">
           <div style="scroll-snap-align: start; display: flex; flex-direction: column; gap: 10px;">
             <a href="#" onClick="{{ item.onOpen }}" style="position: relative; display: block; aspect-ratio: 9 / 16; border-radius: 18px; overflow: hidden; background: oklch(0.94 0.012 195); border: 1px solid oklch(0.9 0.012 195); text-decoration: none;"><img src="{{ item.poster }}" alt="" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;"><div style="position: absolute; inset: 0; background: linear-gradient(180deg, transparent 45%, oklch(0.2 0.02 260 / 0.45) 100%);"></div><div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 46px; height: 46px; border-radius: 50%; background: oklch(1 0 0 / 0.92); display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 24px -10px oklch(0.2 0.03 260 / 0.6);"><svg width="17" height="17" viewBox="0 0 24 24" fill="oklch(0.5 0.13 195)"><path d="M8 5l12 7-12 7z"></path></svg></div></a>
@@ -564,7 +564,7 @@
         </sc-for>
       </div>
     </div>
-    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; margin-top: 32px;">
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; margin-top: 32px; padding: 0 18px;">
       <span style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 19px; color: oklch(0.25 0.02 260);">Хочу так же ↓</span>
       <a href="#" onClick="{{ onOpenSignup }}" style="display: inline-flex; align-items: center; gap: 10px; background: oklch(0.5 0.13 195); color: white; text-decoration: none; padding: 17px 22px; border-radius: 100px; font-weight: 800; font-size: 17px; box-shadow: 0 12px 24px -8px oklch(0.5 0.13 195 / 0.5); width: 100%; box-sizing: border-box; justify-content: center; text-align: center; transition: background 0.15s ease;" style-hover="background: oklch(0.44 0.13 195);">Записаться на вебинар + 3 подарка</a>
     </div>
@@ -648,7 +648,7 @@
 
             <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 12px;">
               <input value="{{ name }}" onChange="{{ onNameChange }}" placeholder="Имя" required="" style="{{ popupNameStyle }}">
-              <input value="{{ phone }}" onChange="{{ onPhoneChange }}" placeholder="Телефон" required="" style="{{ popupPhoneStyle }}">
+              <input value="{{ phone }}" onChange="{{ onPhoneChange }}" onFocus="{{ onPhoneFocus }}" type="tel" inputmode="tel" placeholder="Телефон" required="" style="{{ popupPhoneStyle }}">
               <input value="{{ email }}" onChange="{{ onEmailChange }}" placeholder="Почта" required="" style="{{ popupEmailStyle }}">
               <div style="display: flex; gap: 10px;">
                 <div onClick="{{ onSelectSlot14 }}" style="{{ slot14Style }}">14:00 (Мск)</div>
@@ -666,7 +666,7 @@
 
             <a href="https://t.me/vizovaya_akademiya_bot?start=c1786562678912-ds" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 12px; background: oklch(0.96 0.02 245); border: 1.5px solid oklch(0.88 0.04 245); border-radius: 14px; padding: 11px 14px; text-decoration: none; transition: background 0.15s ease;" style-hover="background: oklch(0.91 0.035 245);">
               <div style="flex-shrink: 0; width: 42px; height: 42px; border-radius: 50%; background: oklch(0.58 0.16 245); display: flex; align-items: center; justify-content: center;">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M21.9 3.7L2.7 11.2c-1.3.5-1.3 1.3-.2 1.6l4.9 1.5 1.9 5.8c.2.6.4.8.9.8.5 0 .7-.2 1-.5l2.4-2.3 5 3.6c.9.5 1.5.2 1.8-.9l3.2-15c.4-1.4-.5-2-1.7-1.6zM9 14.5l10.5-6.6c.5-.3 1-.1.6.2L11 15.9l-.3 3.2-1.4-4.6z"></path></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white" style="display: block;"><path transform="translate(-0.9 0.6)" d="M21.9 3.7L2.7 11.2c-1.3.5-1.3 1.3-.2 1.6l4.9 1.5 1.9 5.8c.2.6.4.8.9.8.5 0 .7-.2 1-.5l2.4-2.3 5 3.6c.9.5 1.5.2 1.8-.9l3.2-15c.4-1.4-.5-2-1.7-1.6zM9 14.5l10.5-6.6c.5-.3 1-.1.6.2L11 15.9l-.3 3.2-1.4-4.6z"></path></svg>
               </div>
               <div style="flex: 1; min-width: 0;">
                 <div style="font-weight: 800; font-size: 15.5px; color: oklch(0.25 0.02 260); margin-bottom: 2px;">Записаться через Telegram-бота</div>
@@ -719,7 +719,7 @@
 
         <a href="https://t.me/vizovaya_akademiya_bot?start=c1786562678912-ds" target="_blank" rel="noopener" style="display: flex; flex-direction: column; align-items: stretch; gap: 8px; background: oklch(0.96 0.02 245); border: 1.5px solid oklch(0.88 0.04 245); border-radius: 13px; padding: 10px 14px; text-decoration: none; transition: background 0.15s ease;" style-hover="background: oklch(0.91 0.035 245);">
           <div style="flex-shrink: 0; width: 42px; height: 42px; border-radius: 50%; background: oklch(0.58 0.16 245); display: flex; align-items: center; justify-content: center;">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M21.9 3.7L2.7 11.2c-1.3.5-1.3 1.3-.2 1.6l4.9 1.5 1.9 5.8c.2.6.4.8.9.8.5 0 .7-.2 1-.5l2.4-2.3 5 3.6c.9.5 1.5.2 1.8-.9l3.2-15c.4-1.4-.5-2-1.7-1.6zM9 14.5l10.5-6.6c.5-.3 1-.1.6.2L11 15.9l-.3 3.2-1.4-4.6z"></path></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="white" style="display: block;"><path transform="translate(-0.9 0.6)" d="M21.9 3.7L2.7 11.2c-1.3.5-1.3 1.3-.2 1.6l4.9 1.5 1.9 5.8c.2.6.4.8.9.8.5 0 .7-.2 1-.5l2.4-2.3 5 3.6c.9.5 1.5.2 1.8-.9l3.2-15c.4-1.4-.5-2-1.7-1.6zM9 14.5l10.5-6.6c.5-.3 1-.1.6.2L11 15.9l-.3 3.2-1.4-4.6z"></path></svg>
           </div>
           <div style="width: 100%; min-width: 0;">
             <div style="font-weight: 800; font-size: 15.5px; color: oklch(0.25 0.02 260); margin-bottom: 2px;">Подключить уведомления в Telegram</div>
@@ -1188,7 +1188,22 @@ class Component extends DCLogic {
   onCloseGifts = () => this.setState({ giftsOpen: false });
 
   onNameChange = (e) => this.setState({ name: e.target.value });
-  onPhoneChange = (e) => this.setState({ phone: e.target.value });
+  onPhoneChange = (e) => {
+    var raw = String(e.target.value || '');
+    var d = raw.replace(/\D/g, '');
+    if (d.length === 0) { this.setState({ phone: '' }); return; }
+    if (d[0] === '8') d = '7' + d.slice(1);
+    if (d[0] !== '7') d = '7' + d;
+    d = d.slice(0, 11);
+    var out = '+7';
+    if (d.length > 1) out += ' (' + d.slice(1, 4);
+    if (d.length >= 5) out += ') ' + d.slice(4, 7);
+    if (d.length >= 8) out += '-' + d.slice(7, 9);
+    if (d.length >= 10) out += '-' + d.slice(9, 11);
+    this.setState({ phone: out });
+  };
+  onPhoneFocus = () => { if (!this.state.phone) this.setState({ phone: '+7 (' }); };
+  phoneOk() { return (String(this.state.phone || '').replace(/\D/g, '')).length === 11; }
   onEmailChange = (e) => this.setState({ email: e.target.value });
   onSelectSlot14 = () => this.setState({ slot: '14:00' });
   onSelectSlot19 = () => this.setState({ slot: '19:00' });
@@ -1262,7 +1277,7 @@ class Component extends DCLogic {
   };
   onSubmit = () => {
     const s = this.state;
-    if (!s.name.trim() || !s.phone.trim() || !s.email.trim() || !s.slot || !s.adsOk || !s.offerOk) {
+    if (!s.name.trim() || !this.phoneOk() || !s.email.trim() || !s.slot || !s.adsOk || !s.offerOk) {
       this.setState({ errorFlash: true });
       if (this._errTimer) clearTimeout(this._errTimer);
       this._errTimer = setTimeout(() => this.setState({ errorFlash: false }), 2200);
@@ -1345,6 +1360,7 @@ class Component extends DCLogic {
       notSubmitted: !this.state.submitted,
       onNameChange: this.onNameChange,
       onPhoneChange: this.onPhoneChange,
+      onPhoneFocus: this.onPhoneFocus,
       onEmailChange: this.onEmailChange,
       slot: this.state.slot,
       onSelectSlot14: this.onSelectSlot14,
@@ -1352,10 +1368,10 @@ class Component extends DCLogic {
       slot14Style: this.slotBtnStyle(this.state.slot === '14:00', this.state.errorFlash && !this.state.slot),
       slot19Style: this.slotBtnStyle(this.state.slot === '19:00', this.state.errorFlash && !this.state.slot),
       heroNameStyle: 'flex: 1 1 100%; border: none; border-radius: 12px; padding: 15px 16px; font-size: 15.5px; font-family: \'Manrope\', sans-serif; outline: none; ' + this.ring(this.state.errorFlash && !this.state.name.trim()),
-      heroPhoneStyle: 'flex: 1 1 100%; border: none; border-radius: 12px; padding: 15px 16px; font-size: 15.5px; font-family: \'Manrope\', sans-serif; outline: none; ' + this.ring(this.state.errorFlash && !this.state.phone.trim()),
+      heroPhoneStyle: 'flex: 1 1 100%; border: none; border-radius: 12px; padding: 15px 16px; font-size: 15.5px; font-family: \'Manrope\', sans-serif; outline: none; ' + this.ring(this.state.errorFlash && !this.phoneOk()),
       heroEmailStyle: 'flex: 1 1 100%; border: none; border-radius: 12px; padding: 15px 16px; font-size: 15.5px; font-family: \'Manrope\', sans-serif; outline: none; ' + this.ring(this.state.errorFlash && !this.state.email.trim()),
       popupNameStyle: 'border: 1.5px solid oklch(0.9 0.01 260); border-radius: 12px; padding: 13px 16px; font-size: 15.5px; font-family: \'Manrope\', sans-serif; outline: none; ' + this.ring(this.state.errorFlash && !this.state.name.trim()),
-      popupPhoneStyle: 'border: 1.5px solid oklch(0.9 0.01 260); border-radius: 12px; padding: 13px 16px; font-size: 15.5px; font-family: \'Manrope\', sans-serif; outline: none; ' + this.ring(this.state.errorFlash && !this.state.phone.trim()),
+      popupPhoneStyle: 'border: 1.5px solid oklch(0.9 0.01 260); border-radius: 12px; padding: 13px 16px; font-size: 15.5px; font-family: \'Manrope\', sans-serif; outline: none; ' + this.ring(this.state.errorFlash && !this.phoneOk()),
       popupEmailStyle: 'border: 1.5px solid oklch(0.9 0.01 260); border-radius: 12px; padding: 13px 16px; font-size: 15.5px; font-family: \'Manrope\', sans-serif; outline: none; ' + this.ring(this.state.errorFlash && !this.state.email.trim()),
       onSubmit: this.onSubmit,
       caseOpen: this.state.caseOpen,

@@ -61,7 +61,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"></noscript>
   <style>
     * { box-sizing: border-box; }
-    @media (min-width: 701px) and (max-width: 1140px) { div:has(> .reserve-submit-btn) { flex-wrap: wrap !important; row-gap: 10px !important; } .reserve-submit-btn { flex: 0 0 100% !important; width: 100% !important; margin: 0 !important; } .reserve-input { flex: 1 1 30% !important; } .reserve-slot-btn { flex: 0 0 auto !important; padding: 0 14px !important; } }
+    @media (min-width: 701px) and (max-width: 1140px) { div:has(> .reserve-submit-btn) { flex-wrap: wrap !important; row-gap: 10px !important; } .reserve-submit-btn { flex: 0 0 100% !important; width: 100% !important; margin: 0 !important; } .reserve-input { flex: 1 1 0 !important; min-width: 0 !important; } .reserve-slot-btn { flex: 1 1 0 !important; min-width: 0 !important; white-space: nowrap !important; padding: 0 8px !important; font-size: 13.5px !important; } }
     #signup { background: oklch(0.99 0.004 90) !important; }
     @media (min-width: 701px) and (max-width: 900px) { .hero-photo-card { max-width: 380px !important; } .about-photo { max-width: 380px !important; } .video-media { max-width: 420px !important; } #hero h1 { max-width: 620px !important; } }
         .site-nav nav { max-width: 1360px !important; padding-left: 6vw !important; padding-right: 6vw !important; }
@@ -597,7 +597,7 @@
             </div><p style="color: oklch(0.94 0.02 195); font-size: 16px; margin: 0 0 20px; line-height: 1.5">После регистрации на бесплатный вебинар вы получаете <span onClick="{{ onOpenGifts }}" class="gift-link" style="color: white; font-weight: 800; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: opacity 0.15s ease;" title="Посмотреть подарки">3 бесплатных материала</span> для старта в визовой сфере.</p>
             <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px;">
               <input value="{{ name }}" onChange="{{ onNameChange }}" placeholder="Имя" required="" class="reserve-input" style="{{ heroNameStyle }}">
-              <input value="{{ phone }}" onChange="{{ onPhoneChange }}" placeholder="Телефон" required="" class="reserve-input" style="{{ heroPhoneStyle }}">
+              <input value="{{ phone }}" onChange="{{ onPhoneChange }}" onFocus="{{ onPhoneFocus }}" type="tel" inputmode="tel" placeholder="Телефон" required="" class="reserve-input" style="{{ heroPhoneStyle }}">
               <input value="{{ email }}" onChange="{{ onEmailChange }}" placeholder="Почта" required="" class="reserve-input" style="{{ heroEmailStyle }}">
               <div onClick="{{ onSelectSlot14 }}" class="reserve-slot-btn" style="{{ slot14Style }}">14:00 (Мск)</div>
               <div onClick="{{ onSelectSlot19 }}" class="reserve-slot-btn" style="{{ slot19Style }}">19:00 (Мск)</div>
@@ -613,7 +613,7 @@
 
             <a href="https://t.me/vizovaya_akademiya_bot?start=c1786562678912-ds" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 14px; background: oklch(1 0 0 / 0.1); border: 1.5px solid oklch(1 0 0 / 0.25); border-radius: 14px; padding: 14px 16px; text-decoration: none; transition: background 0.15s ease;" style-hover="background: oklch(1 0 0 / 0.18);">
               <div style="flex-shrink: 0; width: 42px; height: 42px; border-radius: 50%; background: oklch(0.58 0.16 245); display: flex; align-items: center; justify-content: center;">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M21.9 3.7L2.7 11.2c-1.3.5-1.3 1.3-.2 1.6l4.9 1.5 1.9 5.8c.2.6.4.8.9.8.5 0 .7-.2 1-.5l2.4-2.3 5 3.6c.9.5 1.5.2 1.8-.9l3.2-15c.4-1.4-.5-2-1.7-1.6zM9 14.5l10.5-6.6c.5-.3 1-.1.6.2L11 15.9l-.3 3.2-1.4-4.6z"></path></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white" style="display: block;"><path transform="translate(-0.9 0.6)" d="M21.9 3.7L2.7 11.2c-1.3.5-1.3 1.3-.2 1.6l4.9 1.5 1.9 5.8c.2.6.4.8.9.8.5 0 .7-.2 1-.5l2.4-2.3 5 3.6c.9.5 1.5.2 1.8-.9l3.2-15c.4-1.4-.5-2-1.7-1.6zM9 14.5l10.5-6.6c.5-.3 1-.1.6.2L11 15.9l-.3 3.2-1.4-4.6z"></path></svg>
               </div>
               <div style="flex: 1; min-width: 0;">
                 <div style="font-weight: 800; font-size: 14.5px; color: white; margin-bottom: 2px;">Записаться через Telegram-бота</div>
@@ -756,7 +756,7 @@
 
             <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 12px;">
               <input value="{{ name }}" onChange="{{ onNameChange }}" placeholder="Имя" required="" style="{{ popupNameStyle }}">
-              <input value="{{ phone }}" onChange="{{ onPhoneChange }}" placeholder="Телефон" required="" style="{{ popupPhoneStyle }}">
+              <input value="{{ phone }}" onChange="{{ onPhoneChange }}" onFocus="{{ onPhoneFocus }}" type="tel" inputmode="tel" placeholder="Телефон" required="" style="{{ popupPhoneStyle }}">
               <input value="{{ email }}" onChange="{{ onEmailChange }}" placeholder="Почта" required="" style="{{ popupEmailStyle }}">
               <div style="display: flex; gap: 10px;">
                 <div onClick="{{ onSelectSlot14 }}" style="{{ slot14Style }}">14:00 (Мск)</div>
@@ -774,7 +774,7 @@
 
             <a href="https://t.me/vizovaya_akademiya_bot?start=c1786562678912-ds" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 14px; background: oklch(0.96 0.02 245); border: 1.5px solid oklch(0.88 0.04 245); border-radius: 13px; padding: 10px 14px; text-decoration: none; transition: background 0.15s ease;" style-hover="background: oklch(0.91 0.035 245);">
               <div style="flex-shrink: 0; width: 42px; height: 42px; border-radius: 50%; background: oklch(0.58 0.16 245); display: flex; align-items: center; justify-content: center;">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M21.9 3.7L2.7 11.2c-1.3.5-1.3 1.3-.2 1.6l4.9 1.5 1.9 5.8c.2.6.4.8.9.8.5 0 .7-.2 1-.5l2.4-2.3 5 3.6c.9.5 1.5.2 1.8-.9l3.2-15c.4-1.4-.5-2-1.7-1.6zM9 14.5l10.5-6.6c.5-.3 1-.1.6.2L11 15.9l-.3 3.2-1.4-4.6z"></path></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white" style="display: block;"><path transform="translate(-0.9 0.6)" d="M21.9 3.7L2.7 11.2c-1.3.5-1.3 1.3-.2 1.6l4.9 1.5 1.9 5.8c.2.6.4.8.9.8.5 0 .7-.2 1-.5l2.4-2.3 5 3.6c.9.5 1.5.2 1.8-.9l3.2-15c.4-1.4-.5-2-1.7-1.6zM9 14.5l10.5-6.6c.5-.3 1-.1.6.2L11 15.9l-.3 3.2-1.4-4.6z"></path></svg>
               </div>
               <div style="flex: 1; min-width: 0;">
                 <div style="font-weight: 800; font-size: 14.5px; color: oklch(0.25 0.02 260); margin-bottom: 2px;">Записаться через Telegram-бота</div>
@@ -830,7 +830,7 @@
 
         <a href="https://t.me/vizovaya_akademiya_bot?start=c1786562678912-ds" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 14px; background: oklch(0.96 0.02 245); border: 1.5px solid oklch(0.88 0.04 245); border-radius: 13px; padding: 10px 14px; text-decoration: none; transition: background 0.15s ease;" style-hover="background: oklch(0.91 0.035 245);">
           <div style="flex-shrink: 0; width: 42px; height: 42px; border-radius: 50%; background: oklch(0.58 0.16 245); display: flex; align-items: center; justify-content: center;">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M21.9 3.7L2.7 11.2c-1.3.5-1.3 1.3-.2 1.6l4.9 1.5 1.9 5.8c.2.6.4.8.9.8.5 0 .7-.2 1-.5l2.4-2.3 5 3.6c.9.5 1.5.2 1.8-.9l3.2-15c.4-1.4-.5-2-1.7-1.6zM9 14.5l10.5-6.6c.5-.3 1-.1.6.2L11 15.9l-.3 3.2-1.4-4.6z"></path></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="white" style="display: block;"><path transform="translate(-0.9 0.6)" d="M21.9 3.7L2.7 11.2c-1.3.5-1.3 1.3-.2 1.6l4.9 1.5 1.9 5.8c.2.6.4.8.9.8.5 0 .7-.2 1-.5l2.4-2.3 5 3.6c.9.5 1.5.2 1.8-.9l3.2-15c.4-1.4-.5-2-1.7-1.6zM9 14.5l10.5-6.6c.5-.3 1-.1.6.2L11 15.9l-.3 3.2-1.4-4.6z"></path></svg>
           </div>
           <div style="flex: 1; min-width: 0;">
             <div style="font-weight: 800; font-size: 14.5px; color: oklch(0.25 0.02 260); margin-bottom: 2px;">Подключить уведомления в Telegram</div>
@@ -1288,7 +1288,22 @@ class Component extends DCLogic {
   onCloseGifts = () => this.setState({ giftsOpen: false });
 
   onNameChange = (e) => this.setState({ name: e.target.value });
-  onPhoneChange = (e) => this.setState({ phone: e.target.value });
+  onPhoneChange = (e) => {
+    var raw = String(e.target.value || '');
+    var d = raw.replace(/\D/g, '');
+    if (d.length === 0) { this.setState({ phone: '' }); return; }
+    if (d[0] === '8') d = '7' + d.slice(1);
+    if (d[0] !== '7') d = '7' + d;
+    d = d.slice(0, 11);
+    var out = '+7';
+    if (d.length > 1) out += ' (' + d.slice(1, 4);
+    if (d.length >= 5) out += ') ' + d.slice(4, 7);
+    if (d.length >= 8) out += '-' + d.slice(7, 9);
+    if (d.length >= 10) out += '-' + d.slice(9, 11);
+    this.setState({ phone: out });
+  };
+  onPhoneFocus = () => { if (!this.state.phone) this.setState({ phone: '+7 (' }); };
+  phoneOk() { return (String(this.state.phone || '').replace(/\D/g, '')).length === 11; }
   onEmailChange = (e) => this.setState({ email: e.target.value });
   onSelectSlot14 = () => this.setState({ slot: '14:00' });
   onSelectSlot19 = () => this.setState({ slot: '19:00' });
@@ -1362,7 +1377,7 @@ class Component extends DCLogic {
   };
   onSubmit = () => {
     const s = this.state;
-    if (!s.name.trim() || !s.phone.trim() || !s.email.trim() || !s.slot || !s.adsOk || !s.offerOk) {
+    if (!s.name.trim() || !this.phoneOk() || !s.email.trim() || !s.slot || !s.adsOk || !s.offerOk) {
       this.setState({ errorFlash: true });
       if (this._errTimer) clearTimeout(this._errTimer);
       this._errTimer = setTimeout(() => this.setState({ errorFlash: false }), 2200);
@@ -1445,6 +1460,7 @@ class Component extends DCLogic {
       notSubmitted: !this.state.submitted,
       onNameChange: this.onNameChange,
       onPhoneChange: this.onPhoneChange,
+      onPhoneFocus: this.onPhoneFocus,
       onEmailChange: this.onEmailChange,
       slot: this.state.slot,
       onSelectSlot14: this.onSelectSlot14,
@@ -1452,10 +1468,10 @@ class Component extends DCLogic {
       slot14Style: this.slotBtnStyle(this.state.slot === '14:00', this.state.errorFlash && !this.state.slot),
       slot19Style: this.slotBtnStyle(this.state.slot === '19:00', this.state.errorFlash && !this.state.slot),
       heroNameStyle: 'flex: 1; min-width: 150px; border: none; border-radius: 12px; padding: 13px 16px; font-size: 14.5px; font-family: \'Manrope\', sans-serif; outline: none; ' + this.ring(this.state.errorFlash && !this.state.name.trim()),
-      heroPhoneStyle: 'flex: 1; min-width: 150px; border: none; border-radius: 12px; padding: 13px 16px; font-size: 14.5px; font-family: \'Manrope\', sans-serif; outline: none; ' + this.ring(this.state.errorFlash && !this.state.phone.trim()),
+      heroPhoneStyle: 'flex: 1; min-width: 150px; border: none; border-radius: 12px; padding: 13px 16px; font-size: 14.5px; font-family: \'Manrope\', sans-serif; outline: none; ' + this.ring(this.state.errorFlash && !this.phoneOk()),
       heroEmailStyle: 'flex: 1; min-width: 160px; border: none; border-radius: 12px; padding: 13px 16px; font-size: 14.5px; font-family: \'Manrope\', sans-serif; outline: none; ' + this.ring(this.state.errorFlash && !this.state.email.trim()),
       popupNameStyle: 'border: 1.5px solid oklch(0.9 0.01 260); border-radius: 12px; padding: 13px 16px; font-size: 14.5px; font-family: \'Manrope\', sans-serif; outline: none; ' + this.ring(this.state.errorFlash && !this.state.name.trim()),
-      popupPhoneStyle: 'border: 1.5px solid oklch(0.9 0.01 260); border-radius: 12px; padding: 13px 16px; font-size: 14.5px; font-family: \'Manrope\', sans-serif; outline: none; ' + this.ring(this.state.errorFlash && !this.state.phone.trim()),
+      popupPhoneStyle: 'border: 1.5px solid oklch(0.9 0.01 260); border-radius: 12px; padding: 13px 16px; font-size: 14.5px; font-family: \'Manrope\', sans-serif; outline: none; ' + this.ring(this.state.errorFlash && !this.phoneOk()),
       popupEmailStyle: 'border: 1.5px solid oklch(0.9 0.01 260); border-radius: 12px; padding: 13px 16px; font-size: 14.5px; font-family: \'Manrope\', sans-serif; outline: none; ' + this.ring(this.state.errorFlash && !this.state.email.trim()),
       onSubmit: this.onSubmit,
       caseOpen: this.state.caseOpen,
