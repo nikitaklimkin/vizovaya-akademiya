@@ -62,7 +62,10 @@ $lines[] = date('d.m.Y H:i:s');
 $text = implode("\n", $lines);
 
 // --- отправка -------------------------------------------------------------
-$ok = false;
+$ok      = false;
+$code    = 0;
+$err     = '';
+$resp    = '';
 if ($TG_TOKEN !== '' && $TG_CHAT !== '' && function_exists('curl_init')) {
     $ch = curl_init('https://api.telegram.org/bot' . $TG_TOKEN . '/sendMessage');
     curl_setopt_array($ch, [
@@ -73,12 +76,27 @@ if ($TG_TOKEN !== '' && $TG_CHAT !== '' && function_exists('curl_init')) {
             'disable_web_page_preview' => true,
         ]),
         CURLOPT_RETURNTRANSFER => true,
-        CURLOPT_TIMEOUT        => 10,
+        CURLOPT_TIMEOUT        => 15,
+        CURLOPT_SSL_VERIFYPEER => false,
+        CURLOPT_SSL_VERIFYHOST => 0,
     ]);
     $resp = curl_exec($ch);
-    $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    $err  = curl_error($ch);
+    $code = (int)curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
     $ok = ($code === 200);
+} elseif (!function_exists('curl_init')) {
+    $err = 'curl недоступен';
+}
+
+if (isset($_GET['debug'])) {
+    echo json_encode([
+        'ok'    => $ok,
+        'code'  => $code,
+        'error' => $err,
+        'resp'  => mb_substr((string)$resp, 0, 300),
+    ], JSON_UNESCAPED_UNICODE);
+    exit;
 }
 
 echo json_encode(['ok' => $ok], JSON_UNESCAPED_UNICODE);
