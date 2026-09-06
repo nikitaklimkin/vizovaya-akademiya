@@ -10,12 +10,32 @@ header('Content-Type: application/json; charset=utf-8');
 $TG_TOKEN = '8942163692:AAG0DVX3L4O97rfMsX-pYNdkbyH1m8wqJ0M';
 $TG_CHAT  = '1630009226';
 
+// --- журнал входящих запросов --------------------------------------------
+$LOG = __DIR__ . '/hook_log.txt';
+$rawBody = file_get_contents('php://input');
+@file_put_contents(
+    $LOG,
+    date('d.m.Y H:i:s') . " | " . ($_SERVER['REQUEST_METHOD'] ?? '?')
+      . " | QS: " . ($_SERVER['QUERY_STRING'] ?? '')
+      . " | CT: " . ($_SERVER['CONTENT_TYPE'] ?? '')
+      . " | BODY: " . mb_substr($rawBody, 0, 800)
+      . " | POST: " . mb_substr(json_encode($_POST, JSON_UNESCAPED_UNICODE), 0, 400)
+      . "\n",
+    FILE_APPEND
+);
+
+if (isset($_GET['log'])) {
+    header('Content-Type: text/plain; charset=utf-8');
+    echo is_file($LOG) ? file_get_contents($LOG) : 'журнал пуст';
+    exit;
+}
+
 // --- откуда пришла запись -------------------------------------------------
 $channel = isset($_GET['ch'])   ? trim($_GET['ch'])   : '—';
 $time    = isset($_GET['time']) ? trim($_GET['time']) : '—';
 
 // --- данные подписчика от BotHelp ----------------------------------------
-$raw  = file_get_contents('php://input');
+$raw  = $rawBody;
 $data = json_decode($raw, true);
 if (!is_array($data)) { $data = $_POST; }
 
